@@ -26,6 +26,10 @@ a {
    color: #6b77e5;
 }
 
+.text-wrapper a {
+   text-decoration: underline;
+}
+
 h1,
 h2,
 h3 {
