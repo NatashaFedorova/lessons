@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:regular&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,600,700&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'DM Serif Text', serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+@import url('reset.css');
+
+/* ----------------global------------------ */
+body {
+   font-family: 'Inter', sans-serif;
+   font-size: 18px;
+   color: #474747;
+   background-color: #ffffff;
+}
+
+a {
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+img {
+   max-width: 100%;
+}
+
+h2,
+h3 {
+   line-height: 1.27;
+}
+
+[class*='-container'] {
+   min-width: 600px;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+/* -------------header, footer------------- */
+.page-header,
+.page-footer {
+   background-color: #141414;
+   color: #e0dfdf;
+   padding: 40px 0;
+}
+
+.page-footer .nav {
+   margin-bottom: 20px;
+}
+
+.nav {
+   text-align: center;
+}
+
+.nav li {
+   display: inline-block;
+}
+
+/* Вимушено змінено схему відступів, тут  з права на ліво */
+.nav li + li {
+   margin-left: 30px;
+}
+
+.up-link {
+   text-transform: uppercase;
+   display: block;
+   width: min-content;
+   margin: auto;
+}
+
+/* ---------------hero-section------------ */
+.hero-section {
+   background-color: #303030;
+   padding: 40px 0 48px;
+}
+
+.hero-section-image-wrapper img {
+   display: block;
+   margin: 0 auto;
+}
+
+.page-title {
+   font-size: 32px;
+   text-align: center;
+   color: #ffffff;
+   margin-top: -40px;
+}
+
+/* ---------------about-section----------- */
+.about-section {
+   padding: 140px 0;
+   background-color: #fff9f4;
+}
+
+/*  прибираємо "фантомний"  відступ*/
+.about-container {
+   font-size: 0;
+}
+
+.about-section-text-content-wrapper,
+.about-section-images-wrapper {
+   display: inline-block;
+   vertical-align: top;
+}
+
+.about-section-images-wrapper .image-wrapper {
+   display: inline-block;
+   vertical-align: top;
+   overflow: hidden;
+   border-radius: 5px;
+}
+
+/* Вимушено змінено схему відступів, тут  з права на ліво */
+.about-section-images-wrapper .image-wrapper + .image-wrapper {
+   margin-left: 22px;
+}
+
+.about-section-text-content-wrapper {
+   max-width: 563px;
+   padding-top: 21px;
+   margin-right: 38px;
+}
+
+.about-section .section-title {
+   font-size: 28px;
+   line-height: 1;
+   text-transform: uppercase;
+   margin-bottom: 13px;
+   color: #d06b00;
+}
+
+.about-section .text-wrapper {
+   font-family: Inter;
+   font-size: 20px;
+   line-height: 1.8;
+}
+
+.about-section .accent {
+   font-family: 'DM Serif Text', serif;
+   text-transform: capitalize;
+   font-size: 59px;
+   line-height: 1.46;
+   color: #0e333d;
+   margin-bottom: 25px;
+}
+
+/* Вимушено змінено схему відступів, тут з права на ліво */
+.about-section-images-wrapper img + img {
+   margin-left: 22px;
+}
+
+/* ---------------reasons-section----------- */
+
+.reasons-section {
+   padding-bottom: 50px;
+}
+
+.reasons-container {
+   max-width: 692px;
+}
+
+.reasons-section-image-wrapper {
+   margin-bottom: 37px;
+}
+
+.reasons-section-title,
+.reasons-section-subtitle,
+.reasons-benefits-block .title {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+   color: #37393f;
+}
+
+.reasons-section-title {
+   text-transform: capitalize;
+   font-size: 30px;
+   margin-bottom: 10px;
+}
+
+.reasons-section-subtitle {
+   font-size: 20px;
+   color: #6b77e5;
+   margin-bottom: 12px;
+}
+
+.reasons-section .text-wrapper {
+   line-height: 1.46;
+   color: #7d7d7d;
+   margin-bottom: 42px;
+}
+
+/*  прибираємо "фантомний"  відступ*/
+.reasons-benefits-block {
+   font-size: 0;
+}
+
+.reasons-benefits-block .text-content,
+.reasons-benefits-block-image-wrapper {
+   display: inline-block;
+   vertical-align: top;
+}
+
+.reasons-benefits-block .text-content {
+   max-width: 47%;
+   margin-left: 29px;
+}
+
+.reasons-benefits-block .title {
+   font-size: 25px;
+   margin-bottom: 15px;
+}
+
+.reasons-benefits-block .text-wrapper {
+   font-size: 18px;
+   margin-bottom: 0;
+}
+
+.reasons-benefits-block .accent {
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   color: #40ddb6;
+   margin-bottom: 21px;
+}
+
+/* Вимушено змінено схему відступів, тут з низу в вверх */
+.reasons-benefits-block li + li {
+   margin-top: 30px;
+}
+
+.reasons-benefits-block ul img {
+   margin-right: 3px;
+}
+
+/* ---------------examples-section----------- */
+.examples-section {
+   font-family: 'Montserrat', sans-serif;
+   padding-bottom: 40px;
+}
+.examples-section-title {
+   font-weight: 700;
+   font-size: 42px;
+   text-align: center;
+   color: #0e333d;
+   margin-bottom: 30px;
+}
+
+h4,
+.examples-section-subtitle {
+   font-weight: 700;
+   font-size: 36px;
+   text-align: center;
+   color: #243337;
+   margin-bottom: 30px;
+}
+
+h4 {
+   font-size: 24px;
+}
+
+.examples-height {
+   width: 100%;
+   height: 100px;
+   background: #c31432;
+   background: -webkit-linear-gradient(to right, #c31432, #240b36);
+   background: linear-gradient(to right, #c31432, #240b36);
+   margin-bottom: 30px;
+}
+
+.image-wrapper.visible {
+   display: inline-block;
+   border: 1px solid #303030;
+   border-radius: 20px;
+}
+
+.image-wrapper.hidden {
+   display: inline-block;
+   border: 1px solid #303030;
+   border-radius: 20px;
+   overflow: hidden;
+}
+
+.text-wrapper.scroll {
+   width: 370px;
+   height: 100px;
+   overflow: scroll;
+}
+
+.text-wrapper.auto {
+   overflow: auto;
+}
