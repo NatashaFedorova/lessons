@@ -115,7 +115,7 @@ a {
 
 .about-text-content {
    max-width: 503px;
-   margin-right: 75px;
+   margin-right: 85px;
 }
 
 .about-section .title {
@@ -140,10 +140,11 @@ a {
 .images-content .image-block {
    display: inline-block;
    vertical-align: middle;
+   padding-bottom: 20px;
 }
 
 .images-content .image-block + .image-block {
-   margin-left: 20px;
+   margin-left: 30px;
 }
 
 .images-content .image-wrapper {
