@@ -9,3 +9,5 @@ Lesson-5 - https://natashafedorova.github.io/lessons/lesson-5/
 Lesson-6 - https://natashafedorova.github.io/lessons/lesson-6/
 
 Lesson-7 - https://natashafedorova.github.io/lessons/lesson-7/
+
+Lesson-8 - https://natashafedorova.github.io/lessons/lesson-8/
