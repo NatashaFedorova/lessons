@@ -848,7 +848,7 @@ h4 {
 .shop-now-section .left-part {
    background-color: aqua;
    min-height: 640px;
-   padding: 183px 74px 175px;
+   padding: 183px 74px 74px;
    border-top-left-radius: 20px;
    border-bottom-left-radius: 20px;
    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
