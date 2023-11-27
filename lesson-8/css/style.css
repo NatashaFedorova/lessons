@@ -837,7 +837,6 @@ h4 {
 }
 
 .shop-now-section .right-part {
-   background-color: red;
    min-height: 640px;
    border-top-right-radius: 20px;
    border-bottom-right-radius: 20px;
@@ -846,7 +845,6 @@ h4 {
 }
 
 .shop-now-section .left-part {
-   background-color: aqua;
    min-height: 640px;
    padding: 183px 74px 74px;
    border-top-left-radius: 20px;
