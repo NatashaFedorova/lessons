@@ -1,0 +1,893 @@
+/* font-family: 'Causten', sant-serif; */
+/* font-family: 'Core Sans C', sant-serif; */
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Poppins', sant-serif; */
+
+/*
+Вимушено ситуативно змінено схему відступів "зліва направо, зверху вниз",
+з метою не використання властивостей та псевдоселекторів, які не вивчались,
+а також, щоб не залишати "висячі" відступи
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap');
+@import url('fonts.css');
+@import url('reset.css');
+
+body {
+   font-family: 'Inter', sans-serif;
+   color: rgb(235, 234, 234);
+   background-color: #000000;
+}
+
+a {
+   cursor: pointer;
+   font-size: 24px;
+   color: rgba(172, 255, 47, 0.8);
+   border-bottom: 1px solid;
+}
+
+[class*='-container'] {
+   max-width: 1270px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+[class*='-section'] li + li {
+   margin-top: 20px;
+}
+
+[class*='-section'] + [class*='-section'] {
+   padding-bottom: 80px;
+}
+
+[class*='-section'] .code-example {
+   color: #7ba13e;
+   margin-bottom: 10px;
+}
+[class*='-section'] .code-example code {
+   padding: 0 5px;
+}
+
+/* ==============header, footer============= */
+.header-container,
+.footer-container {
+   padding: 30px 0;
+}
+
+.page-header {
+   border-bottom: 2px solid greenyellow;
+}
+
+.page-footer {
+   border-top: 2px solid greenyellow;
+}
+
+.footer-container {
+   font-size: 0;
+   text-align: center;
+}
+
+.nav {
+   text-align: center;
+}
+
+.page-footer .nav {
+   display: inline-block;
+}
+
+.nav li {
+   display: inline-block;
+   font-size: 0;
+}
+
+.nav li + li {
+   margin-left: 20px;
+}
+
+.up-link {
+   display: inline-block;
+   margin-left: 40px;
+}
+
+/* ==================hero================== */
+.hero-section {
+   background-color: rgb(0, 0, 0);
+   background: linear-gradient(
+         86deg,
+         rgba(0, 0, 0, 1) 0%,
+         rgba(0, 0, 0, 1) 12%,
+         rgba(68, 100, 18, 1) 45%,
+         rgba(74, 109, 20, 1) 51%,
+         rgba(0, 0, 0, 1) 84%,
+         rgba(0, 0, 0, 1) 100%
+      )
+      center / 1230px no-repeat;
+}
+
+.hero-container {
+   padding: 150px 0;
+}
+
+h1 {
+   font-size: 48px;
+   font-weight: 700;
+   color: #000000;
+   text-align: center;
+}
+
+/* ===============examples-section=============== */
+h2 {
+   font-size: 32px;
+   font-weight: 700;
+   color: #cbc9c9;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+h2 code {
+   padding: 0 5px;
+}
+
+h3,
+h4 {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+.bg-color-section li {
+   background-color: darkgoldenrod;
+}
+
+.bg-color-section li span {
+   background-color: rgb(184, 66, 11);
+}
+
+.bg-color-section {
+   padding-top: 80px;
+}
+
+.bg-color-section .example-wrapper p {
+   width: 50%;
+}
+
+.comment {
+   font-size: 14px;
+   color: rgb(176, 173, 173);
+}
+
+/* ======================bg-image-section================= */
+.empty {
+   outline: 1px solid #446412;
+   margin-bottom: 20px;
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-3.jpg');
+}
+
+.empty-and-border {
+   border: 5px solid transparent;
+   background-color: #cbc9c9;
+   background-image: url('../img/spider-3.jpg');
+}
+
+.element-with-content.gradient,
+.empty-and-border.gradient {
+   background: linear-gradient(to right, #446412, rgb(34, 34, 34), #446412) top left / 50% repeat
+      fixed;
+}
+
+.empty-and-padding {
+   padding: 10px;
+   background-color: #cbc9c9;
+   background-image: url('../img/spider-3.jpg');
+}
+
+.element-with-content {
+   border: 1px solid rgb(218, 197, 13);
+   background-color: #cbc9c9;
+   background-image: url('../img/spider-1.jpg');
+}
+
+/* ======================bg-repeat-section================= */
+
+.bg-repeat-no-repeat {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/small/spider-6.jpg');
+   background-repeat: no-repeat;
+}
+
+.bg-repeat-no-repeat.gradient {
+   background-color: rgb(51, 61, 49);
+   background: radial-gradient(
+      circle,
+      rgba(221, 210, 26, 1) 0%,
+      rgba(210, 68, 28, 1) 21%,
+      rgba(30, 100, 18, 1) 49%,
+      rgba(223, 35, 18, 1) 73%,
+      rgba(223, 218, 6, 1) 100%
+   );
+   background-repeat: no-repeat;
+}
+
+.bg-repeat-repeat {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/small/spider-6.jpg');
+   background-repeat: repeat;
+}
+
+.bg-repeat-repeat.gradient {
+   background-color: rgb(51, 61, 49);
+   background: linear-gradient(
+      196deg,
+      rgba(210, 68, 28, 1) 28%,
+      rgba(215, 217, 23, 1) 50%,
+      rgba(223, 35, 18, 1) 71%
+   );
+   background-size: 50px 50px;
+   background-repeat: repeat-x;
+}
+
+.bg-repeat-repeat-x {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/small/spider-6.jpg');
+   background-repeat: repeat-x;
+}
+
+.bg-repeat-repeat-x.gradient {
+   background-color: rgb(51, 61, 49);
+   background: linear-gradient(
+      196deg,
+      rgba(210, 68, 28, 1) 28%,
+      rgba(215, 217, 23, 1) 50%,
+      rgba(223, 35, 18, 1) 71%
+   );
+   background-size: 50px 50px;
+   background-repeat: repeat-x;
+}
+
+.bg-repeat-repeat-y {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/small/spider-6.jpg');
+   background-repeat: repeat-y;
+}
+
+.bg-repeat-repeat-y.gradient {
+   background-color: rgb(51, 61, 49);
+   background: linear-gradient(
+      196deg,
+      rgba(210, 68, 28, 1) 28%,
+      rgba(215, 217, 23, 1) 50%,
+      rgba(223, 35, 18, 1) 71%
+   );
+   background-size: 50px 50px;
+   background-repeat: repeat-y;
+}
+
+.bg-repeat-repeat-x-pattern {
+   color: #446412;
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/pattern-2.jpg');
+   background-repeat: repeat-x;
+}
+
+.bg-repeat-repeat-y-pattern {
+   color: #446412;
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/pattern-1.jpg');
+   background-repeat: repeat-y;
+}
+
+.bg-position-left-top {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-4.jpg');
+   background-size: 100px;
+   background-repeat: no-repeat;
+   background-position: left top;
+}
+
+.bg-position-left-top {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-4.jpg');
+   background-size: 100px;
+   background-repeat: no-repeat;
+   background-position: left 20px top 0;
+}
+
+.bg-position-text {
+   font-size: 14px;
+   margin-bottom: 10px;
+}
+
+.bg-position-left-top.gradient {
+   background-color: rgb(51, 61, 49);
+   background: linear-gradient(
+      196deg,
+      rgba(210, 68, 28, 1) 28%,
+      rgba(215, 217, 23, 1) 50%,
+      rgba(223, 35, 18, 1) 71%
+   );
+   background-repeat: no-repeat;
+   background-position: left 20px top 30px;
+}
+
+.bg-position-left-top.gradient.span {
+   line-height: 1.5;
+   background-repeat: no-repeat;
+   background-position: left 0 top 3px;
+}
+
+.bg-position-center {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-3.jpg');
+   background-size: 300px;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.bg-position-center-second {
+   border: 1px solid #d7d917;
+   height: 200px;
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-3.jpg');
+   background-size: 100px;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.bg-position-center-third {
+   border: 1px solid #d7d917;
+   height: 200px;
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-3.jpg');
+   background-size: 100px;
+   background-repeat: no-repeat;
+   background-position: right;
+}
+
+.bg-position-with-percentage-list,
+.bg-position-default-center-list {
+   font-size: 0;
+}
+
+.bg-position-with-percentage-list .item + .item,
+.bg-position-default-center-list .item + .item {
+   margin-left: 10px;
+}
+
+.bg-position-with-percentage-list .item,
+.bg-position-default-center-list .item {
+   display: inline-block;
+   vertical-align: top;
+   margin: 0;
+}
+
+.bg-position-with-percentage-list .code-example,
+.bg-position-default-center-list .code-example {
+   background-color: #000000;
+   border-radius: 4px;
+   font-size: 14px;
+}
+
+.bg-position-with-percentage-list .block,
+.bg-position-default-center-list .block {
+   border: 1px solid #43d21c;
+   padding: 120px 30px;
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-1.jpg');
+   background-size: 100px;
+   background-repeat: no-repeat;
+}
+.bg-position-center-top {
+   background-position: top;
+}
+.bg-position-center-right {
+   background-position: right;
+}
+.bg-position-center-bottom {
+   background-position: bottom;
+}
+.bg-position-center-left {
+   background-position: left;
+}
+
+.bg-position-with-percentage-center {
+   background-position: 50%;
+}
+
+.bg-position-with-percentage-with-offset {
+   background-position: 75%;
+}
+
+.bg-position-with-negative-percentage {
+   background-position: -25%;
+}
+
+.bg-attachment-scroll,
+.bg-attachment-fixed {
+   height: 300px;
+   overflow: scroll;
+}
+
+.bg-attachment-scroll p {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-1.jpg');
+   background-size: 200px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: scroll;
+}
+
+.bg-attachment-fixed p {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-6.jpg');
+   background-size: 300px;
+   background-repeat: no-repeat;
+   background-position: 30%;
+   background-attachment: fixed;
+}
+
+.bg-attachment-scroll-inline {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-4.jpg');
+   background-size: 300px;
+   background-repeat: no-repeat;
+   background-position: 30% center;
+   background-attachment: scroll;
+}
+
+.bg-attachment-fixed-inline {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-2.jpg');
+   background-size: 300px;
+   background-repeat: no-repeat;
+   background-position: left center;
+   background-attachment: fixed;
+}
+
+.bg-size-section .block {
+   border: 1px solid #43d21c;
+   height: 300px;
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-1.jpg');
+   background-repeat: no-repeat;
+}
+
+.bg-size-section .error {
+   padding-left: 32px;
+   background-image: url('../img/error.svg');
+   background-repeat: no-repeat;
+   background-size: 20px;
+}
+
+.bg-size-section .success {
+   padding-left: 32px;
+   background-image: url('../img/vector.svg');
+   background-repeat: no-repeat;
+   background-size: auto 20px;
+}
+
+.bg-size-one-value-px {
+   background-size: 200px;
+}
+
+.bg-size-one-value-percent {
+   background-size: 30%;
+}
+
+.block.bg-size-two-values-px {
+   background-size: 150px 175px;
+}
+
+.block.bg-size-two-values-percent {
+   background-size: 20% 30%;
+}
+
+.block.bg-size-two-values-auto-px {
+   background-size: auto 175px;
+}
+
+.bg-size-two-values-auto-percent {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-1.jpg');
+   background-repeat: no-repeat;
+   background-size: auto 80%;
+}
+
+.block.bg-size-contain {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-3.jpg');
+   background-repeat: no-repeat;
+
+   background-size: contain;
+}
+
+.block.bg-size-cover {
+   background-color: rgb(51, 61, 49);
+   background-image: url('../img/spider-3.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.bg-complex-section .block {
+   height: 300px;
+   border: 1px solid rgb(66, 175, 44);
+}
+
+.block.bg-complex-first {
+   background: rgba(0, 128, 0, 0.29) url('../img/spider-1.jpg') 0 0 / auto no-repeat fixed;
+}
+
+.block.bg-complex-secont {
+   background: rgba(0, 128, 0, 0.29) url('../img/spider-2.jpg') top / auto 200px no-repeat;
+}
+
+.block.bg-complex-third {
+   background: #fffcfc url('../img/pattern-2.jpg') bottom / auto 200px repeat-x;
+}
+
+.block.bg-complex-fourth {
+   background: rgba(0, 128, 0, 0.29) url('../img/spider-3.jpg') right / 50%;
+}
+
+.block.bg-complex-fifth {
+   height: 500px;
+   background-color: rgb(193, 208, 193);
+   background: url('../img/decor-1.png') right bottom / auto no-repeat,
+      url('../img/decor-2.svg') left -10% bottom / 30% no-repeat,
+      url('../img/decor-3.svg') right -10% top / 30% no-repeat,
+      url('../img/circle.svg') left top / auto no-repeat,
+      url('../img/furniture.png') center / contain no-repeat,
+      url('../img/room.png') right center / 50% 100% no-repeat,
+      linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, #d6cfc2 100%);
+}
+
+/* =========================models======================= */
+.about-online-section {
+   padding: 100px;
+   color: #807d7e;
+   background-color: #fff;
+}
+
+/* лінію краще виконати іншим чином (не завантажуючи картинку),
+але для практики виконую так */
+.about-online-section .text-content {
+   padding-left: 21px;
+   background: url('../img/line.svg') 0 0 / auto no-repeat;
+}
+
+.about-online-section h2,
+.about-online-section h3,
+.about-online-section a {
+   font-family: 'Core Sans C', sant-serif;
+   font-weight: 600;
+}
+
+.about-online-section h2 {
+   color: #3c4242;
+   font-size: 28px;
+   text-align: left;
+   line-height: 1.11;
+   letter-spacing: 0.56px;
+   margin-bottom: 30px;
+}
+
+.about-online-section h3 {
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+   color: #807d7e;
+   margin-bottom: 25px;
+}
+
+.about-online-section a {
+   display: inline-block;
+   font-size: 20px;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+   color: #807d7e;
+   border: none;
+}
+
+.about-online-section .text-wrapper {
+   margin-bottom: 25px;
+}
+
+.about-online-section .text-wrapper + .text-wrapper {
+   margin-bottom: 20px;
+}
+
+.about-online-section .text-wrapper p {
+   font-family: 'Causten', sant-serif;
+   font-size: 20px;
+   line-height: 1.67;
+   letter-spacing: 0.4px;
+   color: #807d7e;
+}
+
+.about-online-section .text-wrapper p + p {
+   margin-top: 20px;
+}
+
+.about-online-section .text-wrapper .accent {
+   font-weight: 700;
+   color: #807d7e;
+}
+
+/* =============about-us, projects, shop-now sections============= */
+.shop-now-section,
+.projects-section,
+.about-us-section {
+   background-color: #ffffff;
+}
+.about-us-container {
+   max-width: 703px;
+}
+
+.projects-section .projects-container {
+   max-width: 1250px;
+}
+
+/* квадрат краще виконати іншим чином (не завантажуючи картинку),
+але для практики виконую так */
+.projects-section h2,
+.about-us-section h2 {
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 1.22;
+   text-align: left;
+   padding-left: 18px;
+   color: #37393f;
+   background: url('../img/box.svg') left 4px / 12px no-repeat;
+   margin-bottom: 16px;
+}
+
+.about-us-section .accent,
+.projects-section .accent {
+   font-family: 'Poppins', sant-serif;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.21;
+   color: #37393f;
+   margin-bottom: 20px;
+}
+
+.about-us-section .text-wrapper {
+   margin-bottom: 43px;
+}
+
+.about-us-section .text-wrapper p,
+.projects-section .text-wrapper p {
+   font-size: 18px;
+   line-height: 1.46;
+   color: #7d7d7d;
+}
+
+.about-us-section .text-wrapper p + p {
+   margin-top: 15px;
+}
+
+.awards-list h3,
+.about-us-section .text-wrapper ul {
+   font-family: 'Poppins', sant-serif;
+   font-size: 20px;
+   line-height: 1.5;
+   color: #37393f;
+}
+
+.about-us-section .text-wrapper ul {
+   margin-top: 20px;
+}
+
+.about-us-section .text-wrapper ul li {
+   padding-left: 35px;
+   background: url('../img/vector-green.svg') 0 3px / 27px no-repeat;
+}
+
+.about-us-section .text-wrapper ul li + li {
+   margin-top: 20px;
+}
+
+.awards-list {
+   font-size: 0;
+   margin-bottom: 37px;
+}
+
+.awards-list li {
+   display: inline-block;
+   max-width: 295px;
+   padding: 31px 32px 32px 90px;
+   border: 1px solid #e3e3e3;
+   vertical-align: top;
+}
+
+.awards-list li + li {
+   margin-top: 0;
+   margin-left: 21px;
+}
+
+.awards-list h3 {
+   font-weight: 600;
+}
+
+.awards-list p {
+   font-size: 16px;
+   line-height: 1.35;
+   color: #7d7d7d;
+}
+
+.awards-list .first {
+   background: url('../img/document.svg') 32px 31px / 39px no-repeat;
+}
+
+.awards-list .second {
+   background: url('../img/cup.svg') 32px 31px / 39px no-repeat;
+}
+
+.about-us-section a {
+   display: inline-block;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 1.22;
+   text-transform: capitalize;
+   padding: 21px 27px 22px 27px;
+   color: #fff;
+   background-color: #6b77e5;
+}
+
+.projects-section h2 {
+   max-width: max-content;
+   margin: 0 auto 14px;
+}
+
+.projects-section .accent {
+   margin-bottom: 14px;
+}
+
+.projects-section .accent,
+.projects-section .text-wrapper {
+   text-align: center;
+}
+
+.projects-section .text-wrapper {
+   padding: 0 184px;
+   margin-bottom: 47px;
+}
+.projects-section ul {
+   font-size: 0;
+}
+
+.projects-section ul + ul {
+   margin-top: 56px;
+}
+
+.projects-section ul li {
+   display: inline-block;
+   width: 100%;
+   max-width: 384px;
+
+   margin: 0;
+   vertical-align: top;
+}
+
+.projects-section ul li + li {
+   margin-left: 34px;
+}
+
+.projects-section ul h3 {
+   font-family: 'Poppins', sant-serif;
+   font-weight: 600;
+   line-height: 1.27;
+   color: #37393f;
+   margin-bottom: 10px;
+}
+
+.projects-section ul .bg-wrapper {
+   width: 100%;
+   height: 501px;
+}
+
+.projects-section ul .text-content {
+   padding-top: 24px;
+}
+
+.projects-section ul p {
+   font-size: 14px;
+   line-height: 1.57;
+   color: #7d7d7d;
+}
+
+.projects-section ul .date {
+   padding-left: 25px;
+   background: url('../img/projects-section/calendar.svg') 0 0 / 22px no-repeat;
+}
+
+.projects-section .first .bg-wrapper {
+   background: #c4c4c4 url('../img/projects-section/project-1.png') top center/ auto 501px no-repeat;
+}
+.projects-section .second .bg-wrapper {
+   background: #c4c4c4 url('../img/projects-section/project-2.png') top center/ auto 501px no-repeat;
+}
+.projects-section .third .bg-wrapper {
+   background: #c4c4c4 url('../img/projects-section/project-3.png') top center / auto 501px
+      no-repeat;
+}
+.projects-section .fourth .bg-wrapper {
+   background: #c4c4c4 url('../img/projects-section/project-4.png') top center / auto 501px
+      no-repeat;
+}
+.projects-section .fifth .bg-wrapper {
+   background: #c4c4c4 url('../img/projects-section/project-5.png') top center / auto 501px
+      no-repeat;
+}
+.projects-section .sixth .bg-wrapper {
+   background: #c4c4c4 url('../img/projects-section/project-6.png') top center / auto 501px
+      no-repeat;
+}
+
+.shop-now-container {
+   font-family: 'Causten', sant-serif;
+   font-size: 0;
+}
+
+.shop-now-container > [class*='-part'] {
+   display: inline-block;
+   vertical-align: middle;
+   width: 50%;
+}
+
+.shop-now-section .right-part {
+   background-color: red;
+   min-height: 640px;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   background: #ffffff url('../img/shop-now-section/shop-now-section-2.png') center / cover
+      no-repeat;
+}
+
+.shop-now-section .left-part {
+   background-color: aqua;
+   min-height: 640px;
+   padding: 183px 74px 175px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+      url('../img/shop-now-section/shop-now-section-1.png') center / cover no-repeat;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.shop-now-section h2 {
+   font-family: 'Core Sans C', sant-serif;
+   font-size: 34px;
+   font-weight: 800;
+   line-height: 1.22;
+   letter-spacing: 0.208px;
+   text-transform: uppercase;
+   text-align: left;
+   margin-bottom: 30px;
+   color: #ffffff;
+}
+
+.shop-now-section .text-wrapper {
+   font-size: 20px;
+   font-weight: 300;
+   line-height: 1.2;
+   letter-spacing: 1px;
+   margin-bottom: 50px;
+}
+
+.shop-now-section .link {
+   display: inline-block;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 1.22;
+   color: #3c4242;
+   padding: 12px 44px;
+   border-radius: 8px;
+   border: transparent;
+   background-color: #fff;
+}
+
+.shop-now-section .accent {
+   text-transform: uppercase;
+}
