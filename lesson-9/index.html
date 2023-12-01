@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 8</title>
+</head>
+
+<body id="start">
+   <header class="page-header">
+      <div class="header-container">
+         <ul class="nav">
+            <li>
+               <a href="#examples">Examples</a>
+            </li>
+            <li>
+               <a href="#models">Models</a>
+            </li>
+         </ul>
+      </div>
+   </header>
+   <main>
+      <div class="hero-section">
+         <div class="hero-container">
+            <h1>Lesson &#35;8. Background</h1>
+         </div>
+      </div>
+
+      <div class="bg-color-section" id="examples">
+         <div class="bg-color-container">
+            <h2>&#123;<code>background-color: ...</code>&#125;</h2>
+            <ul>
+               <li>
+                  <h3>Block</h3>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Animi nisi ex amet maxime molestias possimus provident
+                     obcaecati sit nihil officiis rem odit reiciendis, illo
+                     error corrupti doloremque consequuntur ratione laborum?
+                  </p>
+               </li>
+               <li>
+                  <h3>With Inline</h3>
+                  <p>
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Dicta vero magnam doloribus totam modi sed? Laboriosam
+                     maiores
+                     <span>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ut quae ullam pariatur beatae quas esse enim at, odit,
+                        quasi unde aliquam fuga obcaecati rerum suscipit? Non
+                        itaque repellat ipsam odio.
+                     </span>
+                  </p>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="bg-image-section">
+         <div class="bg-image-container">
+            <h2>&#123;<code>background-image: ...</code>&#125;</h2>
+            <ul>
+               <li>
+                  <h3>No content. Block element</h3>
+                  <div class="empty"></div>
+               </li>
+               <li>
+                  <h3>No content. Inline element</h3>
+                  <!-- ширина та висота 0, не відображається навіть outline -->
+                  <span class="empty"></span>
+                  <p class="comment">Width and height 0, not even an outline is
+                     displayed</p>
+               </li>
+               <li>
+                  <h3>No content but is transparent border. Block element</h3>
+                  <div class="empty-and-border"></div>
+               </li>
+               <li>
+                  <h3>No content but is transparent border. Inline element</h3>
+                  <span class="empty-and-border"></span>
+               </li>
+               <li>
+                  <h3>No content but is transparent border. Block element.
+                     Gradient</h3>
+                  <p class="code-example">&#123;<code>
+                     background: linear-gradient(to right, #446412, rgb(34, 34, 34), #446412)
+                     <br> top left / 50% repeat fixed;
+                     </code>&#125;</p>
+                  <div class="empty-and-border gradient"></div>
+               </li>
+               <li>
+                  <h3>No content but is transparent border. Inline element.
+                     Gradient</h3>
+                  <span class="empty-and-border gradient"></span>
+               </li>
+               <li>
+                  <h3>No content but is padding. Block element</h3>
+                  <div class="empty-and-padding"></div>
+               </li>
+               <li>
+                  <h3>No content but is padding. Inline element</h3>
+                  <span class="empty-and-padding span-element"></span>
+               </li>
+               <li>
+                  <h3>Block element with content</h3>
+                  <p class="element-with-content">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Facilis quo atque quasi
+                     repudiandae, nostrum rerum eaque numquam aliquid porro ad.
+                     Dignissimos laboriosam id illum adipisci quibusdam
+                     similique dicta fuga corrupti.
+                  </p>
+               </li>
+               <li>
+                  <h3>Inline element with content</h3>
+                  <span class="element-with-content">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Facilis quo atque quasi
+                     repudiandae, nostrum rerum eaque numquam aliquid porro ad.
+                     Dignissimos laboriosam id illum adipisci quibusdam
+                     similique dicta fuga corrupti.</span>
+               </li>
+               <li>
+                  <h3>Block element with content. Gradient</h3>
+                  <p class="element-with-content gradient">Lorem ipsum dolor sit
+                     amet
+                     consectetur adipisicing elit. Facilis quo atque quasi
+                     repudiandae, nostrum rerum eaque numquam aliquid porro ad.
+                     Dignissimos laboriosam id illum adipisci quibusdam
+                     similique dicta fuga corrupti.
+                  </p>
+               </li>
+               <li>
+                  <h3>Inline element with content. Gradient</h3>
+                  <span class="element-with-content gradient">Lorem ipsum dolor
+                     sit amet
+                     consectetur adipisicing elit. Facilis quo atque quasi
+                     repudiandae, nostrum rerum eaque numquam aliquid porro ad.
+                     Dignissimos laboriosam id illum adipisci quibusdam
+                     similique dicta fuga corrupti.</span>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="bg-repeat-section">
+         <div class="bg-repeat-container">
+            <h2>&#123;<code>background-repeat: ...</code>&#125;</h2>
+            <ul>
+               <li>
+                  <h3>No repeat. Block</h3>
+                  <p class="bg-repeat-no-repeat">
+                     Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Voluptas porro deleniti ullam
+                     tempore! Rerum facere fuga qui eligendi accusamus unde
+                     excepturi ratione autem reprehenderit explicabo. Impedit,
+                     sint. Autem inventore at ullam, dolore quaerat atque
+                     corrupti a, tempora neque perferendis ipsum illo ducimus
+                     labore vero, natus numquam odit nam quo fugiat aut soluta
+                     sapiente maxime. Earum aliquam incidunt minima? Ipsa
+                     impedit saepe iure. Vitae at deserunt eos numquam, aut sint
+                     itaque accusamus consequatur, aliquid ab dolores fuga,
+                     voluptas incidunt tempore beatae asperiores nam quae dicta
+                     consequuntur culpa! Officiis maiores quae fuga quaerat
+                     exercitationem, aliquam praesentium atque amet ullam totam
+                     veritatis ducimus non labore, odit aspernatur voluptate,
+                     quidem ipsum inventore? Odit, mollitia excepturi, deleniti
+                     a assumenda fugiat ut consequatur molestiae, aliquid
+                     corporis provident minima. Perspiciatis ullam earum dolorum
+                     molestias accusamus! Cupiditate recusandae dolores quaerat
+                     illum hic impedit, cumque labore et vero aperiam nemo rerum
+                     odit blanditiis doloremque dignissimos reprehenderit!
+                     Repellat quia beatae est molestias alias molestiae aperiam
+                     perspiciatis animi sunt laboriosam earum neque tempore
+                     repudiandae enim asperiores, quaerat nam quod nemo aliquid
+                     libero porro laborum reprehenderit!
+                  </p>
+               </li>
+               <li>
+                  <h3>No repeat. Inline</h3>
+                  <span class="bg-repeat-no-repeat">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Voluptas porro deleniti ullam
+                     tempore! Rerum facere fuga qui eligendi accusamus unde
+                     excepturi ratione autem reprehenderit explicabo. Impedit,
+                     sint. Autem inventore at ullam, dolore quaerat atque
+                     corrupti a, tempora neque perferendis ipsum illo ducimus
+                     labore vero, natus numquam odit nam quo fugiat aut soluta
+                     sapiente maxime. Earum aliquam incidunt minima? Ipsa
+                     impedit saepe iure. Vitae at deserunt eos numquam, aut sint
+                     itaque accusamus consequatur, aliquid ab dolores fuga,
+                     voluptas incidunt tempore beatae asperiores nam quae dicta
+                     consequuntur culpa.</span>
+               </li>
+               <li>
+                  <h3>No repeat. Block. Gradient</h3>
+                  <p class="bg-repeat-no-repeat gradient">Lorem ipsum dolor sit
+                     amet
+                     consectetur adipisicing elit. Voluptas porro deleniti ullam
+                     tempore! Rerum facere fuga qui eligendi accusamus unde
+                     excepturi ratione autem reprehenderit explicabo. Impedit,
+                     sint. Autem inventore at ullam, dolore quaerat atque
+                     corrupti a, tempora neque perferendis ipsum illo ducimus
+                     labore vero, natus numquam odit nam quo fugiat aut soluta
+                     sapiente maxime. Earum aliquam incidunt minima? Ipsa
+                     impedit saepe iure. Vitae at deserunt eos numquam, aut sint
+                     itaque accusamus consequatur, aliquid ab dolores fuga,
+                     voluptas incidunt tempore beatae asperiores nam quae dicta
+                     consequuntur culpa! Officiis maiores quae fuga quaerat
+                     exercitationem, aliquam praesentium atque amet ullam totam
+                     veritatis ducimus non labore, odit aspernatur voluptate,
+                     quidem ipsum inventore? Odit, mollitia excepturi, deleniti
+                     a assumenda fugiat ut consequatur molestiae, aliquid
+                     corporis provident minima. Perspiciatis ullam earum dolorum
+                     molestias accusamus! Cupiditate recusandae dolores quaerat
+                     illum hic impedit, cumque labore et vero aperiam nemo rerum
+                     odit blanditiis doloremque dignissimos reprehenderit!
+                     Repellat quia beatae est molestias alias molestiae aperiam
+                     perspiciatis animi sunt laboriosam earum neque tempore
+                     repudiandae enim asperiores, quaerat nam quod nemo aliquid
+                     libero porro laborum reprehenderit! Est ut, sapiente
+                     mollitia voluptatem delectus illum similique nemo facere.
+                     Est totam corrupti nam dolores vero veniam, impedit
+                     reiciendis odio nesciunt! Impedit voluptas magni ducimus
+                     perspiciatis.</p>
+               </li>
+               <li>
+                  <h3>No repeat. Inline. Gradient</h3>
+                  <span class="bg-repeat-no-repeat gradient">Lorem ipsum dolor
+                     sit amet
+                     consectetur adipisicing elit. Voluptas porro deleniti ullam
+                     tempore! Rerum facere fuga qui eligendi accusamus unde
+                     excepturi ratione autem reprehenderit explicabo. Impedit,
+                     sint. Autem inventore at ullam, dolore quaerat atque
+                     corrupti a, tempora neque perferendis ipsum illo ducimus
+                     labore vero, natus numquam odit nam quo fugiat aut soluta
+                     sapiente maxime. Earum aliquam incidunt minima? Ipsa
+                     impedit saepe iure. Vitae at deserunt eos numquam, aut sint
+                     itaque accusamus consequatur, aliquid ab dolores fuga,
+                     voluptas incidunt tempore beatae asperiores nam quae dicta
+                     consequuntur culpa.</span>
+               </li>
+               <li>
+                  <h3>Repeat. Block</h3>
+                  <p class="bg-repeat-repeat">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi rerum!</p>
+               </li>
+               <li>
+                  <h3>Repeat. Inline</h3>
+                  <span class="bg-repeat-repeat">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi rerum!</span>
+               </li>
+               <li>
+                  <h3>Repeat. Block. Gradient</h3>
+                  <p class="bg-repeat-repeat gradient">Lorem ipsum dolor sit
+                     amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi rerum!</p>
+               </li>
+               <li>
+                  <h3>Repeat. Inline. Gradient</h3>
+                  <span class="bg-repeat-repeat gradient">Lorem ipsum dolor sit
+                     amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi rerum!</span>
+               </li>
+               <li>
+                  <h3>Repeat-X. Block</h3>
+                  <p class="bg-repeat-repeat-x">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quod expedita iure asperiores totam odit quasi, corrupti
+                     quis eligendi atque, aliquid aspernatur? Quae id illo
+                     delectus asperiores corporis fugiat cum dolores eveniet
+                     maiores necessitatibus voluptatibus unde ad fuga tempore,
+                     aliquid dolor iure quod consequatur ea quo quis soluta,
+                     repellat, quibusdam sit! Necessitatibus similique nemo odit
+                     vitae debitis nostrum earum doloribus id, hic illo
+                     veritatis! Animi, laborum necessitatibus quisquam corrupti
+                     saepe autem explicabo possimus harum laudantium eveniet
+                     alias doloribus quia tempore quos id numquam velit. Quos,
+                     itaque ipsam perspiciatis quas, culpa earum inventore
+                     aliquam possimus ad totam quibusdam velit eum at
+                     blanditiis.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Blanditiis, incidunt molestiae sed similique, repellendus
+                     iure rem corporis asperiores, placeat architecto quisquam.
+                     Aliquam, nostrum laborum ipsa soluta et quasi molestias,
+                     rerum dolore sunt ratione possimus ullam numquam placeat
+                     dicta quod aut deserunt! Corporis iusto natus, consequuntur
+                     non amet adipisci aperiam vero.</p>
+               </li>
+               <li>
+                  <h3>Repeat-X. Inline</h3>
+                  <span class="bg-repeat-repeat-x">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi rerum!</span>
+               </li>
+               <li>
+                  <h3>Repeat-X. Block. Gradient</h3>
+                  <p class="bg-repeat-repeat-x gradient">Lorem ipsum dolor sit
+                     amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi rerum!</p>
+               </li>
+               <li>
+                  <h3>Repeat-X. Inline. Gradient</h3>
+                  <span class="bg-repeat-repeat-x gradient">Lorem ipsum dolor
+                     sit
+                     amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi rerum!</span>
+               </li>
+               <li>
+                  <h3>Repeat-Y. Block</h3>
+                  <p class="bg-repeat-repeat-y">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quod expedita iure asperiores totam odit quasi, corrupti
+                     quis eligendi atque, aliquid aspernatur? Quae id illo
+                     delectus asperiores corporis fugiat cum dolores eveniet
+                     maiores necessitatibus voluptatibus unde ad fuga tempore,
+                     aliquid dolor iure quod consequatur ea quo quis soluta,
+                     repellat, quibusdam sit! Necessitatibus similique nemo odit
+                     vitae debitis nostrum earum doloribus id, hic illo
+                     veritatis! Animi, laborum necessitatibus quisquam corrupti
+                     saepe autem explicabo possimus harum laudantium eveniet
+                     alias doloribus quia tempore quos id numquam velit. Quos,
+                     itaque ipsam perspiciatis quas, culpa earum inventore
+                     aliquam possimus ad totam quibusdam velit eum at
+                     blanditiis.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Blanditiis, incidunt molestiae sed similique, repellendus
+                     iure rem corporis asperiores, placeat architecto quisquam.
+                     Aliquam, nostrum laborum ipsa soluta et quasi molestias,
+                     rerum dolore sunt ratione possimus ullam numquam placeat
+                     dicta quod aut deserunt! Corporis iusto natus, consequuntur
+                     non amet adipisci aperiam vero.</p>
+               </li>
+               <li>
+                  <h3>Repeat-Y. Inline</h3>
+                  <span class="bg-repeat-repeat-y">Lorem ipsum dolor sit amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi rerum!</span>
+               </li>
+               <li>
+                  <h3>Repeat-Y. Block. Gradient</h3>
+                  <p class="bg-repeat-repeat-y gradient">Lorem ipsum dolor sit
+                     amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. Sed eius similique, aliquid soluta, animi debitis
+                     assumenda voluptatem nostrum temporibus voluptatibus
+                     sapiente nulla eveniet aut veritatis eaque praesentium id
+                     quos, fugiat cum ab quasi neque quaerat laborum quas. Id
+                     adipisci dolorum aliquid, quia sequi rerum!</p>
+               </li>
+               <li>
+                  <h3>Repeat-Y. Inline. Gradient</h3>
+                  <span class="bg-repeat-repeat-y gradient">Lorem ipsum dolor
+                     sit amet consectetur adipisicing elit. Illum iste eveniet
+                     provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. </span>
+               </li>
+
+               <li>
+                  <h3>Repeat-X. Block. Pattern images</h3>
+                  <p class="bg-repeat-repeat-x-pattern">Lorem ipsum dolor sit
+                     amet, consectetur adipisicing elit. Voluptatibus maiores ut
+                     maxime esse ullam quisquam amet nam ex rem vitae magnam
+                     dicta repellendus exercitationem autem, incidunt ab aut,
+                     labore eaque? Amet error laudantium eum soluta, non
+                     incidunt autem expedita architecto nam reiciendis animi
+                     consequuntur qui ut, officiis sit doloribus temporibus hic
+                     quas in enim voluptatem nulla, nisi ab repellendus.
+                     Quisquam ex a veniam est accusamus aut facilis odit
+                     temporibus sed illum error, commodi adipisci iste nam
+                     distinctio vero dicta, molestiae cupiditate, ullam magni
+                     iure minima. Dolorum ut consequuntur nisi fugiat. Quos
+                     neque explicabo architecto illum reiciendis blanditiis,
+                     consectetur mollitia rerum, optio porro eos vero earum
+                     autem culpa excepturi dolores, repellendus magni odit
+                     laboriosam rem dignissimos est. Optio doloribus obcaecati
+                     ad laborum quibusdam voluptate, quos odio reiciendis
+                     perspiciatis eveniet ratione vero architecto nam facilis
+                     eligendi. Doloribus, perferendis nulla! Deleniti corporis
+                     iusto tempora, ex voluptates placeat itaque vel ratione
+                     ullam! Commodi qui nostrum, voluptatem magni voluptate
+                     soluta perspiciatis, consequatur provident ratione fuga
+                     iure molestias, doloremque unde quod totam beatae eos a
+                     atque maxime sequi? Dolorum, dolorem ipsa quo neque facilis
+                     modi quos et quae quibusdam sunt quia exercitationem alias
+                     ea necessitatibus maxime consequuntur? Ducimus eaque
+                     explicabo rerum, eius debitis in autem maiores.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Libero odio, sint atque quisquam cum vitae. Ratione, harum!
+                     Nihil rem unde commodi harum cum quam quidem explicabo, est
+                     veniam possimus nam, perspiciatis distinctio. Vitae nam,
+                     quaerat voluptatum officiis rem sit laudantium nesciunt
+                     possimus quidem esse doloribus officia quae sed veniam
+                     voluptate facilis quod eaque labore. Eius, aut sunt
+                     accusamus magnam nisi quis maiores id commodi odio est
+                     rerum veniam nemo qui libero animi totam quo cum? Deleniti,
+                     error ea vitae laboriosam libero ut quibusdam corporis
+                     neque dicta nihil explicabo accusantium placeat quidem,
+                     maxime reprehenderit hic beatae dolorem animi. Amet
+                     deserunt, quaerat sequi, tempore, ipsa porro rerum
+                     provident tenetur distinctio iure unde fugiat enim facere
+                     laboriosam aperiam magni odio adipisci impedit labore aut
+                     accusantium eveniet exercitationem obcaecati iusto?
+                     Aliquam, natus suscipit, repellendus laudantium nam quasi
+                     molestiae alias fugiat, sunt ratione maiores? Molestias,
+                     excepturi consectetur ipsam, corporis neque mollitia
+                     aliquid similique libero possimus corrupti cupiditate ab
+                     repellendus sed voluptatem error laboriosam ratione nulla
+                     asperiores fugiat debitis, minima nobis beatae quae
+                     officiis. Odio, rem! Voluptatum blanditiis saepe dolor
+                     temporibus sit error nobis omnis ipsa. Repellendus minima
+                     perspiciatis et eaque iure, quaerat ab atque animi vel
+                     eligendi rerum veniam tenetur quisquam optio necessitatibus
+                     voluptas placeat.
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Commodi sit laborum voluptatem dolore tenetur voluptatibus
+                     accusamus ducimus fugiat suscipit quos fuga ipsam
+                     veritatis, esse nisi, debitis, autem maxime dolor odit.
+                     Aliquam, natus suscipit, repellendus laudantium nam quasi
+                     molestiae alias fugiat, sunt ratione maiores? Molestias,
+                     excepturi consectetur ipsam, corporis neque mollitia
+                     aliquid similique libero possimus corrupti cupiditate ab
+                     repellendus sed voluptatem error laboriosam ratione nulla
+                     asperiores fugiat debitis, minima nobis beatae quae
+                     officiis. Odio, rem! Voluptatum blanditiis saepe dolor
+                     temporibus sit error nobis omnis ipsa. Repellendus minima
+                     perspiciatis et eaque iure, quaerat ab atque animi vel
+                     eligendi rerum veniam tenetur quisquam optio necessitatibus
+                     voluptas placeat.
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Commodi sit laborum voluptatem dolore tenetur voluptatibus
+                     accusamus ducimus fugiat suscipit quos fuga ipsam
+                     veritatis, esse nisi, debitis, autem maxime dolor odit.</p>
+               </li>
+               <li>
+                  <h3>Repeat-X. Inline. Pattern images</h3>
+                  <span class="bg-repeat-repeat-x-pattern">Lorem ipsum dolor sit
+                     amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. </span>
+               </li>
+               <li>
+                  <h3>Repeat-Y. Block. Pattern images</h3>
+                  <p class="bg-repeat-repeat-y-pattern">Lorem ipsum dolor sit
+                     amet, consectetur adipisicing elit. Voluptatibus maiores ut
+                     maxime esse ullam quisquam amet nam ex rem vitae magnam
+                     dicta repellendus exercitationem autem, incidunt ab aut,
+                     labore eaque? Amet error laudantium eum soluta, non
+                     incidunt autem expedita architecto nam reiciendis animi
+                     consequuntur qui ut, officiis sit doloribus temporibus hic
+                     quas in enim voluptatem nulla, nisi ab repellendus.
+                     Quisquam ex a veniam est accusamus aut facilis odit
+                     temporibus sed illum error, commodi adipisci iste nam
+                     distinctio vero dicta, molestiae cupiditate, ullam magni
+                     iure minima. Dolorum ut consequuntur nisi fugiat. Quos
+                     neque explicabo architecto illum reiciendis blanditiis,
+                     consectetur mollitia rerum, optio porro eos vero earum
+                     autem culpa excepturi dolores, repellendus magni odit
+                     laboriosam rem dignissimos est. Optio doloribus obcaecati
+                     ad laborum quibusdam voluptate, quos odio reiciendis
+                     perspiciatis eveniet ratione vero architecto nam facilis
+                     eligendi. Doloribus, perferendis nulla! Deleniti corporis
+                     iusto tempora, ex voluptates placeat itaque vel ratione
+                     ullam! Commodi qui nostrum, voluptatem magni voluptate
+                     soluta perspiciatis, consequatur provident ratione fuga
+                     iure molestias, doloremque unde quod totam beatae eos a
+                     atque maxime sequi? Dolorum, dolorem ipsa quo neque facilis
+                     modi quos et quae quibusdam sunt quia exercitationem alias
+                     ea necessitatibus maxime consequuntur? Ducimus eaque
+                     explicabo rerum, eius debitis in autem maiores.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Libero odio, sint atque quisquam cum vitae. Ratione, harum!
+                     Nihil rem unde commodi harum cum quam quidem explicabo, est
+                     veniam possimus nam, perspiciatis distinctio. Vitae nam,
+                     quaerat voluptatum officiis rem sit laudantium nesciunt
+                     possimus quidem esse doloribus officia quae sed veniam
+                     voluptate facilis quod eaque labore. Eius, aut sunt
+                     accusamus magnam nisi quis maiores id commodi odio est
+                     rerum veniam nemo qui libero animi totam quo cum? Deleniti,
+                     error ea vitae laboriosam libero ut quibusdam corporis
+                     neque dicta nihil explicabo accusantium placeat quidem,
+                     maxime reprehenderit hic beatae dolorem animi. Amet
+                     deserunt, quaerat sequi, tempore, ipsa porro rerum
+                     provident tenetur distinctio iure unde fugiat enim facere
+                     laboriosam aperiam magni odio adipisci impedit labore aut
+                     accusantium eveniet exercitationem obcaecati iusto?
+                     Aliquam, natus suscipit, repellendus laudantium nam quasi
+                     molestiae alias fugiat, sunt ratione maiores? Molestias,
+                     excepturi consectetur ipsam, corporis neque mollitia
+                     aliquid similique libero possimus corrupti cupiditate ab
+                     repellendus sed voluptatem error laboriosam ratione nulla
+                     asperiores fugiat debitis, minima nobis beatae quae
+                     officiis. Odio, rem! Voluptatum blanditiis saepe dolor
+                     temporibus sit error nobis omnis ipsa. Repellendus minima
+                     perspiciatis et eaque iure, quaerat ab atque animi vel
+                     eligendi rerum veniam tenetur quisquam optio necessitatibus
+                     voluptas placeat.
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Commodi sit laborum voluptatem dolore tenetur voluptatibus
+                     accusamus ducimus fugiat suscipit quos fuga ipsam
+                     veritatis, esse nisi, debitis, autem maxime dolor odit.
+                     Aliquam, natus suscipit, repellendus laudantium nam quasi
+                     molestiae alias fugiat, sunt ratione maiores? Molestias,
+                     excepturi consectetur ipsam, corporis neque mollitia
+                     aliquid similique libero possimus corrupti cupiditate ab
+                     repellendus sed voluptatem error laboriosam ratione nulla
+                     asperiores fugiat debitis, minima nobis beatae quae
+                     officiis. Odio, rem! Voluptatum blanditiis saepe dolor
+                     temporibus sit error nobis omnis ipsa. Repellendus minima
+                     perspiciatis et eaque iure, quaerat ab atque animi vel
+                     eligendi rerum veniam tenetur quisquam optio necessitatibus
+                     voluptas placeat.
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Commodi sit laborum voluptatem dolore tenetur voluptatibus
+                     accusamus ducimus fugiat suscipit quos fuga ipsam
+                     veritatis, esse nisi, debitis, autem maxime dolor odit.</p>
+               </li>
+               <li>
+                  <h3>Repeat-Y. Inline. Pattern images</h3>
+                  <span class="bg-repeat-repeat-y-pattern">Lorem ipsum dolor sit
+                     amet
+                     consectetur adipisicing elit. Illum iste eveniet provident
+                     deleniti optio explicabo commodi nulla est nihil iure
+                     incidunt voluptate ipsam debitis nemo unde repellat, odio
+                     voluptatum quo sit hic doloremque laudantium. Aut
+                     molestias, voluptatem ut a laudantium amet. Dignissimos
+                     magnam iste, iusto perspiciatis quos dicta quidem
+                     consectetur deleniti incidunt mollitia ullam fugit natus,
+                     ipsam molestias doloribus recusandae facere ducimus quis
+                     maxime. </span>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="bg-position-section">
+         <div class="bg-position-container">
+            <h2>
+               &#123;<code>background-position: ...</code>&#125;
+            </h2>
+            <ul>
+               <li>
+                  <h3>Position (left top). Block</h3>
+                  <p class="bg-position-text">Default position is left 0 and top
+                     0.</p>
+                  <p class="code-example">
+                     &#123;<code>background-position: left 20px top 0;</code>&#125;
+                  </p>
+                  <p class="bg-position-left-top">Lorem ipsum dolor sit, amet
+                     consectetur adipisicing elit.
+                     Commodi, quos? Earum quia exercitationem necessitatibus.
+                     Necessitatibus rerum explicabo iusto distinctio recusandae
+                     aperiam veritatis minus magnam repellendus voluptatibus
+                     provident facere, eaque omnis, voluptatum, inventore non
+                     molestias! Nemo in earum temporibus deserunt! Aut iure,
+                     commodi rem corrupti tempora vel rerum amet ullam facilis
+                     omnis beatae tenetur, delectus voluptates? Amet dolorum
+                     veniam libero numquam. Natus, hic esse ex saepe iste
+                     laudantium provident nemo assumenda?</p>
+               </li>
+               <li>
+                  <h3>Position (left top). Inline</h3>
+                  <p class="code-example">
+                     &#123;<code>background-position: left 20px top 0;</code>&#125;
+                  </p>
+                  <span class="bg-position-left-top">Lorem ipsum dolor sit, amet
+                     consectetur adipisicing elit.
+                     Commodi, quos? Earum quia exercitationem necessitatibus.
+                     Necessitatibus rerum explicabo iusto distinctio recusandae
+                     aperiam veritatis minus magnam repellendus voluptatibus
+                     provident facere, eaque omnis, voluptatum, inventore non
+                     molestias! Nemo in earum temporibus deserunt! Aut iure,
+                     commodi rem corrupti tempora vel rerum amet ullam facilis
+                     omnis beatae tenetur, delectus voluptates? Amet dolorum
+                     veniam libero numquam. Natus, hic esse ex saepe iste
+                     laudantium provident nemo assumenda?</span>
+               </li>
+               <li>
+                  <h3>Position (left top). Block. Gradient</h3>
+                  <p class="code-example">
+                     &#123;<code>background-position: left 20px top 30px;</code>&#125;
+                  </p>
+                  <p class="bg-position-left-top gradient">Lorem ipsum dolor
+                     sit, amet
+                     consectetur adipisicing elit.
+                     Commodi, quos? Earum quia exercitationem necessitatibus.
+                     Necessitatibus rerum explicabo iusto distinctio recusandae
+                     aperiam veritatis minus magnam repellendus voluptatibus
+                     provident facere, eaque omnis, voluptatum, inventore non
+                     molestias! Nemo in earum temporibus deserunt! Aut iure,
+                     commodi rem corrupti tempora vel rerum amet ullam facilis
+                     omnis beatae tenetur, delectus voluptates? Amet dolorum
+                     veniam libero numquam. Natus, hic esse ex saepe iste
+                     laudantium provident nemo assumenda?</p>
+               </li>
+               <li>
+                  <h3>Position (left top). Inline. Gradient</h3>
+                  <p class="code-example">
+                     &#123;<code>background-position: left 0 top 3px;</code>&#125;
+                  </p>
+                  <span class="bg-position-left-top gradient span">Lorem ipsum
+                     dolor
+                     sit, amet
+                     consectetur adipisicing elit.
+                     Commodi, quos? Earum quia exercitationem necessitatibus.
+                     Necessitatibus rerum explicabo iusto distinctio recusandae
+                     aperiam veritatis minus magnam repellendus voluptatibus
+                     provident facere, eaque omnis, voluptatum, inventore non
+                     molestias! Nemo in earum temporibus deserunt! Aut iure,
+                     commodi rem corrupti tempora vel rerum amet ullam facilis
+                     omnis beatae tenetur, delectus voluptates? Amet dolorum
+                     veniam libero numquam. Natus, hic esse ex saepe iste
+                     laudantium provident nemo assumenda?</span>
+               </li>
+               <li>
+                  <h3>Position (center). Block</h3>
+                  <p class="code-example">
+                     &#123;<code>background-position: center;</code>&#125;
+                  </p>
+                  <p class="bg-position-center">Lorem ipsum dolor sit, amet
+                     consectetur adipisicing elit.
+                     Commodi, quos? Earum quia exercitationem necessitatibus.
+                     Necessitatibus rerum explicabo iusto distinctio recusandae
+                     aperiam veritatis minus magnam repellendus voluptatibus
+                     provident facere, eaque omnis, voluptatum, inventore non
+                     molestias! Nemo in earum temporibus deserunt! Aut iure,
+                     commodi rem corrupti tempora vel rerum amet ullam facilis
+                     omnis beatae tenetur, delectus voluptates? Amet dolorum
+                     veniam libero numquam. Natus, hic esse ex saepe iste
+                     laudantium provident nemo assumenda?</p>
+               </li>
+               <li>
+                  <h3>Position (center). Inline</h3>
+                  <p class="code-example">
+                     &#123;<code>background-position: center;</code>&#125;
+                  </p>
+                  <span class="bg-position-center">Lorem ipsum dolor sit, amet
+                     consectetur adipisicing elit.
+                     Commodi, quos? Earum quia exercitationem necessitatibus.
+                     Necessitatibus rerum explicabo iusto distinctio recusandae
+                     aperiam veritatis minus magnam repellendus voluptatibus
+                     provident facere, eaque omnis, voluptatum, inventore non
+                     molestias! Nemo in earum temporibus deserunt! Aut iure,
+                     commodi rem corrupti tempora vel rerum amet ullam facilis
+                     omnis beatae tenetur, delectus voluptates? Amet dolorum
+                     veniam libero numquam. Natus, hic esse ex saepe iste
+                     laudantium provident nemo assumenda?</span>
+               </li>
+               <li>
+                  <h3>Position (center). Block. Block is larger than the
+                     background image.</h3>
+                  <p class="code-example">
+                     &#123;<code>background-position: center;</code>&#125;
+                  </p>
+                  <div class="bg-position-center-second"></div>
+               </li>
+               <li>
+                  <h3>
+                     Position (left, top, right, bottom and default center).
+                     Block
+                  </h3>
+                  <p class="bg-position-text">If the value of the property is
+                     one (left, top, right, bottom), then the second is the
+                     center by default</p>
+                  <ul class="bg-position-default-center-list">
+                     <li class="item">
+                        <div class="block bg-position-center-top">
+                           <span class="code-example">
+                              &#123;<code>background-position: top;</code>&#125;
+                           </span>
+                        </div>
+                     </li>
+                     <li class="item">
+                        <div class="block bg-position-center-right">
+                           <span class="code-example">
+                              &#123;<code>background-position: right</code>&#125;
+                           </span>
+                        </div>
+                     </li>
+                     <li class="item">
+                        <div class="block bg-position-center-bottom">
+                           <span class="code-example">
+                              &#123;<code>background-position: bottom</code>&#125;
+                           </span>
+                        </div>
+                     </li>
+                     <li class="item">
+                        <div class="block bg-position-center-left">
+                           <span class="code-example">
+                              &#123;<code>background-position: left</code>&#125;
+                           </span>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>
+                     Position (unit of measurement percentage). Block
+                  </h3>
+                  <ul class="bg-position-with-percentage-list">
+                     <li class="item">
+                        <div class="block bg-position-with-negative-percentage">
+                           <span class="code-example">
+                              &#123;<code>background-position: -25%;</code>&#125;
+                           </span>
+                        </div>
+                     </li>
+                     <li class="item">
+                        <div class="block bg-position-with-percentage-center">
+                           <span class="code-example">
+                              &#123;<code>background-position: 50%;</code>&#125;
+                           </span>
+                        </div>
+                     </li>
+                     <li class="item">
+                        <div
+                           class="block bg-position-with-percentage-with-offset">
+                           <span class="code-example">
+                              &#123;<code>background-position: 75%;</code>&#125;
+                           </span>
+                        </div>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="bg-attachment-section">
+         <div class="bg-attachment-container">
+            <h2>
+               &#123;<code>background-attachment: ...</code>&#125;
+            </h2>
+            <ul>
+               <li>
+                  <h3>Scroll (default). Block</h3>
+                  <p class="code-example">
+                     &#123;<code>background-attachment: scroll;</code>&#125;
+                  </p>
+                  <div class="bg-attachment-scroll">
+                     <p>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Nobis modi provident
+                        nostrum,
+                        minus cupiditate quasi iste repudiandae fugiat, tempore
+                        reprehenderit sit ad beatae. Odio velit officiis
+                        tenetur.
+                        Optio maiores dolores, asperiores quam officiis quidem
+                        reiciendis nam laboriosam saepe! Aperiam, ex animi hic
+                        voluptates, distinctio atque architecto impedit repellat
+                        ab
+                        excepturi tempore voluptate nesciunt esse consectetur
+                        amet
+                        similique. Laboriosam fuga illum enim qui ipsum
+                        repudiandae
+                        officiis adipisci quos vitae, est, culpa nostrum numquam
+                        reprehenderit. Quae cum nihil laboriosam saepe ipsum.
+                        Assumenda dignissimos saepe rem nesciunt repellendus
+                        dolores quisquam, doloremque odit voluptatum tenetur
+                        illum,
+                        aspernatur quo nam sunt fuga soluta iste, necessitatibus
+                        ullam quaerat eius? Sapiente dolores, accusantium sunt
+                        ut
+                        tempora iusto illo earum corrupti nam nesciunt
+                        dignissimos
+                        esse odit atque ea quia! Suscipit, rem. Placeat tempore
+                        nulla optio cumque dolores ipsam. Officia alias
+                        doloremque
+                        animi excepturi, corrupti est in quam, ipsa qui sequi
+                        nesciunt porro quae consequuntur dolorem. Odit,
+                        cupiditate
+                        odio? Quibusdam dolorum eaque fugit repellat quam quis
+                        perferendis iure, soluta veniam id a nemo totam rem
+                        consectetur possimus impedit blanditiis officiis fugiat
+                        ea.
+                        Totam velit odit voluptatem ipsam necessitatibus nisi,
+                        veniam aperiam earum nihil quo suscipit molestias. Non
+                        reprehenderit quae possimus cumque neque deleniti odio
+                        corporis deserunt nemo laboriosam quibusdam vel
+                        voluptate,
+                        dolor asperiores placeat sapiente, pariatur magnam! Non
+                        suscipit numquam dolorem sunt modi excepturi molestiae,
+                        magni provident, a distinctio impedit voluptas nobis
+                        voluptatem assumenda sed animi ut commodi eum ipsum
+                        optio
+                        rem expedita repudiandae cumque doloribus.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Eaque soluta laborum explicabo quaerat quae earum
+                        nobis numquam fugit ex nihil ea iure quia, fuga labore
+                        doloremque. Quae vitae obcaecati quia voluptatibus ab!
+                        Quam, ullam. Aliquam molestias placeat a distinctio
+                        delectus ad architecto fuga hic, in reprehenderit, autem
+                        ut voluptates minus odit eaque obcaecati nostrum sed
+                        sunt eius unde facere? Nobis ipsa eos cum porro
+                        reprehenderit odio sapiente veritatis et dolor eligendi
+                        omnis, ad voluptatem ab quisquam libero maxime corporis
+                        nulla veniam voluptate voluptates? Iure aliquid alias
+                        commodi voluptatem. Culpa libero aspernatur, dolorum
+                        quas suscipit perspiciatis, aperiam repellendus natus,
+                        sed illo magni similique? Nulla quam eligendi molestias
+                        obcaecati dicta quibusdam, in nemo porro id! Voluptas
+                        ipsa dolorem corrupti laboriosam pariatur eos doloribus,
+                        architecto eveniet libero quisquam voluptatem atque
+                        cumque neque! Molestiae et ex dicta quos eius dolor
+                        omnis rem error? Delectus distinctio consectetur alias
+                        sunt deleniti illo aliquam, possimus sed quis ut,
+                        obcaecati excepturi architecto, id qui explicabo vero
+                        asperiores? Nam quis sapiente quam laudantium? Sapiente
+                        sint qui culpa mollitia rerum alias possimus aperiam ab
+                        sequi. At deleniti fugit dolorem. Fuga eos id at nemo.
+                        Doloremque delectus numquam totam quos praesentium sunt
+                        incidunt vel possimus, dolor esse temporibus eaque
+                        repellat, nobis quibusdam impedit obcaecati quas aliquam
+                        ratione maxime odio sapiente fugiat eveniet! Labore
+                        distinctio vero iusto assumenda officia sed ratione
+                        ipsum corrupti! Nostrum at exercitationem perspiciatis
+                        temporibus autem aperiam modi mollitia sit voluptas
+                        doloremque, amet labore? Voluptate provident, id
+                        temporibus illo nesciunt quam pariatur! Fuga voluptas
+                        autem blanditiis magni! Ipsam blanditiis dicta a,
+                        commodi, repudiandae consectetur ab, perferendis eum
+                        eligendi debitis dolor autem quidem odio exercitationem
+                        similique unde quisquam sequi vel sapiente aspernatur
+                        beatae fugit magni! Molestiae repellat officiis modi
+                        sint consequatur assumenda vel tempora similique iusto
+                        delectus repudiandae magni, commodi laboriosam libero,
+                        suscipit sed. Iure velit soluta eveniet iste at!
+                     </p>
+                  </div>
+               </li>
+               <li>
+                  <h3>Fixed. Block</h3>
+                  <p class="code-example">
+                     &#123;<code>background-attachment: fixed;</code>&#125;
+                  </p>
+                  <div class="bg-attachment-fixed">
+                     <p>Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Nobis modi provident
+                        nostrum,
+                        minus cupiditate quasi iste repudiandae fugiat, tempore
+                        reprehenderit sit ad beatae. Odio velit officiis
+                        tenetur.
+                        Optio maiores dolores, asperiores quam officiis quidem
+                        reiciendis nam laboriosam saepe! Aperiam, ex animi hic
+                        voluptates, distinctio atque architecto impedit repellat
+                        ab
+                        excepturi tempore voluptate nesciunt esse consectetur
+                        amet
+                        similique. Laboriosam fuga illum enim qui ipsum
+                        repudiandae
+                        officiis adipisci quos vitae, est, culpa nostrum numquam
+                        reprehenderit. Quae cum nihil laboriosam saepe ipsum.
+                        Assumenda dignissimos saepe rem nesciunt repellendus
+                        dolores quisquam, doloremque odit voluptatum tenetur
+                        illum,
+                        aspernatur quo nam sunt fuga soluta iste, necessitatibus
+                        ullam quaerat eius? Sapiente dolores, accusantium sunt
+                        ut
+                        tempora iusto illo earum corrupti nam nesciunt
+                        dignissimos
+                        esse odit atque ea quia! Suscipit, rem. Placeat tempore
+                        nulla optio cumque dolores ipsam. Officia alias
+                        doloremque
+                        animi excepturi, corrupti est in quam, ipsa qui sequi
+                        nesciunt porro quae consequuntur dolorem. Odit,
+                        cupiditate
+                        odio? Quibusdam dolorum eaque fugit repellat quam quis
+                        perferendis iure, soluta veniam id a nemo totam rem
+                        consectetur possimus impedit blanditiis officiis fugiat
+                        ea.
+                        Totam velit odit voluptatem ipsam necessitatibus nisi,
+                        veniam aperiam earum nihil quo suscipit molestias. Non
+                        reprehenderit quae possimus cumque neque deleniti odio
+                        corporis deserunt nemo laboriosam quibusdam vel
+                        voluptate,
+                        dolor asperiores placeat sapiente, pariatur magnam! Non
+                        suscipit numquam dolorem sunt modi excepturi molestiae,
+                        magni provident, a distinctio impedit voluptas nobis
+                        voluptatem assumenda sed animi ut commodi eum ipsum
+                        optio
+                        rem expedita repudiandae cumque doloribus.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Eaque soluta laborum explicabo quaerat quae earum
+                        nobis numquam fugit ex nihil ea iure quia, fuga labore
+                        doloremque. Quae vitae obcaecati quia voluptatibus ab!
+                        Quam, ullam. Aliquam molestias placeat a distinctio
+                        delectus ad architecto fuga hic, in reprehenderit, autem
+                        ut voluptates minus odit eaque obcaecati nostrum sed
+                        sunt eius unde facere? Nobis ipsa eos cum porro
+                        reprehenderit odio sapiente veritatis et dolor eligendi
+                        omnis, ad voluptatem ab quisquam libero maxime corporis
+                        nulla veniam voluptate voluptates? Iure aliquid alias
+                        commodi voluptatem. Culpa libero aspernatur, dolorum
+                        quas suscipit perspiciatis, aperiam repellendus natus,
+                        sed illo magni similique? Nulla quam eligendi molestias
+                        obcaecati dicta quibusdam, in nemo porro id! Voluptas
+                        ipsa dolorem corrupti laboriosam pariatur eos doloribus,
+                        architecto eveniet libero quisquam voluptatem atque
+                        cumque neque! Molestiae et ex dicta quos eius dolor
+                        omnis rem error? Delectus distinctio consectetur alias
+                        sunt deleniti illo aliquam, possimus sed quis ut,
+                        obcaecati excepturi architecto, id qui explicabo vero
+                        asperiores? Nam quis sapiente quam laudantium? Sapiente
+                        sint qui culpa mollitia rerum alias possimus aperiam ab
+                        sequi. At deleniti fugit dolorem. Fuga eos id at nemo.
+                        Doloremque delectus numquam totam quos praesentium sunt
+                        incidunt vel possimus, dolor esse temporibus eaque
+                        repellat, nobis quibusdam impedit obcaecati quas aliquam
+                        ratione maxime odio sapiente fugiat eveniet! Labore
+                        distinctio vero iusto assumenda officia sed ratione
+                        ipsum corrupti! Nostrum at exercitationem perspiciatis
+                        temporibus autem aperiam modi mollitia sit voluptas
+                        doloremque, amet labore? Voluptate provident, id
+                        temporibus illo nesciunt quam pariatur! Fuga voluptas
+                        autem blanditiis magni! Ipsam blanditiis dicta a,
+                        commodi, repudiandae consectetur ab, perferendis eum
+                        eligendi debitis dolor autem quidem odio exercitationem
+                        similique unde quisquam sequi vel sapiente aspernatur
+                        beatae fugit magni! Molestiae repellat officiis modi
+                        sint consequatur assumenda vel tempora similique iusto
+                        delectus repudiandae magni, commodi laboriosam libero,
+                        suscipit sed. Iure velit soluta eveniet iste at!
+                     </p>
+                  </div>
+               </li>
+               <li>
+                  <h3>Scroll (default). Inline</h3>
+                  <p class="code-example">
+                     &#123;<code>background-position: 30% center; background-attachment: scroll;</code>&#125;
+                  </p>
+                  <span class="bg-attachment-scroll-inline">Lorem ipsum dolor
+                     sit amet
+                     consectetur adipisicing elit. Nobis modi provident
+                     nostrum,
+                     minus cupiditate quasi iste repudiandae fugiat, tempore
+                     reprehenderit sit ad beatae. Odio velit officiis
+                     tenetur.
+                     Optio maiores dolores, asperiores quam officiis quidem
+                     reiciendis nam laboriosam saepe! Aperiam, ex animi hic
+                     voluptates, distinctio atque architecto impedit repellat
+                     ab
+                     excepturi tempore voluptate nesciunt esse consectetur
+                     amet
+                     similique. Laboriosam fuga illum enim qui ipsum
+                     repudiandae
+                     officiis adipisci quos vitae, est, culpa nostrum numquam
+                     reprehenderit. Quae cum nihil laboriosam saepe ipsum.
+                     Assumenda dignissimos saepe rem nesciunt repellendus
+                     dolores quisquam, doloremque odit voluptatum tenetur
+                     illum,
+                     aspernatur quo nam sunt fuga soluta iste, necessitatibus
+                     ullam quaerat eius? Sapiente dolores, accusantium sunt
+                     ut
+                     tempora iusto illo earum corrupti nam nesciunt
+                     dignissimos
+                     esse odit atque ea quia! Suscipit, rem. Placeat tempore
+                     nulla optio cumque dolores ipsam. Officia alias
+                     doloremque
+                     animi excepturi, corrupti est in quam, ipsa qui sequi
+                     nesciunt porro quae consequuntur dolorem. Odit,
+                     cupiditate
+                     odio? Quibusdam dolorum eaque fugit repellat quam quis
+                     perferendis iure, soluta veniam id a nemo totam rem
+                     consectetur possimus impedit blanditiis officiis fugiat
+                     ea.
+                     Totam velit odit voluptatem ipsam necessitatibus nisi,
+                     veniam aperiam earum nihil quo suscipit molestias. Non
+                     reprehenderit quae possimus cumque neque deleniti odio
+                     corporis deserunt nemo laboriosam quibusdam vel
+                     voluptate,
+                     dolor asperiores placeat sapiente, pariatur magnam! Non
+                     suscipit numquam dolorem sunt modi excepturi molestiae,
+                     magni provident, a distinctio impedit voluptas nobis
+                     voluptatem assumenda sed animi ut commodi eum ipsum
+                     optio
+                     rem expedita repudiandae cumque doloribus.
+                  </span>
+               </li>
+               <li>
+                  <h3>Fixed. Inline</h3>
+                  <p class="code-example">
+                     &#123;<code>background-position: left center; background-attachment: fixed;</code>&#125;
+                  </p>
+                  <span class="bg-attachment-fixed-inline">Lorem ipsum dolor sit
+                     amet
+                     consectetur adipisicing elit. Nobis modi provident
+                     nostrum,
+                     minus cupiditate quasi iste repudiandae fugiat, tempore
+                     reprehenderit sit ad beatae. Odio velit officiis
+                     tenetur.
+                     Optio maiores dolores, asperiores quam officiis quidem
+                     reiciendis nam laboriosam saepe! Aperiam, ex animi hic
+                     voluptates, distinctio atque architecto impedit repellat
+                     ab
+                     excepturi tempore voluptate nesciunt esse consectetur
+                     amet
+                     similique. Laboriosam fuga illum enim qui ipsum
+                     repudiandae
+                     officiis adipisci quos vitae, est, culpa nostrum numquam
+                     reprehenderit. Quae cum nihil laboriosam saepe ipsum.
+                     Assumenda dignissimos saepe rem nesciunt repellendus
+                     dolores quisquam, doloremque odit voluptatum tenetur
+                     illum,
+                     aspernatur quo nam sunt fuga soluta iste, necessitatibus
+                     ullam quaerat eius? Sapiente dolores, accusantium sunt
+                     ut
+                     tempora iusto illo earum corrupti nam nesciunt
+                     dignissimos
+                     esse odit atque ea quia! Suscipit, rem. Placeat tempore
+                     nulla optio cumque dolores ipsam. Officia alias
+                     doloremque
+                     animi excepturi, corrupti est in quam, ipsa qui sequi
+                     nesciunt porro quae consequuntur dolorem. Odit,
+                     cupiditate
+                     odio? Quibusdam dolorum eaque fugit repellat quam quis
+                     perferendis iure, soluta veniam id a nemo totam rem
+                     consectetur possimus impedit blanditiis officiis fugiat
+                     ea.
+                     Totam velit odit voluptatem ipsam necessitatibus nisi,
+                     veniam aperiam earum nihil quo suscipit molestias. Non
+                     reprehenderit quae possimus cumque neque deleniti odio
+                     corporis deserunt nemo laboriosam quibusdam vel
+                     voluptate,
+                     dolor asperiores placeat sapiente, pariatur magnam! Non
+                     suscipit numquam dolorem sunt modi excepturi molestiae,
+                     magni provident, a distinctio impedit voluptas nobis
+                     voluptatem assumenda sed animi ut commodi eum ipsum
+                     optio
+                     rem expedita repudiandae cumque doloribus.
+                     Lorem ipsum dolor sit amet, consectetur adipisicing
+                     elit. Eaque soluta laborum explicabo quaerat quae earum
+                     nobis numquam fugit ex nihil ea iure quia, fuga labore
+                     doloremque. Quae vitae obcaecati quia voluptatibus ab!
+                     Quam, ullam. Aliquam molestias placeat a distinctio
+                     delectus ad architecto fuga hic, in reprehenderit, autem
+                     ut voluptates minus odit eaque obcaecati nostrum sed
+                     sunt eius unde facere? Nobis ipsa eos cum porro
+                     reprehenderit odio sapiente veritatis et dolor eligendi
+                     omnis, ad voluptatem ab quisquam libero maxime corporis
+                     nulla veniam voluptate voluptates? Iure aliquid alias
+                     commodi voluptatem. Culpa libero aspernatur, dolorum
+                     quas suscipit perspiciatis, aperiam repellendus natus,
+                     sed illo magni similique? Nulla quam eligendi molestias
+                     obcaecati dicta quibusdam, in nemo porro id! Voluptas
+                     ipsa dolorem corrupti laboriosam pariatur eos doloribus,
+                     architecto eveniet libero quisquam voluptatem atque
+                     cumque neque! Molestiae et ex dicta quos eius dolor
+                     omnis rem error? Delectus distinctio consectetur alias
+                     sunt deleniti illo aliquam, possimus sed quis ut,
+                     obcaecati excepturi architecto, id qui explicabo vero
+                     asperiores? Nam quis sapiente quam laudantium? Sapiente
+                     sint qui culpa mollitia rerum alias possimus aperiam ab
+                     sequi. At deleniti fugit dolorem. Fuga eos id at nemo.
+                     Doloremque delectus numquam totam quos praesentium sunt
+                     incidunt vel possimus, dolor esse temporibus eaque
+                     repellat, nobis quibusdam impedit obcaecati quas aliquam
+                     ratione maxime odio sapiente fugiat eveniet! Labore
+                     distinctio vero iusto assumenda officia sed ratione
+                     ipsum corrupti! Nostrum at exercitationem perspiciatis
+                     temporibus autem aperiam modi mollitia sit voluptas
+                     doloremque, amet labore? Voluptate provident, id
+                     temporibus illo nesciunt quam pariatur! Fuga voluptas
+                     autem blanditiis magni! Ipsam blanditiis dicta a,
+                     commodi, repudiandae consectetur ab, perferendis eum
+                     eligendi debitis dolor autem quidem odio exercitationem
+                     similique unde quisquam sequi vel sapiente aspernatur
+                     beatae fugit magni! Molestiae repellat officiis modi
+                     sint consequatur assumenda vel tempora similique iusto
+                     delectus repudiandae magni, commodi laboriosam libero,
+                     suscipit sed. Iure velit soluta eveniet iste at!
+                  </span>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="bg-size-section">
+         <div class="bg-size-container">
+            <h2>
+               &#123;<code>background-size: ...</code>&#125;
+            </h2>
+            <ul>
+               <li>
+                  <h3>One value in pixels (clearly defined width, height is
+                     adjustable). Block</h3>
+                  <p class="code-example">
+                     &#123;<code>background-size: 200px;</code>&#125;
+                  </p>
+                  <div class="block bg-size-one-value-px"></div>
+               </li>
+               <li>
+                  <h3>One value in percent. Block</h3>
+                  <p class="code-example">
+                     &#123;<code>background-size: 30%;</code>&#125;
+                  </p>
+                  <div class="block bg-size-one-value-percent"></div>
+               </li>
+               <li>
+                  <h3 class="error">
+                     Two values in pixels. Block.
+                  </h3>
+                  <p class="code-example">
+                     &#123;<code>background-size: 150px 175px;</code>&#125;
+                  </p>
+                  <div class="block bg-size-two-values-px"></div>
+               </li>
+               <li>
+                  <h3 class="error">
+                     Two values in percent. Block.
+                  </h3>
+                  <p class="code-example">
+                     &#123;<code>background-size: 20% 30%;</code>&#125;
+                  </p>
+                  <div class="block bg-size-two-values-percent"></div>
+               </li>
+               <li>
+                  <h3 class="success">
+                     Two values in auto and pixels (if you need to clearly
+                     specify the width). Block.
+                  </h3>
+                  <p class="code-example">
+                     &#123;<code>background-size: auto 175px;</code>&#125;
+                  </p>
+                  <div class="block bg-size-two-values-auto-px"></div>
+               </li>
+               <li>
+                  <h3 class="success">
+                     Two values in auto and percent (if you need to clearly
+                     specify the width). Block.
+                  </h3>
+                  <p class="code-example">
+                     &#123;<code>background-size: auto 80%;</code>&#125;
+                  </p>
+                  <p class="bg-size-two-values-auto-percent">
+                     Lorem ipsum
+                     dolor sit amet consectetur adipisicing elit. Ea
+                     perspiciatis aliquam quos illo atque ipsum, optio impedit
+                     tempore corporis deleniti ipsa eius labore, quia accusamus
+                     voluptates qui rerum ratione soluta consequuntur aperiam
+                     harum nisi! Reprehenderit modi tempore repellat architecto
+                     nesciunt laborum nisi ea qui, dicta reiciendis optio dolore
+                     necessitatibus ad quae fugit dolor harum laudantium nostrum
+                     illum et cupiditate! Ducimus eius corporis voluptate!
+                     Commodi, earum nulla? Autem incidunt voluptatum tempore
+                     accusamus perferendis placeat laborum dolores, debitis
+                     voluptatibus adipisci doloribus molestias, et molestiae
+                     odit, sunt qui provident dicta velit. Nemo repellat
+                     doloribus error maxime iusto obcaecati fugit commodi vero
+                     maiores quisquam. Lorem ipsum, dolor sit amet consectetur
+                     adipisicing elit. Aut ea magnam eius esse, voluptatibus
+                     maxime deserunt non blanditiis est praesentium.
+                  </p>
+               </li>
+               <li>
+                  <h3>
+                     Contain. Block.
+                  </h3>
+                  <p class="code-example">
+                     &#123;<code>background-size: contain;</code>&#125;
+                  </p>
+                  <div class="block bg-size-contain"></div>
+               </li>
+               <li>
+                  <h3>
+                     Cover. Block.
+                  </h3>
+                  <p class="code-example">
+                     &#123;<code>background-size: cover;</code>&#125;
+                  </p>
+                  <div class="block bg-size-cover"></div>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="bg-complex-section">
+         <div class="bg-complex-container">
+            <h2>
+               &#123;<code>background: ...</code>&#125;
+            </h2>
+
+            <ul>
+               <li>
+                  <p class="code-example">
+                     &#123;<code>background: rgba(0, 128, 0, 0.29) url('../img/spider-1.jpg') 0 0 / auto
+                     no-repeat fixed;</code>&#125;
+                  </p>
+                  <div class="block bg-complex-first"></div>
+               </li>
+               <li>
+                  <p class="code-example">
+                     &#123;<code>background: rgba(0, 128, 0, 0.29) url('../img/spider-2.jpg') top / auto 200px
+                     no-repeat;</code>&#125;
+                  </p>
+                  <div class="block bg-complex-secont"></div>
+               </li>
+               <li>
+                  <p class="code-example">
+                     &#123;<code>background: #fffcfc url('../img/pattern-2.jpg') bottom / auto 200px repeat-x;</code>&#125;
+                  </p>
+                  <div class="block bg-complex-third"></div>
+               </li>
+               <li>
+                  <p class="code-example">
+                     &#123;<code>background: rgba(0, 128, 0, 0.29) url('../img/spider-3.jpg') right / 50%;</code>&#125;
+                  </p>
+                  <div class="block bg-complex-fourth"></div>
+               </li>
+               <li>
+
+                  <p class="code-example">
+                     &#123;<code>background: url('../img/decor-1.png') right bottom / auto no-repeat,
+                        <br>
+                     url('../img/decor-2.svg') left -10% bottom / 30% no-repeat,
+                     <br>
+                     url('../img/decor-3.svg') right -10% top / 30% no-repeat,
+                     <br>
+                     url('../img/circle.svg') left top / auto no-repeat,
+                     <br>
+                     url('../img/furniture.png') center / contain no-repeat,
+                     <br>
+                     url('../img/room.png') right center / 50% 100% no-repeat,
+                     <br>
+                     linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, #d6cfc2 100%);</code>&#125;
+                  </p>
+                  <div class="block bg-complex-fifth"></div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="about-online-section" id="models">
+         <div class="about-online-container">
+            <div class="text-content">
+               <h2>
+                  Clothing for Women Online in India
+               </h2>
+               <h3>Reexplore Women's Clothing Collection Online at Euphoria</h3>
+               <div class="text-wrapper">
+                  <p>
+                     Women's Clothing – Are you searching for the best website
+                     to
+                     buy Clothing for
+                     Women online in India? Well, your search for the coolest
+                     and
+                     most stylish womens
+                     clothing ends here. From trendy Casual Womens Wear Online
+                     shopping to premium
+                     quality cotton women's apparel, <span
+                        class="accent">Euphoria</span>
+                     has
+                     closet of Women
+                     Collection covered
+                     with the latest and best designs of Women's Clothing
+                     Online.
+                  </p>
+                  <p>
+                     Our collection of clothes for women will make you the
+                     trendsetter with an iconic
+                     resemblance of choice in Womens Wear.
+                  </p>
+               </div>
+               <h3>One-Stop Destination to Shop Every Clothing for Women:
+                  Euphoria
+               </h3>
+               <div class="text-wrapper">
+                  <p>
+                     Today, Clothing for Women is gaining more popularity above
+                     all. This is because
+                     gone are the days when women were used to carrying
+                     uncomfortable fashion. Today,
+                     a lady looks prettier when she is in Casual Womens Wear
+                     which
+                     is a comfortable
+                     outfit. Concerning this, <span
+                        class="accent">Euphoria</span>
+                     has a big fat range of
+                     Stylish Women's
+                     Clothing that would make her the winner wherever she goes.
+                  </p>
+                  <p>
+                     Our collection of clothes for women will make you the
+                     trendsetter with an iconic
+                     resemblance of choice in Womens Wear. It is quite evident
+                     to
+                     say that there are
+                     very few Womens Clothing online stores where you can buy
+                     Western Wear for Women
+                     comprising the premium material and elegant design that you
+                     are always seeking
+                     for. Basically,
+                  </p>
+               </div>
+               <a class="link" href="https://www.google.com/" target="_blank"
+                  rel="noopener noreferrer" title="follow the link">
+                  See more
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="about-us-section">
+         <div class="about-us-container">
+            <h2>Welcome Whitecollar</h2>
+            <p class="accent">
+               We Care About Your
+               <br>
+               Business Plan.
+            </p>
+            <div class="text-wrapper">
+               <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  high level
+                  overviews.Iterative approaches to corporate strategy foster
+                  collaborative
+                  thinking to further the overal.
+               </p>
+               <p>
+                  Leverage agile frameworks to provide a robust synopsis for
+                  high level
+                  overviews.Iterative approaches to corporate strategy
+               </p>
+               <ul>
+                  <li>Components of a Business Strategy.</li>
+                  <li>Business Consulting</li>
+               </ul>
+            </div>
+            <ul class="awards-list">
+               <li class="first">
+                  <h3>Experience</h3>
+                  <p>Leverage frameworks toprovidee werment.</p>
+               </li>
+               <li class="second">
+                  <h3>Awards Winner</h3>
+                  <p>Leverage frameworks to provide vermont.</p>
+               </li>
+            </ul>
+            <a href="#models" title="go to section">More About Us</a>
+         </div>
+      </div>
+
+      <div class="projects-section">
+         <div class="projects-container">
+            <h2>Latest Projects</h2>
+            <p class="accent">
+               Discover our latest client projects
+            </p>
+            <div class="text-wrapper">
+               <p>Leverage agile frameworks to provide a robust synopsis for
+                  high level
+                  overviews.Iterative approaches to corporate strategy foster
+                  collaborative
+                  thinking to further the overal.
+               </p>
+            </div>
+            <ul>
+               <li class="first product-card">
+                  <a href="#">
+                     <div class="bg-wrapper"></div>
+                     <div class="text-content">
+                        <h3>Financial Investment</h3>
+                        <p class="date">Sep 2022</p>
+                     </div>
+                  </a>
+               </li>
+               <li class="second product-card">
+                  <a href="#">
+                     <div class="bg-wrapper"></div>
+                     <div class="text-content">
+                        <h3>Marketing Strategy</h3>
+                        <p class="date">Sep 2022</p>
+                     </div>
+                  </a>
+               </li>
+               <li class="third product-card">
+                  <a href="#">
+                     <div class="bg-wrapper"></div>
+                     <div class="text-content">
+                        <h3>Business Consulting</h3>
+                        <p class="date">Sep 2022</p>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+            <ul>
+               <li class="fourth product-card">
+                  <a href="#">
+                     <div class="bg-wrapper"></div>
+                     <div class="text-content">
+                        <h3>Financial Investment</h3>
+                        <p class="date">Sep 2022</p>
+                     </div>
+                  </a>
+               </li>
+               <li class="fifth product-card">
+                  <a href="#">
+                     <div class="bg-wrapper"></div>
+                     <div class="text-content">
+                        <h3>Web Development</h3>
+                        <p class="date">Sep 2022</p>
+                     </div>
+                  </a>
+               </li>
+               <li class="sixth product-card">
+                  <a href="#">
+                     <div class="bg-wrapper"></div>
+                     <div class="text-content">
+                        <h3>Financial Investment</h3>
+                        <p class="date">Sep 2022</p>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="shop-now-section">
+         <div class="shop-now-container">
+            <div class="left-part">
+               <h2>WE MADE YOUR EVERYDAY FASHION BETTER!</h2>
+               <div class="text-wrapper">
+                  <p>In our journey to improve everyday fashion, euphoria
+                     presents
+                     <span class="accent">everyday</span> wear
+                     range - Comfortable &#38; Affordable fashion 24/7
+                  </p>
+               </div>
+               <a class="link" href="#">Shop Now</a>
+            </div>
+            <div class="right-part"></div>
+         </div>
+      </div>
+   </main>
+   <footer class="page-footer">
+      <div class="footer-container">
+         <ul class="nav">
+            <li>
+               <a href="#examples">Examples</a>
+            </li>
+            <li>
+               <a href="#models">Models</a>
+            </li>
+         </ul>
+         <a class="up-link" href="#start">UP</a>
+      </div>
+   </footer>
+</body>
+
+</html>
