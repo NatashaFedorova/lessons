@@ -642,12 +642,6 @@ h1 {
    height: 27px;
    margin-right: 19px;
    vertical-align: top;
-
-   transition: all 500ms;
-}
-
-.about-card:hover .about-card-title::before {
-   transform: scale(1.1);
 }
 
 .about-card .text-wrapper {
