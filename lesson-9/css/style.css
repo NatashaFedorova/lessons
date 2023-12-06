@@ -157,7 +157,6 @@ h1 {
    font-size: 20px;
    color: rgb(221, 221, 6);
    text-align: center;
-   margin-bottom: 30px;
 }
 
 .examples-list > li:not(:last-child) {
@@ -614,10 +613,6 @@ h1 {
    margin-bottom: 16px;
 }
 
-.about-container > *:last-child {
-   margin-bottom: 0;
-}
-
 .about-card {
    padding: 28px 38px;
    border: 1px solid #e3e3e3;
@@ -693,6 +688,10 @@ h1 {
 .about-link:visited {
    color: #fff;
    background-color: #353b70;
+}
+
+.about-container > *:last-child {
+   margin-bottom: 0;
 }
 
 /* Why------------------------------ */
