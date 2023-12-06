@@ -637,7 +637,7 @@ h1 {
 
 .about-card-title::before {
    content: '';
-   background: url('../img/vector-about-section.svg') 0 0 / contain no-repeat;
+   background: url('../img/jewelry-1.jpg') center / contain no-repeat;
    width: 27px;
    height: 27px;
    margin-right: 19px;
