@@ -139,7 +139,7 @@ h1 {
    font-size: 36px;
 }
 
-.hero-container > *:last-child {
+.home-container > *:last-child {
    margin-bottom: 0;
 }
 
