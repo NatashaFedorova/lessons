@@ -1,0 +1,37 @@
+/* ===========================Causten=============================== */
+@font-face {
+   font-family: 'Causten';
+   src: url('../fonts/causten/causten-light.woff2') format('woff2'),
+      url('../fonts/causten/causten-light.woff') format('woff');
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Causten';
+   src: url('../fonts/causten/causten-regular-webfont.woff2') format('woff2'),
+      url('../fonts/causten/causten-regular-webfont.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Causten';
+   src: url('../fonts/causten/causten-bold-webfont.woff2') format('woff2'),
+      url('../fonts/causten/causten-bold-webfont.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* =========================Cormorant Infant============================ */
+@font-face {
+   font-family: 'Cormorant Infant';
+   src: url('../fonts/cormorant-infant/cormorant-infant-bold.woff2') format('woff2'),
+      url('../fonts/cormorant-infant/cormorant-infant-bold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}

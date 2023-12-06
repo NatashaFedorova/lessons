@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 9</title>
+</head>
+
+<body>
+   <header class="page-header">
+      <div class="header-container">
+         <ul class="nav">
+            <li class="nav-item">
+               <a class="nav-link" href="#state-pseudo-class">
+                  State pseudo-class</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#position-pseudo-class">
+                  Position pseudo-class</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#pseudo-elements">
+                  Pseudo-elements</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#game">
+                  Game
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#about">
+                  About
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#why">
+                  Why
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#how">
+                  How
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#jewelry">
+                  Jewelry
+               </a>
+            </li>
+         </ul>
+      </div>
+   </header>
+   <main>
+
+      <div class="example-section state-pseudo-class" id="state-pseudo-class">
+         <div class="example-container">
+            <h2>State pseudo-class: hover, focus, active, visited</h2>
+            <p class="text">
+               Sections are displayed using the target pseudo-class
+            </p>
+            <ul class="state-pseudo-class-list">
+               <li>
+                  <a class="first-link link"
+                     href="https://css.in.ua/css/function/drop-shadow"
+                     target="_blank" rel="noopener noreferrer">First</a>
+               </li>
+               <li>
+                  <a class="second-link link"
+                     href="https://css.in.ua/css/function/drop-shadow"
+                     target="_blank" rel="noopener noreferrer">Second</a>
+               </li>
+               <li>
+                  <a class="third-link link" href="https://css.in.ua/"
+                     target="_blank" rel="noopener noreferrer">Third</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="example-section position-pseudo-class"
+         id="position-pseudo-class">
+         <div class="example-container">
+            <h2>Position pseudo-class in code:
+               <br>
+               first-child, first-of-type, last-child, last-of-type, nth-child,
+               not
+            </h2>
+            <p class="text">
+               Please, hover over the name of one of the proposed
+               pseudo-classes and you will be able to view the example.
+            </p>
+
+            <ul class="position-pseudo-class-list">
+               <li>
+                  <h3 class="example-name example-first-child">
+                     <code>:first-child</code>
+                  </h3>
+                  <div class="example-show">
+                     <span> span </span>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <span> span </span>
+                     <div> div </div>
+                     <span> span </span>
+                  </div>
+               </li>
+
+               <li>
+                  <h3 class="example-name example-first-of-type">
+                     <code>div:first-of-type</code>
+                  </h3>
+                  <div class="example-show">
+                     <span> span </span>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <span> span </span>
+                     <div> div </div>
+                     <span> span </span>
+                  </div>
+               </li>
+
+               <li>
+                  <h3 class="example-name example-last-child">
+                     <code>:last-child</code>
+                  </h3>
+                  <div class="example-show">
+                     <span> span </span>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <span> span </span>
+                     <div> div </div>
+                     <span> span </span>
+                  </div>
+               </li>
+
+               <li>
+                  <h3 class="example-name example-last-of-type">
+                     <code>span:last-of-type</code>
+                  </h3>
+                  <div class="example-show">
+                     <span> span </span>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <span> span </span>
+                     <div> div </div>
+                     <span> span </span>
+                  </div>
+               </li>
+
+               <li>
+                  <h3 class="example-name example-nth-child-odd">
+                     <code>:nth-child(odd)</code>
+                  </h3>
+                  <div class="example-show">
+                     <span> span </span>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <span> span </span>
+                     <div> div </div>
+                     <span> span </span>
+                  </div>
+               </li>
+
+               <li>
+                  <h3 class="example-name example-nth-child-even">
+                     <code>:nth-child(even)</code>
+                  </h3>
+                  <div class="example-show">
+                     <span> span </span>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <span> span </span>
+                     <div> div </div>
+                     <span> span </span>
+                  </div>
+               </li>
+
+               <li>
+                  <h3 class="example-name example-nth-child-num">
+                     <code>:nth-child(4)</code>
+                  </h3>
+                  <div class="example-show">
+                     <span> span </span>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <span> span </span>
+                     <div> div </div>
+                     <span> span </span>
+                  </div>
+               </li>
+
+
+               <li>
+                  <h3 class="example-name example-nth-child-algorithm">
+                     <code>:nth-child(3n + 3)</code>
+                  </h3>
+                  <div class="example-show">
+                     <span> span </span>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <span> span </span>
+                     <div> div </div>
+                     <span> span </span>
+                  </div>
+               </li>
+
+               <li>
+                  <h3 class="example-name example-not">
+                     <code>:not(:nth-child(3n + 3))</code>
+                  </h3>
+                  <div class="example-show">
+                     <span> span </span>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <div> div </div>
+                     <span> span </span>
+                     <div> div </div>
+                     <span> span </span>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="example-section pseudo-elements" id="pseudo-elements">
+         <div class="example-container">
+            <h2>Pseudo-elements: :before, :after</h2>
+            <ul class="pseudo-elements-examples-list">
+               <li class="first">
+                  <div class="example-wrapper">
+                     <p class="example">example
+                     </p>
+                  </div>
+               </li>
+               <li class="second">
+                  <div class="example-wrapper">
+                     <p class="example">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dolorem recusandae, quis provident
+                        fugiat
+                        blanditiis dolores iure. Quaerat, repudiandae, obcaecati
+                        tenetur unde dolor consequatur maxime beatae provident,
+                        minima in assumenda totam!</p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="example-section game" id="game">
+         <div class="example-container">
+            <h2>Game &#34;Get to the end&#34;</h2>
+            <div class="game-wrapper">
+               <div class="game-line line-1">
+                  <p>Go!</p>
+               </div>
+               <div class="game-line line-2"></div>
+               <div class="game-line line-3"></div>
+               <div class="game-line line-4"></div>
+               <div class="game-line line-5"></div>
+               <div class="game-line line-6"></div>
+               <div class="game-line line-7"></div>
+               <div class="game-line line-8"></div>
+               <div class="game-line line-9"></div>
+               <div class="game-line line-10"></div>
+               <div class="game-line line-11"></div>
+               <div class="game-line line-12"></div>
+               <div class="game-line line-13"></div>
+               <p class="game-finish">Winner!</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="model-section about-section" id="about">
+         <div class="about-container">
+            <div class="title-block-wrapper">
+               <p class="pre-title">Welcome Whitecollar</p>
+               <h2 class="section-title">We Care About Your
+                  <br> Business plan.
+               </h2>
+            </div>
+            <div class="text-wrapper">
+               <p>Leverage agile frameworks to provide a robust synopsis for
+                  high level
+                  overviews.Iterative approaches to corporate strategy foster
+                  collaborative
+                  thinking to further the overal.
+               </p>
+               <p>Leverage agile frameworks to provide a robust synopsis for
+                  high level
+                  overviews.Iterative approaches to corporate strategy.
+               </p>
+            </div>
+            <ul class="about-list">
+               <li class="about-card">
+                  <h3 class="about-card-title">Our Vision</h3>
+                  <div class="text-wrapper">
+                     <p>
+                        Capitalize on low hanging fruit to identify a
+                        ballpark
+                        value added activity to beta clickthroughs.
+                     </p>
+                  </div>
+               </li>
+               <li class="about-card">
+                  <h3 class="about-card-title">Our Mision</h3>
+                  <div class="text-wrapper">
+                     <p>
+                        Podcasting operational change management inside of
+                        workflows to establish a framework.
+                     </p>
+                  </div>
+               </li>
+            </ul>
+            <a class="about-link" href="#fake-link">More About Us</a>
+         </div>
+      </div>
+
+      <div class="model-section why-section" id="why">
+         <div class="why-container">
+            <h2 class="title">
+               Why Us For International Business Management Consulting!
+            </h2>
+            <div class="text-wrapper">
+               <p>
+                  Completely synergized resourced taxings relationships premiers
+                  markets ultivate
+                  one-to-one customer service with robust ideas dynamically
+                  innovated resources
+                  leveling customer service for state of the art customer
+                  service innovate product
+                  for reliable supply engage web services cutting-edge
+                  deliverables.
+               </p>
+            </div>
+            <h3 class="section-subtitle">
+               Proactively envisioned multimedia based expertise media growth
+               superior collaboration.
+            </h3>
+            <div class="text-wrapper">
+               <p>
+                  One-to-one customer service with robust ideas dynamically
+                  innovated resources
+                  for reliable supply engage web services cutting-edge
+                  deliverables.
+               </p>
+            </div>
+            <div class="why-benefits-block">
+               <div class="img-wrapper"></div>
+               <div class="text-content">
+                  <h3>Our benefits</h3>
+                  <div class="text-wrapper">
+                     <p class="accent">
+                        Incubate standards compliant channels benefits.
+                     </p>
+                     <ul class="benefits-list">
+                        <li class="benefits-item">Credibly reintermediate
+                           backend
+                        </li>
+                        <li class="benefits-item">Holistically foster superior
+                        </li>
+                        <li class="benefits-item">Distinctively exploit optimal
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <h2 class="title">Frequently Asked Questions</h2>
+            <div class="text-wrapper">
+               <p>Leveling customer service for state of the art customer
+                  service innovate product
+                  for reliable supply engage web services cutting-edge
+                  deliverables.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="model-section how-section" id="how">
+         <div class="how-container">
+            <div class="title-block-wrapper">
+               <p class="pre-title">Work Process</p>
+               <h2 class="section-title">How We Work</h2>
+            </div>
+            <ul class="how-list">
+               <li class="how-card">
+                  <div class="card-content-wrapper">
+                     <h3>Make Appointment</h3>
+                     <div class="text-wrapper">
+                        <p>Leverage agile frameworks provide
+                           synopsishigh level overviews
+                           value proposition.</p>
+                     </div>
+                     <a href="#how">Testimonials</a>
+                  </div>
+               </li>
+
+               <li class="how-card">
+                  <div class="card-content-wrapper">
+                     <h3>Consultation</h3>
+                     <div class="text-wrapper">
+                        <p>Leverage agile frameworks provide
+                           synopsishigh level overviews
+                           value proposition.</p>
+                     </div>
+                     <a href="#how">Testimonials</a>
+                  </div>
+               </li>
+
+               <li class="how-card">
+                  <div class="card-content-wrapper">
+                     <h3>Enjoy the Service</h3>
+                     <div class="text-wrapper">
+                        <p>Leverage agile frameworks provide
+                           synopsishigh level overviews
+                           value proposition.</p>
+                     </div>
+                     <a href="#how">Testimonials</a>
+
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="model-section jewelry-section" id="jewelry">
+         <div class="jewelry-container">
+            <h2 class="jewelry-title">We Develop Create Custom Jewels.</h2>
+            <div class="jewelry-list">
+               <div class="jewelry-card">
+                  <div class="bg-wrapper">
+                     <div class="bg"></div>
+                  </div>
+                  <h3>Embossed hoop earrings</h3>
+                  <p>&#36;144.00</p>
+               </div>
+               <div class="jewelry-card">
+
+                  <p class="text">&#35;02
+                     <br>
+                     new jewellery collection
+                  </p>
+
+                  <div class="bg-wrapper">
+                     <div class="bg"></div>
+                  </div>
+                  <h3>Embossed hoop earrings</h3>
+                  <p>&#36;144.00</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="home" id="home">
+         <div class="hero-container">
+            <h1>Lesson &#35;9. Pseudo-classes and pseudo-elements</h1>
+         </div>
+      </div>
+   </main>
+
+   <footer class="page-footer">
+      <div class="footer-container">
+         <div class="link-wrapper">
+            <a class="home-link" href="#home">Home</a>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
