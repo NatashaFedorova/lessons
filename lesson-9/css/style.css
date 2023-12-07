@@ -604,6 +604,10 @@ h1 {
    margin-bottom: 10px;
 }
 
+.about-section .section-title {
+   max-width: 430px;
+}
+
 .about-container .text-wrapper {
    color: #7d7d7d;
    line-height: 1.46;
@@ -858,27 +862,27 @@ h1 {
    box-shadow: 0px 0px 14px 3px rgba(108, 120, 229, 0.5);
 }
 
-.how-card:nth-child(1) .card-content-wrapper::before {
+.how-card.first .card-content-wrapper::before {
    background: #40ddb6 url('../img/calendar.svg') center / cover no-repeat;
 }
 
-.how-card:nth-child(1):hover .card-content-wrapper::before {
+.how-card.first:hover .card-content-wrapper::before {
    background: #6b77e5 url('../img/calendar-hover.svg') center / cover no-repeat;
 }
 
-.how-card:nth-child(2) .card-content-wrapper::before {
+.how-card.second .card-content-wrapper::before {
    background: #40ddb6 url('../img/puzzle.svg') center / cover no-repeat;
 }
 
-.how-card:nth-child(2):hover .card-content-wrapper::before {
+.how-card.second:hover .card-content-wrapper::before {
    background: #6b77e5 url('../img/puzzle-hover.svg') center / cover no-repeat;
 }
 
-.how-card:nth-child(3) .card-content-wrapper::before {
+.how-card.third .card-content-wrapper::before {
    background: #40ddb6 url('../img/success.svg') center / cover no-repeat;
 }
 
-.how-card:nth-child(3):hover .card-content-wrapper::before {
+.how-card.third:hover .card-content-wrapper::before {
    background: #6b77e5 url('../img/success-hover.svg') 0 0 / cover no-repeat;
 }
 
