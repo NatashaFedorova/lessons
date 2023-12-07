@@ -836,6 +836,7 @@ h1 {
 .card-content-wrapper {
    padding: 58px 43px;
    background-color: #f4f4f4;
+   transition: box-shadow 500ms;
 }
 
 .card-content-wrapper::before {
