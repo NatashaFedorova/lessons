@@ -17,3 +17,5 @@ Lesson-9 - https://natashafedorova.github.io/lessons/lesson-9/
 Lesson-10 - https://natashafedorova.github.io/lessons/lesson-10/
 
 Lesson-11 - https://natashafedorova.github.io/lessons/lesson-11/
+
+Lesson-12 - https://natashafedorova.github.io/lessons/lesson-12/
