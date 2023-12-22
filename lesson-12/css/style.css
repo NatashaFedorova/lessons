@@ -702,6 +702,16 @@ body {
    outline: 2px solid #ffffff;
 }
 
+.social-networks__img-wrapper {
+   width: 45px;
+   height: 45px;
+}
+
+.social-networks__img-wrapper img {
+   width: 100%;
+   height: 100%;
+}
+
 .model__text-content {
    position: absolute;
    left: 22px;
