@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon/fav.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 12</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <ul class="header__nav-list">
+               <li class="header__nav-item">
+                  <a class="header__nav-link" href="#static">Practice</a>
+                  <ul class="first-sub-menu">
+                     <li class="first-sub-menu__item">
+                        <a class="first-sub-menu__link"
+                           href="#static">Static</a>
+                     </li>
+                     <li class="first-sub-menu__item">
+                        <a class="first-sub-menu__link"
+                           href="#relative">Relative</a>
+                        <ul class="second-sub-menu">
+                           <li class="second-sub-menu__item">
+                              <a class="second-sub-menu__link"
+                                 href="#relative-ex-1">Example
+                                 1</a>
+                           </li>
+                           <li class="second-sub-menu__item">
+                              <a class="second-sub-menu__link"
+                                 href="#relative-ex-2">Example
+                                 2</a>
+                           </li>
+                           <li class="second-sub-menu__item">
+                              <a class="second-sub-menu__link"
+                                 href="#relative-ex-3">Example
+                                 3</a>
+                           </li>
+                           <li class="second-sub-menu__item">
+                              <a class="second-sub-menu__link"
+                                 href="#relative-ex-4">Example
+                                 4</a>
+                           </li>
+                           <li class="second-sub-menu__item">
+                              <a class="second-sub-menu__link"
+                                 href="#relative-ex-5">Example
+                                 5</a>
+                           </li>
+                           <li class="second-sub-menu__item">
+                              <a class="second-sub-menu__link"
+                                 href="#relative-ex-6">Example
+                                 6</a>
+                           </li>
+                           <li class="second-sub-menu__item">
+                              <a class="second-sub-menu__link"
+                                 href="#relative-ex-7">Example
+                                 7</a>
+                           </li>
+                           <li class="second-sub-menu__item">
+                              <a class="second-sub-menu__link"
+                                 href="#relative-ex-8">Example
+                                 8</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="first-sub-menu__item">
+                        <a class="first-sub-menu__link"
+                           href="#z-index">z-index</a>
+                     </li>
+                     <li class="first-sub-menu__item">
+                        <a class="first-sub-menu__link"
+                           href="#absolute">Absolute</a>
+                     </li>
+                     <li class="first-sub-menu__item">
+                        <a class="first-sub-menu__link" href="#fixed">Fixed</a>
+                     </li>
+                     <li class="first-sub-menu__item">
+                        <a class="first-sub-menu__link"
+                           href="#sticky">Sticky</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="header__nav-item">
+                  <a class="header__nav-link" href="#model">Model</a>
+               </li>
+            </ul>
+         </div>
+      </header>
+
+      <main>
+         <div class="hero">
+            <div class="hero__bg">
+               <div class="hero__container">
+                  <h1 class="hero__title">Lesson &#35;12. Positioning</h1>
+               </div>
+            </div>
+         </div>
+         <div class="static" id="static">
+            <div class="static__container">
+               <h2 class="static__title title-section">Static (default)</h2>
+               <p class="static__accent accent">WARNING! The top, left, right,
+                  bottom,
+                  z-index properties are not used because the
+                  positioning is static.
+               </p>
+               <p class="static__change">
+                  &#123; <code>position: relative;</code> &#125;
+               </p>
+               <ul class="static__list">
+                  <li class="static__item">
+                     <div class="static__box static__box--top">&#123;
+                        <code>position: static; top: 30px; z-index: 1;</code>
+                        &#125;
+                     </div>
+                  </li>
+                  <li class="static__item">
+                     <div class="static__box static__box--right">&#123;
+                        <code>position: static;  right: 30px; z-index: 2;</code>
+                        &#125;
+                     </div>
+                  </li>
+                  <li class="static__item">
+                     <div class="static__box static__box--bottom">&#123;
+                        <code>position: static; bottom: 30px; z-index: 1;</code>
+                        &#125;
+                     </div>
+                  </li>
+                  <li class="static__item">
+                     <div class="static__box static__box--left">&#123;
+                        <code>position: static; left: 30px; z-index: 1;</code>
+                        &#125;
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="relative" id="relative">
+            <div class="relative__container">
+               <h2 class="relative__title title-section">Relative</h2>
+               <ul class="relative__list list-examples">
+                  <li class="list-examples__item" id="relative-ex-1">
+                     <div
+                        class="list-examples__box list-examples__box--just-relative">
+                        &#123;
+                        <code> position: relative; </code>&#125;
+                     </div>
+                  </li>
+                  <li class="list-examples__item" id="relative-ex-2">
+                     <div
+                        class="list-examples__box list-examples__box--top-left">
+                        &#123;
+                        <code> position: relative; top: 10px; left: 10px; </code>&#125;
+                     </div>
+                  </li>
+                  <li class="list-examples__item" id="relative-ex-3">
+                     <div
+                        class="list-examples__box list-examples__box--top-left-minus">
+                        &#123;
+                        <code> position: relative; top: -10px; left: -10px; </code>&#125;
+                     </div>
+                  </li>
+                  <li class="list-examples__item" id="relative-ex-4">
+                     <div
+                        class="list-examples__box list-examples__box--right-bottom">
+                        &#123;
+                        <code> position: relative; right: 10px; bottom: 10px; </code>&#125;
+                     </div>
+                  </li>
+                  <li class="list-examples__item" id="relative-ex-5">
+                     <div
+                        class="list-examples__box list-examples__box--top-left-right-bottom"
+                        title="right: 40px; bottom: 40px; properties are not applied">
+                        &#123;
+                        <code> position: relative; top: 12px; left: 12px;</code>
+                        <code
+                           class="not-working">right: 40px; bottom: 40px;</code>&#125;
+                     </div>
+                  </li>
+                  <li class="list-examples__item list-examples__item--height-auto"
+                     id="relative-ex-6">
+                     <div
+                        class="list-examples__box list-examples__box--bottom-not-working"
+                        title="bottom: 20%; properties are not applied">
+                        <p>li &#123;<code> height: auto; </code>&#125;</p>
+                        <p>li &#62; div
+                           &#123;<code> position: relative; left: 20%;</code>
+                           <code class="not-working">bottom: 20%;</code>&#125;
+                        </p>
+                     </div>
+                  </li>
+                  <li class="list-examples__item list-examples__item--defined-height"
+                     id="relative-ex-7">
+                     <div
+                        class="list-examples__box list-examples__box--bottom-percentage-working">
+                        <p>li &#123;<code> height: 80px; </code>&#125;</p>
+                        <p>li &#62; div
+                           &#123;<code> position: relative; left: 20%; bottom: 20%;</code>&#125;
+                        </p>
+                     </div>
+                  </li>
+                  <li class="list-examples__item" id="relative-ex-8">
+                     <div
+                        class="list-examples__box list-examples__box--with-span">
+                        Text
+                        <span>
+                           span &#123;
+                           <code> position: relative; </code>&#125;
+                        </span>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="z-index" id="z-index">
+            <div class="z-index__container">
+               <h2 class="z-index__title title-section">z-index</h2>
+               <ul class="z-index__list list-examples">
+                  <li class="list-examples__item">
+                     <div class="block block--z-index-relative">
+                        <p>
+                           &#123;<code> position: relative; top: 13px; z-index: 1; </code>&#125;
+                        </p>
+                     </div>
+                     <div class="block block--z-index-static">
+                        <p>
+                           &#123;<code> position: static; z-index: 2; </code>&#125;
+                        </p>
+                     </div>
+                  </li>
+                  <li class="list-examples__item">
+                     <div class="block block--z-index-relative">
+                        <p>
+                           &#123;<code> position: relative; top: 13px; z-index: 1; </code>&#125;
+                        </p>
+                     </div>
+                     <div class="block block--z-index-relative-second">
+                        <p>
+                           &#123;<code> position: relative; z-index: 1; </code>&#125;
+                        </p>
+                     </div>
+                  </li>
+                  <li class="list-examples__item">
+                     <div class="block block--z-index-10000">
+                        <p>
+                           &#123;<code> position: relative; top: 15px; z-index: 10000;</code>&#125;
+                        </p>
+                     </div>
+                     <div class="block block--z-index-9999">
+                        <p>
+                           &#123;<code> position: relative; z-index: 9999;</code>&#125;
+                        </p>
+                     </div>
+                  </li>
+                  <li class="list-examples__item list-examples__item--bg-red">
+                     <div class="block block--z-index-plus">
+                        <p>
+                           &#123;<code> position: relative; top: 15px; z-index: 1;</code>&#125;
+                        </p>
+                     </div>
+                     <div class="block block--z-index-minus">
+                        <p>
+                           &#123;<code> position: relative; z-index: -1;</code>&#125;
+                        </p>
+                     </div>
+                  </li>
+                  <li class="list-examples__item list-examples__item--center">
+                     <div class="parent-first">
+                        <p>
+                           &#123;<code> position: relative; z-index: 2; </code>&#125;
+                        </p>
+                        <div class="parent-first__child-1">
+                           <p>
+                              &#123;<code> z-index: 5; </code>&#125;
+                           </p>
+                        </div>
+                        <div class="parent-first__child-2">
+                           <p>
+                              &#123;<code> z-index: 3; </code>&#125;
+                           </p>
+                        </div>
+                     </div>
+                     <div class="parent-second">
+                        <p>
+                           &#123;<code> position: relative; z-index: 4; </code>&#125;
+                        </p>
+                        <div class="parent-second__child-1">
+                           <p>
+                              &#123;<code> z-index: 2; </code>&#125;
+                           </p>
+                        </div>
+                        <div class="parent-second__child-2">
+                           <p>
+                              &#123;<code> z-index: 1; </code>&#125;
+                           </p>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="list-examples__item list-examples__item--center">
+                     <div class="parent-first parent-first">
+                        <p>
+                           &#123;<code> position: relative; z-index: 2; </code>&#125;
+                        </p>
+                        <div class="parent-first__child-1">
+                           <p>
+                              &#123;<code> z-index: 5; </code>&#125;
+                           </p>
+                        </div>
+                        <div class="parent-first__child-2">
+                           <p>
+                              &#123;<code> z-index: 3; </code>&#125;
+                           </p>
+                        </div>
+                     </div>
+                     <div class="parent-second parent-second--static">
+                        <p>
+                           &#123;<code> position: static; z-index: 4; </code>&#125;
+                        </p>
+                        <div class="parent-second__child-1">
+                           <p>
+                              &#123;<code> z-index: 2; </code>&#125;
+                           </p>
+                        </div>
+                        <div class="parent-second__child-2">
+                           <p>
+                              &#123;<code> z-index: 1; </code>&#125;
+                           </p>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="absolute" id="absolute">
+            <div class="absolute__container">
+               <h2 class="absolute__title title-section">Absolute</h2>
+               <div class="absolute__examples-wrapper examples-wrapper">
+                  <div class="examples-wrapper__first-example">
+                     <p>
+                        &#123;
+                        <code> position: absolute; top: -5px; right: -5px; </code>&#125;
+                     </p>
+                  </div>
+                  <div class="examples-wrapper__second-example">
+                     <p>
+                        &#123;
+                        <code> position: absolute; top: 10%; bottom: 10%; right: 0; </code>&#125;
+                     </p>
+                  </div>
+                  <div class="examples-wrapper__third-example">
+                     <p>
+                        &#123;
+                        <code> position: absolute; bottom: 30%; right: 100px; </code>&#125;
+                     </p>
+                  </div>
+                  <div class="examples-wrapper__fourth-example fourth-example">
+                     Parent <br>
+                     &#123;
+                     <code> position: relative; </code>&#125;
+                     <p class="fourth-example__child">
+                        Child<br>
+                        &#123;
+                        <code> position: absolute; top: 100%; left: 100%; </code>&#125;
+                     </p>
+                  </div>
+                  <div class="examples-wrapper__fifth-example">
+                     <p>
+                        &#123;
+                        <code> position: absolute; left: 20%; right: 30%; bottom: 10%; </code>&#125;
+                     </p>
+                  </div>
+                  <div class="examples-wrapper__sixth-example">
+                     <p>
+                        &#123;
+                        <code> position: absolute; right: 100%; </code>&#125;
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fixed" id="fixed">
+            <div class="fixed__container">
+               <h2 class="fixed__title title-section">Fixed</h2>
+               <p class="fixed__accent accent">As
+                  examples, 2 blocks and a site header
+               </p>
+               <p class="fixed__accent fixed__accent--margin accent">Positioned
+                  relative to the
+                  browser window!!</p>
+               <div class="fixed__example-wrapper">
+                  <p class="fixed__first-example">
+                     &#123;
+                     <code> position: fixed; top: 0; right: 0; z-index: 10006; </code>&#125;
+                  </p>
+                  <p class="fixed__second-example">
+                     &#123;
+                     <code> position: fixed; bottom: 0; left: 0; </code>&#125;
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="sticky" id="sticky">
+            <div class="sticky__container">
+               <h2 class="sticky__title title-section">Sticky</h2>
+               <div class="sticky__example-wrapper">
+                  <h3 class="sticky__example-title">
+                     Title 1</h3>
+                  <div class="sticky__text-wrapper text-wrapper">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        Magnam, veniam? Accusamus eligendi expedita, maiores
+                        fugiat
+                        natus commodi corporis consequuntur! At cumque natus
+                        dolorem voluptates soluta eum porro. Dignissimos unde
+                        vero
+                        ratione molestiae perspiciatis quibusdam sequi enim
+                        autem
+                        rerum, dolorem eos ea adipisci eveniet ducimus minus
+                        error
+                        repudiandae corporis magni? Quas facilis ipsum ipsa
+                        dolore
+                        laboriosam officiis at adipisci minus, modi laudantium
+                        porro assumenda repellat veritatis similique, in atque?
+                        Sequi praesentium veniam provident ab corrupti?
+                        Suscipit,
+                        repudiandae dignissimos sunt at quisquam harum quibusdam
+                        porro. Quam, quod id voluptatum, doloremque sapiente aut
+                        sint suscipit minus odit itaque quas? Modi a molestiae
+                        laudantium molestias voluptatem, ipsum ipsa asperiores
+                        placeat eligendi illum eius possimus, nesciunt ipsam
+                        dignissimos. Itaque reprehenderit corrupti, tenetur illo
+                        perspiciatis voluptate facilis officia sunt dolore
+                        molestias porro possimus unde quisquam cumque optio
+                        doloribus voluptates dolorem! Nihil impedit asperiores
+                        repellat, eaque, odit possimus unde at vero fugiat minus
+                        cum quae sit natus sint magni ducimus in rem cumque a
+                        corrupti. Illo assumenda cupiditate earum inventore
+                        ipsum
+                        necessitatibus in expedita rem, cum placeat aliquam
+                        exercitationem eligendi qui sequi consequuntur ipsam
+                        dolorum nobis quibusdam corporis eveniet soluta vitae
+                        minus
+                        accusantium? Vel nulla autem laudantium placeat minima
+                        alias iusto architecto maiores error totam unde aliquam
+                        officia, sequi recusandae hic est tempora velit optio
+                        dignissimos doloremque amet dolorum blanditiis non
+                        laboriosam? Assumenda porro voluptate quisquam enim quas
+                        sapiente ullam dicta itaque modi alias. Reprehenderit
+                        temporibus et harum corrupti, porro, modi molestiae
+                        dignissimos assumenda ea expedita eveniet iste ut
+                        placeat
+                        rem, commodi minus illum natus dolores! Corrupti
+                        sapiente
+                        tempore corporis dignissimos enim odio vitae alias
+                        reprehenderit eligendi doloribus, illo libero
+                        praesentium
+                        reiciendis earum odit porro ex aut nisi suscipit aperiam
+                        accusamus quaerat qui ratione tempora! Vero aliquid
+                        porro
+                        nisi facilis, dolores, nemo ad dignissimos vitae eveniet
+                        obcaecati, culpa adipisci accusantium explicabo illo non
+                        nulla! Aspernatur, qui vero.</p>
+                  </div>
+                  <h3
+                     class="sticky__example-title sticky__example-title--coral">
+                     Title 2</h3>
+                  <div class="sticky__text-wrapper text-wrapper">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        Magnam, veniam? Accusamus eligendi expedita, maiores
+                        fugiat
+                        natus commodi corporis consequuntur! At cumque natus
+                        dolorem voluptates soluta eum porro. Dignissimos unde
+                        vero
+                        ratione molestiae perspiciatis quibusdam sequi enim
+                        autem
+                        rerum, dolorem eos ea adipisci eveniet ducimus minus
+                        error
+                        repudiandae corporis magni? Quas facilis ipsum ipsa
+                        dolore
+                        laboriosam officiis at adipisci minus, modi laudantium
+                        porro assumenda repellat veritatis similique, in atque?
+                        Sequi praesentium veniam provident ab corrupti?
+                        Suscipit,
+                        repudiandae dignissimos sunt at quisquam harum quibusdam
+                        porro. Quam, quod id voluptatum, doloremque sapiente aut
+                        sint suscipit minus odit itaque quas? Modi a molestiae
+                        laudantium molestias voluptatem, ipsum ipsa asperiores
+                        placeat eligendi illum eius possimus, nesciunt ipsam
+                        dignissimos. Itaque reprehenderit corrupti, tenetur illo
+                        perspiciatis voluptate facilis officia sunt dolore
+                        molestias porro possimus unde quisquam cumque optio
+                        doloribus voluptates dolorem! Nihil impedit asperiores
+                        repellat, eaque, odit possimus unde at vero fugiat minus
+                        cum quae sit natus sint magni ducimus in rem cumque a
+                        corrupti. Illo assumenda cupiditate earum inventore
+                        ipsum
+                        necessitatibus in expedita rem, cum placeat aliquam
+                        exercitationem eligendi qui sequi consequuntur ipsam
+                        dolorum nobis quibusdam corporis eveniet soluta vitae
+                        minus
+                        accusantium? Vel nulla autem laudantium placeat minima
+                        alias iusto architecto maiores error totam unde aliquam
+                        officia, sequi recusandae hic est tempora velit optio
+                        dignissimos doloremque amet dolorum blanditiis non
+                        laboriosam? Assumenda porro voluptate quisquam enim quas
+                        sapiente ullam dicta itaque modi alias. Reprehenderit
+                        temporibus et harum corrupti, porro, modi molestiae
+                        dignissimos assumenda ea expedita eveniet iste ut
+                        placeat
+                        rem, commodi minus illum natus dolores! Corrupti
+                        sapiente
+                        tempore corporis dignissimos enim odio vitae alias
+                        reprehenderit eligendi doloribus, illo libero
+                        praesentium
+                        reiciendis earum odit porro ex aut nisi suscipit aperiam
+                        accusamus quaerat qui ratione tempora! Vero aliquid
+                        porro
+                        nisi facilis, dolores, nemo ad dignissimos vitae eveniet
+                        obcaecati, culpa adipisci accusantium explicabo illo non
+                        nulla! Aspernatur, qui vero.</p>
+                  </div>
+                  <h3
+                     class="sticky__example-title sticky__example-title--crimson">
+                     Title 3</h3>
+                  <div class="sticky__text-wrapper text-wrapper">
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                        Magnam, veniam? Accusamus eligendi expedita, maiores
+                        fugiat
+                        natus commodi corporis consequuntur! At cumque natus
+                        dolorem voluptates soluta eum porro. Dignissimos unde
+                        vero
+                        ratione molestiae perspiciatis quibusdam sequi enim
+                        autem
+                        rerum, dolorem eos ea adipisci eveniet ducimus minus
+                        error
+                        repudiandae corporis magni? Quas facilis ipsum ipsa
+                        dolore
+                        laboriosam officiis at adipisci minus, modi laudantium
+                        porro assumenda repellat veritatis similique, in atque?
+                        Sequi praesentium veniam provident ab corrupti?
+                        Suscipit,
+                        repudiandae dignissimos sunt at quisquam harum quibusdam
+                        porro. Quam, quod id voluptatum, doloremque sapiente aut
+                        sint suscipit minus odit itaque quas? Modi a molestiae
+                        laudantium molestias voluptatem, ipsum ipsa asperiores
+                        placeat eligendi illum eius possimus, nesciunt ipsam
+                        dignissimos. Itaque reprehenderit corrupti, tenetur illo
+                        perspiciatis voluptate facilis officia sunt dolore
+                        molestias porro possimus unde quisquam cumque optio
+                        doloribus voluptates dolorem! Nihil impedit asperiores
+                        repellat, eaque, odit possimus unde at vero fugiat minus
+                        cum quae sit natus sint magni ducimus in rem cumque a
+                        corrupti. Illo assumenda cupiditate earum inventore
+                        ipsum
+                        necessitatibus in expedita rem, cum placeat aliquam
+                        exercitationem eligendi qui sequi consequuntur ipsam
+                        dolorum nobis quibusdam corporis eveniet soluta vitae
+                        minus
+                        accusantium? Vel nulla autem laudantium placeat minima
+                        alias iusto architecto maiores error totam unde aliquam
+                        officia, sequi recusandae hic est tempora velit optio
+                        dignissimos doloremque amet dolorum blanditiis non
+                        laboriosam? Assumenda porro voluptate quisquam enim quas
+                        sapiente ullam dicta itaque modi alias. Reprehenderit
+                        temporibus et harum corrupti, porro, modi molestiae
+                        dignissimos assumenda ea expedita eveniet iste ut
+                        placeat
+                        rem, commodi minus illum natus dolores! Corrupti
+                        sapiente
+                        tempore corporis dignissimos enim odio vitae alias
+                        reprehenderit eligendi doloribus, illo libero
+                        praesentium
+                        reiciendis earum odit porro ex aut nisi suscipit aperiam
+                        accusamus quaerat qui ratione tempora! Vero aliquid
+                        porro
+                        nisi facilis, dolores, nemo ad dignissimos vitae eveniet
+                        obcaecati, culpa adipisci accusantium explicabo illo non
+                        nulla! Aspernatur, qui vero.</p>
+                  </div>
+               </div>
+               <div class="sticky__example-wrapper-second">
+                  <div class="sticky__example-first">
+                     <div class="sticky__side side">
+                        <ul class="side__list">
+                           <li class="side__item">
+                              <a class="side__link" href="#">
+                                 Side title 1
+                              </a>
+                           </li>
+                           <li class="side__item">
+                              <a class="side__link" href="#">
+                                 Side title 2
+                              </a>
+                           <li class="side__item">
+                              <a class="side__link" href="#">
+                                 Side title 3
+                              </a>
+                        </ul>
+                     </div>
+                     <div
+                        class="sticky__text-wrapper sticky__text-wrapper--width">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Architecto officia assumenda aperiam tempora
+                           molestias vel adipisci rerum, dicta recusandae
+                           dolore
+                           dignissimos facilis incidunt alias eum enim
+                           veritatis
+                           rem expedita repellendus modi? Autem quis voluptas
+                           aspernatur dolorem explicabo illo qui, aperiam
+                           commodi officiis velit dignissimos sed saepe odit
+                           id
+                           error totam eius esse a quisquam laborum
+                           praesentium
+                           adipisci perspiciatis. Doloremque dolorum nemo
+                           incidunt eaque voluptate corrupti saepe sunt, hic
+                           nam
+                           laborum, est excepturi ut delectus. Dolor
+                           excepturi
+                           adipisci, perferendis praesentium itaque ratione
+                           aperiam, enim fugiat facere dicta quidem aliquam
+                           non?
+                           Eligendi officia dolorem expedita quod, earum odio
+                           voluptas enim repellendus rem illum reprehenderit
+                           omnis adipisci? Neque consequuntur eum corrupti,
+                           distinctio eius praesentium quam ex quibusdam
+                           corporis qui ipsam tenetur excepturi eveniet? Est
+                           asperiores itaque, corporis quos consequuntur
+                           veniam
+                           placeat doloremque voluptas a saepe, eveniet,
+                           animi
+                           assumenda iusto commodi. Non incidunt et quasi,
+                           enim
+                           fugiat vero adipisci, ea odio omnis, possimus
+                           labore
+                           officiis unde nobis! Quisquam, delectus aperiam
+                           porro
+                           enim natus quo sunt explicabo repudiandae
+                           veritatis
+                           expedita? Animi quasi perferendis esse itaque
+                           tempora
+                           molestiae expedita officiis quia aperiam. Totam
+                           consequuntur voluptatibus, aperiam quibusdam
+                           molestias officiis sequi, facilis quasi animi
+                           dolorem
+                           quis? Nihil sed, quibusdam nulla quae ut odit
+                           reiciendis tempore. Delectus, maiores distinctio.
+                           Repellat suscipit sed totam rerum esse rem
+                           pariatur
+                           id incidunt, nostrum quod, similique laudantium
+                           maxime labore omnis. Numquam, eos laboriosam!
+                           Minus
+                           sapiente, maxime ratione officia, nisi laborum
+                           odit
+                           possimus dolore et porro distinctio delectus ad.
+                           Aspernatur officiis excepturi repellat
+                           praesentium.
+                           Repellendus, optio maxime sunt quibusdam
+                           recusandae,
+                           a ea amet maiores culpa doloribus necessitatibus
+                           vero. Consequuntur, architecto nesciunt saepe ab
+                           dolor explicabo delectus quod deserunt cupiditate
+                           ipsam, provident labore at commodi maxime incidunt
+                           nulla aut reiciendis repellendus eos minus odio
+                           doloribus rerum dignissimos. Unde sunt odio
+                           consequuntur ratione debitis. Perspiciatis,
+                           molestias
+                           dicta? Quos officia sint harum neque corrupti?
+                           Atque,
+                           debitis, temporibus cum quidem magni odio
+                           consequuntur eaque harum ad doloribus magnam est
+                           asperiores similique, vitae officiis ea suscipit
+                           perspiciatis repellendus cumque id aliquam
+                           ratione!
+                           Dolore voluptatum facere consectetur? Nulla iure
+                           rerum reprehenderit, voluptatum sequi officiis?
+                           Mollitia corporis facere unde quis veritatis
+                           neque?
+                           Laborum veritatis repudiandae repellat voluptatum
+                           reiciendis doloribus soluta? Voluptate inventore
+                           vel
+                           vero hic a dolorem sed animi maxime dolores
+                           laudantium non repellendus enim aperiam tenetur
+                           deleniti quis ipsam tempora sunt voluptatibus,
+                           sequi
+                           earum minima laborum omnis. Ullam ad fugit
+                           deleniti
+                           repellat recusandae dignissimos, officia, placeat
+                           ducimus id corrupti veritatis? Amet a eius aperiam
+                           porro aliquam? Minus, quis minima!</p>
+                     </div>
+                  </div>
+                  <div class="sticky__example-second">
+                     <div
+                        class="sticky__text-wrapper sticky__text-wrapper--width">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Architecto officia assumenda aperiam tempora
+                           molestias vel adipisci rerum, dicta recusandae
+                           dolore
+                           dignissimos facilis incidunt alias eum enim
+                           veritatis
+                           rem expedita repellendus modi? Autem quis voluptas
+                           aspernatur dolorem explicabo illo qui, aperiam
+                           commodi officiis velit dignissimos sed saepe odit
+                           id
+                           error totam eius esse a quisquam laborum
+                           praesentium
+                           adipisci perspiciatis. Doloremque dolorum nemo
+                           incidunt eaque voluptate corrupti saepe sunt, hic
+                           nam
+                           laborum, est excepturi ut delectus. Dolor
+                           excepturi
+                           adipisci, perferendis praesentium itaque ratione
+                           aperiam, enim fugiat facere dicta quidem aliquam
+                           non?
+                           Eligendi officia dolorem expedita quod, earum odio
+                           voluptas enim repellendus rem illum reprehenderit
+                           omnis adipisci? Neque consequuntur eum corrupti,
+                           distinctio eius praesentium quam ex quibusdam
+                           corporis qui ipsam tenetur excepturi eveniet? Est
+                           asperiores itaque, corporis quos consequuntur
+                           veniam
+                           placeat doloremque voluptas a saepe, eveniet,
+                           animi
+                           assumenda iusto commodi. Non incidunt et quasi,
+                           enim
+                           fugiat vero adipisci, ea odio omnis, possimus
+                           labore
+                           officiis unde nobis! Quisquam, delectus aperiam
+                           porro
+                           enim natus quo sunt explicabo repudiandae
+                           veritatis
+                           expedita? Animi quasi perferendis esse itaque
+                           tempora
+                           molestiae expedita officiis quia aperiam. Totam
+                           consequuntur voluptatibus, aperiam quibusdam
+                           molestias officiis sequi, facilis quasi animi
+                           dolorem
+                           quis? Nihil sed, quibusdam nulla quae ut odit
+                           reiciendis tempore. Delectus, maiores distinctio.
+                           Repellat suscipit sed totam rerum esse rem
+                           pariatur
+                           id incidunt, nostrum quod, similique laudantium
+                           maxime labore omnis. Numquam, eos laboriosam!
+                           Minus
+                           sapiente, maxime ratione officia, nisi laborum
+                           odit
+                           possimus dolore et porro distinctio delectus ad.
+                           Aspernatur officiis excepturi repellat
+                           praesentium.
+                           Repellendus, optio maxime sunt quibusdam
+                           recusandae,
+                           a ea amet maiores culpa doloribus necessitatibus
+                           vero. Consequuntur, architecto nesciunt saepe ab
+                           dolor explicabo delectus quod deserunt cupiditate
+                           ipsam, provident labore at commodi maxime incidunt
+                           nulla aut reiciendis repellendus eos minus odio
+                           doloribus rerum dignissimos. Unde sunt odio
+                           consequuntur ratione debitis. Perspiciatis,
+                           molestias
+                           dicta? Quos officia sint harum neque corrupti?
+                           Atque,
+                           debitis, temporibus cum quidem magni odio
+                           consequuntur eaque harum ad doloribus magnam est
+                           asperiores similique, vitae officiis ea suscipit
+                           perspiciatis repellendus cumque id aliquam
+                           ratione!
+                           Dolore voluptatum facere consectetur? Nulla iure
+                           rerum reprehenderit, voluptatum sequi officiis?
+                           Mollitia corporis facere unde quis veritatis
+                           neque?
+                           Laborum veritatis repudiandae repellat voluptatum
+                           reiciendis doloribus soluta? Voluptate inventore
+                           vel
+                           vero hic a dolorem sed animi maxime dolores
+                           laudantium non repellendus enim aperiam tenetur
+                           deleniti quis ipsam tempora sunt voluptatibus,
+                           sequi
+                           earum minima laborum omnis. Ullam ad fugit
+                           deleniti
+                           repellat recusandae dignissimos, officia, placeat
+                           ducimus id corrupti veritatis? Amet a eius aperiam
+                           porro aliquam? Minus, quis minima!</p>
+                     </div>
+                     <div class="sticky__side sticky__side--right side">
+                        <ul class="side__list">
+                           <li class="side__item">
+                              <a class="side__link" href="#">
+                                 Side title 1
+                              </a>
+                           </li>
+                           <li class="side__item">
+                              <a class="side__link" href="#">
+                                 Side title 2
+                              </a>
+                           <li class="side__item">
+                              <a class="side__link" href="#">
+                                 Side title 3
+                              </a>
+                        </ul>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="model" id="model">
+            <div class="model__container">
+               <ul class="model__list">
+                  <li class="model__item">
+                     <div class="model__img-wrapper">
+                        <img src="img/model/person-1.webp" alt="woman"
+                           width="386">
+                     </div>
+                     <div class="model__social-networks social-networks">
+                        <ul class="social-networks__list">
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/insta.svg"
+                                    alt="instagram icon" width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/fb.svg" alt="facebook icon"
+                                    width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/twiter.svg"
+                                    alt="twiter icon" width="45">
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="model__text-content">
+                        <h3 class="model__name">Natasha Kelvin</h3>
+                        <p class="model__position">Managing Director</p>
+                     </div>
+                  </li>
+                  <li class="model__item">
+                     <div class="model__img-wrapper">
+                        <img src="img/model/person-2.webp" alt="man"
+                           width="386">
+                     </div>
+                     <div class="model__social-networks social-networks">
+                        <ul class="social-networks__list">
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/insta.svg"
+                                    alt="instagram icon" width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/fb.svg" alt="facebook icon"
+                                    width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/twiter.svg"
+                                    alt="twiter icon" width="45">
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="model__text-content">
+                        <h3 class="model__name">David Simpson</h3>
+                        <p class="model__position">Designer</p>
+                     </div>
+                  </li>
+                  <li class="model__item">
+                     <div class="model__img-wrapper">
+                        <img src="img/model/person-3.webp" alt="woman"
+                           width="386">
+                     </div>
+                     <div class="model__social-networks social-networks">
+                        <ul class="social-networks__list">
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/insta.svg"
+                                    alt="instagram icon" width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/fb.svg" alt="facebook icon"
+                                    width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/twiter.svg"
+                                    alt="twiter icon" width="45">
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="model__text-content">
+                        <h3 class="model__name">Madeleine Grant</h3>
+                        <p class="model__position">Marketing Specialist</p>
+                     </div>
+                  </li>
+                  <li class="model__item">
+                     <div class="model__img-wrapper">
+                        <img src="img/model/person-4.webp" alt="man"
+                           width="386">
+                     </div>
+                     <div class="model__social-networks social-networks">
+                        <ul class="social-networks__list">
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/insta.svg"
+                                    alt="instagram icon" width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/fb.svg" alt="facebook icon"
+                                    width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/twiter.svg"
+                                    alt="twiter icon" width="45">
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="model__text-content">
+                        <h3 class="model__name">Jonathan Coleman</h3>
+                        <p class="model__position">Managing Director</p>
+                     </div>
+                  </li>
+                  <li class="model__item">
+                     <div class="model__img-wrapper">
+                        <img src="img/model/person-5.webp" alt="woman"
+                           width="386">
+                     </div>
+                     <div class="model__social-networks social-networks">
+                        <ul class="social-networks__list">
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/insta.svg"
+                                    alt="instagram icon" width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/fb.svg" alt="facebook icon"
+                                    width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/twiter.svg"
+                                    alt="twiter icon" width="45">
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="model__text-content">
+                        <h3 class="model__name">Wanda Forsyth</h3>
+                        <p class="model__position">Designer</p>
+                     </div>
+                  </li>
+                  <li class="model__item">
+                     <div class="model__img-wrapper">
+                        <img src="img/model/person-6.webp" alt="man"
+                           width="386">
+                     </div>
+                     <div class="model__social-networks social-networks">
+                        <ul class="social-networks__list">
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/insta.svg"
+                                    alt="instagram icon" width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/fb.svg" alt="facebook icon"
+                                    width="45">
+                              </a>
+                           </li>
+                           <li class="social-networks__item">
+                              <a class="social-networks__link" href="#">
+                                 <img src="img/model/twiter.svg"
+                                    alt="twiter icon" width="45">
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="model__text-content">
+                        <h3 class="model__name">Austin Randall</h3>
+                        <p class="model__position">Marketing Specialist</p>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </main>
+
+      <footer class="footer">
+         <div class="footer__container">
+            <p>Footer</p>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
