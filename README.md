@@ -1,6 +1,6 @@
 Lesson-2. File structure, familiarity with HTML 
 
-          https://natashafedorova.github.io/lessons/lesson-2/
+https://natashafedorova.github.io/lessons/lesson-2/
 
 
 Lesson-3. HTML nesting, CSS
