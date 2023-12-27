@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon/fav.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 13</title>
+
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <ul class="header__nav nav">
+               <li class="nav__item">
+                  <a class="nav__link" href="#practice">Practice</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#car">Car</a>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <main>
+         <div class="hero">
+            <div class="hero__container">
+               <h1 class="hero__title">Lesson &#35;13. CSS-transformation</h1>
+            </div>
+         </div>
+         <div class="practice" id="practice">
+            <div class="practice__container">
+               <p class="accent">Please point to any of the examples and you
+                  will see the
+                  changes according to
+                  the inscription</p>
+               <ul class="practice__list">
+                  <li class="practice__item practice__item--translate-pixel">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: translate(20px, 20px);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class="practice__item practice__item--translate-percentage">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: translate(20%, 20%);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class="practice__item practice__item--translate-percentage-minus">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: translate(-10%, -10%);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--translate-x">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: translateX(-15%);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--translate-y">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: translateY(-15%);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--scale-default"
+                     title="unchanged">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: scale(1);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--scale-less">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: scale(0.5);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--scale-more">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: scale(1.2);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--scale-two-value">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: scale(0.9, 1.3);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--scale-x">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: scaleX(1.2);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--scale-y">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: scaleY(0.4);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--scale-mirror">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: scaleY(0.4);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--rotate-plus">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: rotate(10deg);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--rotate-minus">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: rotate(-10deg);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--rotate-x">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: rotateX(-40deg);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--rotate-y">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: rotateY(-40deg);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--skew-plus">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: skew(40deg);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--skew-minus">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: skew(-10deg);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--skew-plus-minus">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: skew(20deg, -20deg);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--skew-x">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: skewX(40deg);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--skew-y">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: skewY(10deg);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--matrix">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: matrix(1.2, .5, .5, -1, 70, -50);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--combine">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform: translate(70px, -50px) skew(-22deg, 20deg) scale(1.2, -1);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class="practice__item practice__item--transform-origin-default">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>
+                           transform-origin: 50% 50%;
+                           </code>
+                           <br>
+                           or
+                           <br>
+                           <code>
+                           transform-origin: 50%;
+                           </code>
+                           <br>
+                           or
+                           <br>
+                           <code>
+                           transform-origin: center;
+                           <br>
+                           transform: scale(0.5);
+                           </code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class="practice__item practice__item--transform-origin-top-left">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>transform-origin: top left;
+                           transform: scale(0.5);</code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class="practice__item practice__item--transform-origin-percentage">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>
+                              transform-origin: 70% 80%;
+                              transform: scale(0.5);
+                           </code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class="practice__item practice__item--transform-origin-rotate">
+                     <div class="practice__block  block">
+                        <span>
+                           <code>
+                              transform-origin: right bottom;
+                              transform: rotate(30deg);
+                           </code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class="practice__item practice__item--perspective-less-value">
+                     <div class="practice__block  block">
+                        <span>
+                           parent
+                           <br>
+                           <code>
+                              perspective: 20px;
+                              <br>
+                              perspective-origin: center;
+                           </code>
+                           <br>
+                           child
+                           <br>
+                           <code>
+                              transform: rotate3d(1, 1, 1, 20deg);
+                           </code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class="practice__item practice__item--perspective-more-value">
+                     <div class="practice__block  block">
+                        <span>
+                           parent
+                           <br>
+                           <code>
+                              perspective: 800px;
+                              <br>
+                              perspective-origin: center;
+                           </code>
+                           <br>
+                           child
+                           <br>
+                           <code>
+                           transform: rotate3d(1, 1, 1, 20deg);
+                           </code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class=" practice__item practice__item--perspective-more-value-rotate3d-flat">
+                     <div class="practice__block  block">
+                        <span>
+                           parent
+                           <br>
+                           <code>
+                              perspective: 800px;
+                              <br>
+                              perspective-origin: center;
+                              <br>
+                              transform-style: flat;
+                           </code>
+                           <br>
+                           child
+                           <br>
+                           <code>
+                              transform: rotateX(40deg);
+                           </code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class=" practice__item practice__item--perspective-more-value-rotate3d-preserve-3d">
+                     <div class="practice__block  block">
+                        <span>
+                           parent
+                           <br>
+                           <code>
+                              perspective: 800px;
+                              <br>
+                              perspective-origin: -150%;
+                              <br>
+                              transform-style: preserve-3d;
+                           </code>
+                           <br>
+                           child
+                           <br>
+                           <code>
+                              transform: rotateY(40deg);
+                           </code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class=" practice__item practice__item--backface-visibility-visible">
+                     <div class="practice__block  block">
+                        <span>
+                           parent
+                           <br>
+                           <code>
+                              perspective: 800px;
+                              <br>
+                              transform-style: preserve-3d;
+                           </code>
+                           <br>
+                           child
+                           <br>
+                           <code>
+                                 backface-visibility: visible;
+                                 transform: rotateY(180deg);
+                           </code>
+                        </span>
+                     </div>
+                  </li>
+                  <li
+                     class=" practice__item practice__item--backface-visibility-hidden">
+                     <div class="practice__block  block">
+                        <span>
+                           parent
+                           <br>
+                           <code>
+                              perspective: 800px;
+                              <br>
+                              transform-style: preserve-3d;
+                           </code>
+                           <br>
+                           child
+                           <br>
+                           <code>
+                              backface-visibility: hidden;
+                              transform: rotateY(180deg);
+                           </code>
+                        </span>
+                     </div>
+                  </li>
+                  <li class="practice__item practice__item--flip">
+                     <div class="flip">
+                        <div class="flip__body">
+                           <div class="flip__back">
+                              <span>
+                                 parent
+                                 <br>
+                                 <code>
+                                    perspective: 1000px;
+                                 </code>
+                                 <br>
+                                 body
+                                 <br>
+                                 <code>
+                                    transform-style: preserve-3d;
+                                 </code>
+                                 <br>
+                                 back
+                                 <br>
+                                 <code>
+                                    transform: rotateY(180deg);
+                                 </code>
+                                 <br>
+                                 parent:hover
+                                 <br>
+                                 <code>
+                                    backface-visibility: hidden;
+                                    transform: rotateY(0deg);
+                                 </code>
+                              </span>
+                           </div>
+                           <div class="flip__front">
+                              <span>
+                                 parent
+                                 <br>
+                                 <code>
+                                    perspective: 1000px;
+                                 </code>
+                                 <br>
+                                 body
+                                 <br>
+                                 <code>
+                                    transform-style: preserve-3d;
+                                 </code>
+                                 <br>
+                                 front
+                                 <br>
+                                 <code>
+                                       backface-visibility: hidden;
+                                       transform: rotateY(0deg);
+                                 </code>
+                                 <br>
+                                 parent:hover
+                                 <br>
+                                 <code>
+                                    transform: rotateY(-180deg);
+                                 </code>
+                              </span>
+                           </div>
+
+                        </div>
+                     </div>
+                  </li>
+
+               </ul>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <ul class="footer__nav nav">
+               <li class="nav__item">
+                  <a class="nav__link" href="#practice">Practice</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#car">Car</a>
+               </li>
+            </ul>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
