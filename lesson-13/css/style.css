@@ -341,9 +341,21 @@ body {
 
 /* ============================================================== */
 
-.car__wrapper {
-   width: 980px;
+.car {
+   height: 900px;
+   background: url('../img/city.webp') center/cover no-repeat;
+}
+
+.car__container {
    position: relative;
+}
+
+.car__wrapper {
+   position: absolute;
+   top: 364px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 980px;
    padding: 120px 0;
 }
 
