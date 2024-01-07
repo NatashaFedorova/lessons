@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 14</title>
+
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="bg">
+         <header class="header">
+            <div class="header__container">
+               <ul class="nav">
+                  <li class="nav__item">
+                     <a href="#practice" class="nav__link">Practice</a>
+                  </li>
+                  <li class="nav__item">
+                     <a href="#car" class="nav__link">Car</a>
+                  </li>
+               </ul>
+            </div>
+         </header>
+         <main class="page">
+            <div class="practice" id="practice">
+               <div class="practice__container">
+                  <div class="practice__list">
+                     <div class="practice__item">
+                        <div class="practice__example-wrapper">
+                           <div
+                              class="practice__example practice__example--transition-duration">
+                           </div>
+                        </div>
+                        <p class="practice__code">
+                           <span>element</span>
+                           <br>
+                           <code>transition-duration: 300ms;</code>
+                           <br>
+                           <span>parent:hover > child</span>
+                           <br>
+                           <code>
+                              background-color: rgb(246, 140, 65);
+                              <br>
+                              width: 200px;
+                           </code>
+                        </p>
+                     </div>
+                     <div class="practice__item">
+                        <div class="practice__example-wrapper">
+                           <div
+                              class="practice__example practice__example--transition-duration-second">
+                           </div>
+                        </div>
+                        <p class="practice__code">
+                           <span>element</span>
+                           <br>
+                           <code>transition-duration: 300ms;</code>
+                           <br>
+                           <span>parent:hover > child</span>
+                           <br>
+                           <code>
+                              background-color: rgb(246, 141, 66);
+                              <br>
+                              width: 200px;
+                              <br>
+                              transition-duration: 800ms;
+                           </code>
+                        </p>
+                     </div>
+                     <div class="practice__item">
+                        <div class="practice__example-wrapper">
+                           <div
+                              class="practice__example practice__example--transition-property-all">
+                           </div>
+                        </div>
+                        <p class="practice__code">
+                           <span>element</span>
+                           <br>
+                           <code>
+                              background-color: chocolate;
+                              <br>
+                              transform: translateX(0%);
+                              <br>
+                              transition-property: all;
+                              <br>
+                              transition-duration: 500ms;
+                           </code>
+                           <br>
+                           <span>parent:hover > child</span>
+                           <br>
+                           <code>
+                              background-color: rgb(174, 30, 30);
+                                 <br>
+                              transform: translateX(100%);
+                           </code>
+                        </p>
+                     </div>
+                     <div class="practice__item">
+                        <div class="practice__example-wrapper">
+                           <div
+                              class="practice__example practice__example--transition-property-transform">
+                           </div>
+                        </div>
+                        <p class="practice__code">
+                           <span>element</span>
+                           <br>
+                           <code>
+                              background-color: chocolate;
+                              <br>
+                              transform: translateX(0%);
+                              <br>
+                              transition-property: transform;
+                              <br>
+                              transition-duration: 800ms;
+                           </code>
+                           <br>
+                           <span>parent:hover > child</span>
+                           <br>
+                           <code>
+                              background-color: rgb(174, 30, 30);
+                              <br>
+                              transform: translateX(100%);
+                           </code>
+                        </p>
+                     </div>
+                     <div class="practice__item">
+                        <div class="practice__example-wrapper">
+                           <div
+                              class="practice__example practice__example--transition-property-bg-transform">
+                           </div>
+                        </div>
+                        <p class="practice__code">
+                           <span>element</span>
+                           <br>
+                           <code>
+                              background-color: chocolate;
+                              <br>
+                              transform: translateX(0%);
+                              <br>
+                              transition-property: transform, background-color;
+                              <br>
+                              transition-duration: 300ms, 1000ms;
+                           </code>
+                           <br>
+                           <span>parent:hover > child</span>
+                           <br>
+                           <code>
+                              background-color: rgb(174, 30, 30);
+                              <br>
+                              transform: translateX(100%);
+                           </code>
+                        </p>
+                     </div>
+                     <div class="practice__item">
+                        <div class="practice__example-wrapper">
+                           <div
+                              class="practice__example practice__example--transition-delay">
+                           </div>
+                        </div>
+                        <p class="practice__code">
+                           <span>element</span>
+                           <br>
+                           <code>transition-delay: 500ms;</code>
+                           <br>
+                           <span>parent:hover > child</span>
+                           <br>
+                           <code>transform: rotate(-45deg);</code>
+                        </p>
+                     </div>
+                     <div class="practice__item">
+                        <div class="practice__example-wrapper">
+                           <div
+                              class="practice__example practice__example--transition-delay-duration">
+                           </div>
+                        </div>
+                        <p class="practice__code">
+                           <span>element</span>
+                           <br>
+                           <code>transition-property: transform, background-color;
+                              <br>transition-duration: 500ms;
+                              <br>transition-delay: 0ms, 600ms;
+                           </code>
+                           <br>
+                           <span>parent:hover > child</span>
+                           <br>
+                           <code>transform: rotate(-85deg);
+                              <br>background-color: rgb(210, 45, 30);
+                           </code>
+                        </p>
+                     </div>
+                     <div class="practice__item">
+                        <div class="practice__example-wrapper">
+                           <div
+                              class="practice__examples-list transition-delay-list">
+                              <div class="transition-delay-list__item"></div>
+                              <div class="transition-delay-list__item"></div>
+                              <div class="transition-delay-list__item"></div>
+                              <div class="transition-delay-list__item"></div>
+                              <div class="transition-delay-list__item"></div>
+                           </div>
+                        </div>
+                        <p class="practice__code">
+                           <span>element</span>
+                           <br>
+                           <code>transform: translateX(-200%);
+                              <br>transition-property: transform;
+                              <br>transition-duration: 300ms;
+                           </code>
+                           <br>
+                           <span>element:nth-child(1)</span>
+                           <br>
+                           <code>transition-delay: 0ms;</code>
+
+                           <br>
+                           <span>element:nth-child(2)</span>
+                           <br>
+                           <code>transition-delay: 200ms;</code>
+
+                           <br>
+                           <span>element:nth-child(3)</span>
+                           <br>
+                           <code>transition-delay: 500ms;</code>
+
+                           <br>
+                           <span>element:nth-child(4)</span>
+                           <br>
+                           <code>transition-delay: 800ms;</code>
+
+                           <br>
+                           <span>element:nth-child(5)</span>
+                           <br>
+                           <code>transition-delay: 1100ms;</code>
+
+                           <br>
+                           <span>parent:hover > child</span>
+                           <br>
+                           <code>transform: translateX(100%);</code>
+                        </p>
+                     </div>
+
+                     <div class="practice__item">
+                        <div class="practice__example-wrapper clock-wrapper">
+                           <img class="clock" src="img/clock.svg" alt="clock" width="300">
+                        </div>
+                        <p class="practice__code">
+                           <span>element</span>
+                           <br>
+                           <code>transition-duration: 100ms;</code>
+                           <br>
+                           <code>transform: translateX(100%);</code>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+            <!-- <div class="car" id="car">
+                  <div class="car__container">
+                     <p>Car</p>
+                  </div>
+               </div> -->
+         </main>
+         <footer class="footer">
+            <div class="footer__container">
+               <p class="footer__name">Fedorova Natalia</p>
+            </div>
+         </footer>
+      </div>
+   </div>
+</body>
+
+</html>
