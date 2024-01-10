@@ -1,0 +1,11 @@
+/* font-family: 'Ephesis', cursive; */
+
+@font-face {
+   font-family: 'Ephesis';
+   src: url('../fonts/ephesis-regular.woff2') format('woff2'),
+      url('../fonts/ephesis-regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
