@@ -113,10 +113,6 @@
    border: 1px solid #807d7e;
 }
 
-.models-header__input:hover::placeholder {
-   opacity: 0;
-}
-
 .models-header__input:focus {
    outline: 1px solid #807d7e;
 }
