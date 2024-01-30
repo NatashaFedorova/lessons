@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon/fav.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 16 | Form</title>
+
+</head>
+
+<body class="body">
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <ul class="header__nav nav">
+               <li class="nav__item">
+                  <a class="nav__link" href="#practice">Practice</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#my-info">My Info</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#check-out">Check Out</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#call-back">Call Back</a>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <main class="page">
+         <div class="hero">
+            <div class="hero__container">
+               <h1 class="hero__title">Form</h1>
+            </div>
+         </div>
+         <div class="practice">
+            <div class="practice__container">
+               <form class="practice__form form-practice" action="#"
+                  method="GET" enctype="multipart/form-data" data-practice-form>
+                  <fieldset class="form-practice__groupe">
+                     <legend class="form-practice__title-groupe">Name</legend>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="first-name">
+                           First Name &#42;
+                        </label>
+                        <input class="form-practice__input" id="first-name"
+                           type="text" name="first-name" minlength="1"
+                           maxlength="20" title="from 1 to 20 letters" required>
+                     </div>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="last-name">
+                           Last Name
+                        </label>
+                        <input class="form-practice__input" id="last-name"
+                           type="text" name="last-name" minlength="1"
+                           maxlength="20" title="from 1 to 20 letters">
+                     </div>
+                  </fieldset>
+                  <fieldset class="form-practice__groupe">
+                     <legend class="form-practice__title-groupe">
+                        Contacts
+                     </legend>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="email">
+                           Email &#42;
+                        </label>
+                        <input class="form-practice__input" id="last-name"
+                           type="email" name="email" required>
+                     </div>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="phone-number">
+                           Phone number
+                        </label>
+                        <input class="form-practice__input" id="phone-number"
+                           type="tel" name="phone-number">
+                     </div>
+
+                  </fieldset>
+                  <div class="form-practice__buttons-wrapper">
+                     <button class="form-practice__button" type="reset">
+                        Reset
+                     </button>
+                     <button class="form-practice__button" type="submit">
+                        Submit
+                     </button>
+               </form>
+            </div>
+         </div>
+
+         <!-- <form action="" method="get">
+            <div class="form__input-wrapper">
+               <input style="border: 1px solid red;" type="text"
+                  inputmode="numeric" pattern="[0-9]{16}" name="card-num"
+                  title="Enter the 16-digit payment card number">
+            </div>
+            <button type="submit">Send</button>
+         </form> -->
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <ul class="header__nav nav">
+               <li class="nav__item">
+                  <a class="nav__link" href="#practice">Practice</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#my-info">My Info</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#check-out">Check Out</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#call-back">Call Back</a>
+               </li>
+            </ul>
+            <p class="footer__name">Fedorova Nataliya</p>
+         </div>
+      </footer>
+   </div>
+   <script src="js/js.js" type="module"></script>
+</body>
+
+</html>
