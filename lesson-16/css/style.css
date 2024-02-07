@@ -99,7 +99,7 @@ input {
 }
 
 .hero {
-   background: url('../img/bg.webp') center/ cover no-repeat;
+   background: rgb(1, 26, 1) url('../img/bg.webp') center/ cover no-repeat;
    padding: 150px 0;
    box-shadow: 0px 0px 13px 0px rgb(1, 102, 1);
 }
@@ -123,11 +123,12 @@ input {
    border: 1px solid rgb(1, 102, 1);
    border-radius: 4px;
    display: flex;
+   align-items: center;
    gap: 30px;
 }
 
 .form-practice__groupe > * {
-   flex: 1 1 auto;
+   flex: 1 1 50%;
 }
 
 .form-practice__title-groupe {
@@ -140,12 +141,16 @@ input {
 
 .form-practice__label {
    font-size: 24px;
-   width: max-content;
+   max-width: max-content;
 }
 
 .form-practice__line > * {
    display: block;
    margin-bottom: 10px;
+}
+
+.form-practice__line--margin > * {
+   margin-bottom: 0;
 }
 
 .form-practice__line > *:last-child {
@@ -162,6 +167,11 @@ input {
    transition: all 300ms;
 }
 
+.form-practice__input::placeholder {
+   color: rgba(242, 242, 242, 0.4);
+   transition: all 300ms;
+}
+
 .form-practice__input:hover {
    border: 1px solid rgb(1, 102, 1);
 }
@@ -170,6 +180,71 @@ input {
    color: rgb(1, 102, 1);
    border: 1px solid rgb(1, 102, 1);
    outline: 1px solid rgb(1, 102, 1);
+}
+
+.form-practice__input:focus::placeholder {
+   opacity: 0;
+}
+
+/* колір календаря буде світлий */
+.form-practice__input--calendar {
+   color-scheme: dark;
+}
+
+.form-practice__line--flex {
+   flex: 0 1 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+.form-practice__label--checkbox {
+   flex: 1 1 50%;
+}
+
+.form-practice__input--checkbox,
+.form-practice__input--radio {
+   flex: 0 0 24px;
+   min-height: 24px;
+   line-height: 1;
+}
+
+.form-practice__input--checkbox,
+.form-practice__input--radio {
+   flex: 0 0 24px;
+   min-height: 24px;
+   line-height: 1;
+}
+
+.form-practice__text {
+   color: rgba(242, 242, 242, 0.6);
+}
+
+.form-practice__select {
+   flex: 0 0 50%;
+   background-color: rgba(10, 10, 10, 0.8);
+   color: #f2f2f2;
+   padding: 10px;
+   font-family: 'Causten', sant-serif;
+   font-size: 24px;
+   border: 1px solid #f2f2f2;
+}
+
+.form-practice__option {
+   width: 100%;
+   font-size: 20px;
+}
+
+.form-practice__input--color {
+   flex: 0 0 50%;
+   height: 50px;
+   padding: 0;
+}
+
+.form-practice__groupe-block {
+   display: flex;
+   gap: 30px;
 }
 
 .form-practice__buttons-wrapper {
