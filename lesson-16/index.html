@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon/fav.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Form | Practice</title>
+
+</head>
+
+<body class="body">
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <ul class="header__nav nav">
+               <li class="nav__item">
+                  <a class="nav__link" href="index.html">Practice</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="models.html#my-info">My Info</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="models.html#check-out">Check
+                     Out</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="models.html#call-back">Call
+                     Back</a>
+               </li>
+            </ul>
+         </div>
+      </header>
+      <main class="page">
+         <div class="hero">
+            <div class="hero__container">
+               <h1 class="hero__title">Form</h1>
+            </div>
+         </div>
+         <div class="practice">
+            <div class="practice__container">
+               <form class="practice__form form-practice" action="#"
+                  method="GET" enctype="multipart/form-data" data-practice-form>
+                  <fieldset class="form-practice__groupe">
+                     <legend class="form-practice__title-groupe">Name</legend>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="first-name">
+                           First Name &#42;
+                        </label>
+                        <input class="form-practice__input" id="first-name"
+                           type="text" name="first-name" minlength="1"
+                           maxlength="20" placeholder="First Name"
+                           title="From 1 to 20 letters" required>
+                     </div>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="last-name">
+                           Last Name
+                        </label>
+                        <input class="form-practice__input" id="last-name"
+                           type="text" name="last-name" placeholder="Last Name"
+                           minlength="1" maxlength="20"
+                           title="From 1 to 20 letters">
+                     </div>
+                  </fieldset>
+                  <fieldset class="form-practice__groupe">
+                     <legend class="form-practice__title-groupe">
+                        Contacts
+                     </legend>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="email">
+                           Email &#42;
+                        </label>
+                        <input class="form-practice__input" id="email"
+                           placeholder="example@gmail.com" type="email"
+                           name="email" required>
+                     </div>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="phone-number">
+                           Phone number
+                        </label>
+                        <input class="form-practice__input" id="phone-number"
+                           type="tel" name="phone-number"
+                           placeholder="+380000000000" tabindex="-1"
+                           minlength="10" maxlength="13">
+                     </div>
+                  </fieldset>
+                  <fieldset class="form-practice__groupe">
+                     <legend class="form-practice__title-groupe">
+                        Age
+                     </legend>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="full-years">
+                           Full Years
+                        </label>
+                        <input class="form-practice__input" id="full-years"
+                           placeholder="Full  years" type="number"
+                           name="full-years">
+                     </div>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="birth">
+                           Date of birth &#42;
+                        </label>
+                        <input
+                           class="form-practice__input form-practice__input--calendar"
+                           type="date" id="birth" name="birth" min="1950-01-01"
+                           max="2007-12-31" autocomplete="off" required>
+                     </div>
+                  </fieldset>
+                  <fieldset class="form-practice__groupe ">
+                     <legend class="form-practice__title-groupe">
+                        Property
+                     </legend>
+                     <div
+                        class="form-practice__line form-practice__line--flex form-practice__line--margin">
+                        <input
+                           class="form-practice__input  form-practice__input--checkbox"
+                           id="is-car" type="checkbox" name="is-car">
+                        <label
+                           class="form-practice__label form-practice__label--checkbox"
+                           for="is-car">
+                           Have you a car?
+                        </label>
+                     </div>
+                     <div
+                        class="form-practice__line form-practice__line--flex form-practice__line--margin">
+                        <input
+                           class="form-practice__input  form-practice__input--checkbox"
+                           id="is-flat" type="checkbox" name="is-flat">
+                        <label
+                           class="form-practice__label form-practice__label--checkbox"
+                           for="is-flat">
+                           Have you a flat?
+                        </label>
+                     </div>
+                  </fieldset>
+
+                  <fieldset class="form-practice__groupe">
+                     <legend class="form-practice__title-groupe">
+                        Car
+                     </legend>
+                     <div
+                        class="form-practice__line form-practice__line--flex form-practice__line--margin">
+                        <label class="form-practice__label" for="brand">
+                           Brand
+                        </label>
+                        <input class="form-practice__input" id="brand"
+                           type="text" minlength="2" maxlength="20">
+                     </div>
+
+                     <div class="form-practice__block">
+                        <div
+                           class="form-practice__line form-practice__line--flex form-practice__line--margin">
+                           <label class="form-practice__label" for="fuel">
+                              Fuel
+                           </label>
+                           <input
+                              class="form-practice__input form-practice__input--radio"
+                              id="fuel" type="radio" name="ecology"
+                              value="fuel">
+                           <label class="form-practice__label" for="electro">
+                              Electro
+                           </label>
+                           <input
+                              class="form-practice__input form-practice__input--radio"
+                              id="electro" type="radio" name="ecology"
+                              value="electro">
+                           <label class="form-practice__label" for="hybrid">
+                              Hybrid
+                           </label>
+                           <input
+                              class="form-practice__input form-practice__input--radio"
+                              id="hybrid" type="radio" name="ecology"
+                              value="hybrid">
+                        </div>
+                     </div>
+                  </fieldset>
+
+                  <fieldset class="form-practice__groupe ">
+                     <legend class="form-practice__title-groupe">
+                        About car
+                     </legend>
+                     <div
+                        class="form-practice__line form-practice__line--flex form-practice__line--margin">
+                        <label class="form-practice__label" for="type">
+                           Type
+                        </label>
+                        <select class="form-practice__select" name="type"
+                           id="type">
+                           <option class="form-practice__option" value="sedan">
+                              Sedan</option>
+                           <option class="form-practice__option"
+                              value="hatchback">Hatchback</option>
+                           <option class="form-practice__option" value="pickup">
+                              Pickup</option>
+                           <option class="form-practice__option" value="jeep">
+                              Jeep</option>
+                        </select>
+                     </div>
+                     <div
+                        class="form-practice__line  form-practice__line--flex form-practice__line--margin">
+                        <label class="form-practice__label" for="color">
+                           Color
+                        </label>
+                        <input
+                           class="form-practice__input form-practice__input--color"
+                           id="color" type="color" name="color" value="#000000">
+                     </div>
+                  </fieldset>
+
+                  <fieldset class="form-practice__groupe ">
+                     <legend class="form-practice__title-groupe">
+                        Other
+                     </legend>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="password">
+                           Password
+                        </label>
+                        <input class="form-practice__input" id="password"
+                           type="password" name="password"
+                           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                           title="Minimum of eight characters, at least one uppercase letter, one lowercase letter, one number, and one special character">
+                     </div>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="file">
+                           Add file
+                        </label>
+                        <input class="form-practice__input" id="file"
+                           type="file" name="file"
+                           accept="image/webp, image/jpeg, image/png">
+                     </div>
+                     <div class="form-practice__line">
+                        <label class="form-practice__label" for="progress">
+                           Progress
+                        </label>
+                        <input class="form-practice__input range-form-practice"
+                           id="progress" type="range" name="progress" min="0"
+                           max="10" value="5" step="1">
+                     </div>
+                  </fieldset>
+
+                  <!-- ================= hidden=========================== -->
+                  <div class="form-practice__line">
+                     <p class="form-practice__text">
+                        A hidden input that cannot be filled in by the user, but
+                        contains some data
+                     </p>
+                     <input class="form-practice__input" type="hidden" name="os"
+                        value="windows">
+                  </div>
+                  <!-- ==================================================== -->
+
+                  <div class="form-practice__buttons-wrapper">
+                     <button class="form-practice__button" type="reset">
+                        Reset
+                     </button>
+                     <button class="form-practice__button" type="submit">
+                        Submit
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <ul class="footer__nav nav">
+               <li class="nav__item">
+                  <a class="nav__link" href="index.html">Practice</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="models.html#my-info">My Info</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="models.html#check-out">Check
+                     Out</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="models.html#call-back">Call
+                     Back</a>
+            </ul>
+            <p class="footer__name">Fedorova Nataliya</p>
+         </div>
+      </footer>
+   </div>
+   <script src="js/practice.js" type="module"></script>
+</body>
+
+</html>
+
+
+<!-- <input id="card-number" type="text" inputmode="numeric"
+   pattern="[0-9\\s]{13,19}" autocomplete="cc-number" maxlength="19"
+   title="Enter the 16-digit payment card number" required> -->
