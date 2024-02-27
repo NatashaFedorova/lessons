@@ -104,6 +104,10 @@ select {
    transition: all 300ms;
 }
 
+.nav__link--line-bg::after {
+   background-color: rgba(138, 51, 253, 0.8);
+}
+
 .nav__link:hover::after {
    transform: scale(1);
 }
