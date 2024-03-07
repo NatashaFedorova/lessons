@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="img/favicon/fav.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Form | Models</title>
+
+</head>
+
+<body class="body body--model">
+   <div class="wrapper">
+      <header class="header header--mb">
+         <div class="header__container">
+            <ul class="header__nav nav">
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg"
+                     href="index.html">Practice</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg" href="#my-info">My
+                     Info</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg"
+                     href="#check-out">Check
+                     Out</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg" href="#call-back">Call
+                     Back</a>
+            </ul>
+         </div>
+      </header>
+      <main class="page">
+         <div class="my-info" id="my-info">
+            <div class="my-info__container">
+               <h2 class="my-info__title section-title">my info</h2>
+               <h3 class="my-info__section-subtitle section-subtitle">Add
+                  Address</h3>
+               <form class="my-info__form" action="#" method="GET"
+                  enctype="multipart/form-data" data-my-info-form>
+                  <div class="my-info__main-part-form main-part-form">
+                     <div class="my-info__text-part-form">
+                        <div class="my-info__column">
+                           <div class="my-info__line">
+                              <label class="my-info__label models-label"
+                                 for="info-first-name">
+                                 First Name&#42;
+                              </label>
+                              <input class="my-info__input models-input"
+                                 id="info-first-name" type="text"
+                                 name="firstName" minlength="1" maxlength="20"
+                                 placeholder="First Name"
+                                 title="From 1 to 20 letters" required>
+                           </div>
+                        </div>
+                        <div class="my-info__column">
+                           <div class="my-info__line">
+                              <label class="my-info__label models-label"
+                                 for="info-last-name">
+                                 Last Name&#42;
+                              </label>
+                              <input class="my-info__input models-input"
+                                 id="info-last-name" type="text" name="lastName"
+                                 minlength="1" maxlength="20"
+                                 placeholder="Last Name"
+                                 title="From 1 to 20 letters" required>
+                           </div>
+                        </div>
+                        <div class="my-info__column">
+                           <div class="my-info__line">
+                              <label class="my-info__label models-label"
+                                 for="info-country">
+                                 Country &#47; Region&#42;
+                              </label>
+                              <input class="my-info__input models-input"
+                                 id="info-country" type="text" name="country"
+                                 minlength="1" maxlength="20"
+                                 placeholder="Country &#47; Region"
+                                 title="From 1 to 20 letters" required>
+                           </div>
+                        </div>
+                        <div class="my-info__column">
+                           <div class="my-info__line">
+                              <label class="my-info__label models-label"
+                                 for="info-company">
+                                 Company Name
+                              </label>
+                              <input
+                                 class="my-info__input models-input models-input--ttransform"
+                                 id="info-company" type="text" name="company"
+                                 minlength="1" maxlength="30"
+                                 placeholder="Company &#40;optional&#41;"
+                                 title="From 1 to 30 letters">
+                           </div>
+                        </div>
+                        <div class="my-info__column">
+                           <div class="my-info__line">
+                              <label class="my-info__label models-label"
+                                 for="info-street-address">
+                                 Street Address&#42;
+                              </label>
+                              <input class="my-info__input models-input"
+                                 id="info-street-address" type="text"
+                                 name="streetAddress" minlength="1"
+                                 maxlength="20"
+                                 placeholder="House number and street name"
+                                 title="From 1 to 20 letters" required>
+                           </div>
+                        </div>
+                        <div class="my-info__column">
+                           <div class="my-info__line">
+                              <label class="my-info__label models-label"
+                                 for="info-apt">
+                                 Apt, suite, unit
+                              </label>
+                              <input
+                                 class="my-info__input models-input models-input--ttransform"
+                                 id="info-apt" type="number" name="apt" min="1"
+                                 placeholder="Apartment, suite, unit, etc. &#40;optional&#41;"
+                                 title="Enter a number from 1">
+                           </div>
+                        </div>
+                        <div class="my-info__column">
+                           <div class="my-info__line">
+                              <label class="my-info__label models-label"
+                                 for="info-сity">
+                                 City&#42;
+                              </label>
+                              <input class="my-info__input models-input"
+                                 id="info-сity" type="text" name="сity"
+                                 minlength="1" maxlength="30"
+                                 placeholder="Town &#47; City"
+                                 title="From 1 to 30 letters" required>
+                           </div>
+                        </div>
+                        <div class="my-info__column">
+                           <div class="my-info__line ">
+                              <label class="my-info__label models-label"
+                                 for="info-state">
+                                 State&#42;
+                              </label>
+                              <select class="my-info__select models-select"
+                                 id="info-state" name="state" required>
+                                 <option class="models-select__option" value="">
+                                    State</option>
+                                 <option class="models-select__option"
+                                    value="al">
+                                    Alabama</option>
+                                 <option class="models-select__option"
+                                    value="ak">
+                                    Alaska</option>
+                                 <option class="models-select__option"
+                                    value="az">
+                                    Arizona</option>
+                                 <option class="models-select__option"
+                                    value="ar">
+                                    Arkansas</option>
+                                 <option class="models-select__option"
+                                    value="ca">
+                                    California</option>
+                                 <option class="models-select__option"
+                                    value="co">
+                                    Colorado</option>
+                                 <option class="models-select__option"
+                                    value="ct">
+                                    Connecticut</option>
+                                 <option class="models-select__option"
+                                    value="de">
+                                    Delaware</option>
+                                 <option class="models-select__option"
+                                    value="dc">
+                                    District Of Columbia
+                                 </option>
+                                 <option class="models-select__option"
+                                    value="fl">
+                                    Florida</option>
+                                 <option class="models-select__option"
+                                    value="ga">
+                                    Georgia</option>
+                                 <option class="models-select__option"
+                                    value="hi">
+                                    Hawaii</option>
+                                 <option class="models-select__option"
+                                    value="id">
+                                    Idaho</option>
+                                 <option class="models-select__option"
+                                    value="il">
+                                    Illinois</option>
+                                 <option class="models-select__option"
+                                    value="in">
+                                    Indiana</option>
+                                 <option class="models-select__option"
+                                    value="ia">Iowa
+                                 </option>
+                                 <option class="models-select__option"
+                                    value="ks">
+                                    Kansas</option>
+                                 <option class="models-select__option"
+                                    value="ky">
+                                    Kentucky</option>
+                                 <option class="models-select__option"
+                                    value="la">
+                                    Louisiana</option>
+                                 <option class="models-select__option"
+                                    value="me">
+                                    Maine</option>
+                                 <option class="models-select__option"
+                                    value="md">
+                                    Maryland</option>
+                                 <option class="models-select__option"
+                                    value="ma">
+                                    Massachusetts</option>
+                                 <option class="models-select__option"
+                                    value="mi">
+                                    Michigan</option>
+                                 <option class="models-select__option"
+                                    value="mn">
+                                    Minnesota</option>
+                                 <option class="models-select__option"
+                                    value="ms">
+                                    Mississippi</option>
+                                 <option class="models-select__option"
+                                    value="mo">
+                                    Missouri</option>
+                                 <option class="models-select__option"
+                                    value="mt">
+                                    Montana</option>
+                                 <option class="models-select__option"
+                                    value="ne">
+                                    Nebraska</option>
+                                 <option class="models-select__option"
+                                    value="nv">
+                                    Nevada</option>
+                                 <option class="models-select__option"
+                                    value="nh">New
+                                    Hampshire</option>
+                                 <option class="models-select__option"
+                                    value="nj">New
+                                    Jersey</option>
+                                 <option class="models-select__option"
+                                    value="nm">New
+                                    Mexico</option>
+                                 <option class="models-select__option"
+                                    value="ny">New
+                                    York</option>
+                                 <option class="models-select__option"
+                                    value="nc">
+                                    North Carolina</option>
+                                 <option class="models-select__option"
+                                    value="nd">
+                                    North Dakota</option>
+                                 <option class="models-select__option"
+                                    value="oh">Ohio
+                                 </option>
+                                 <option class="models-select__option"
+                                    value="ok">
+                                    Oklahoma</option>
+                                 <option class="models-select__option"
+                                    value="or">
+                                    Oregon</option>
+                                 <option class="models-select__option"
+                                    value="pa">
+                                    Pennsylvania</option>
+                                 <option class="models-select__option"
+                                    value="ri">
+                                    Rhode Island</option>
+                                 <option class="models-select__option"
+                                    value="sc">
+                                    South Carolina</option>
+                                 <option class="models-select__option"
+                                    value="sd">
+                                    South Dakota</option>
+                                 <option class="models-select__option"
+                                    value="tn">
+                                    Tennessee</option>
+                                 <option class="models-select__option"
+                                    value="tx">
+                                    Texas</option>
+                                 <option class="models-select__option"
+                                    value="ut">Utah
+                                 </option>
+                                 <option class="models-select__option"
+                                    value="vt">
+                                    Vermont</option>
+                                 <option class="models-select__option"
+                                    value="va">
+                                    Virginia</option>
+                                 <option class="models-select__option"
+                                    value="wa">
+                                    Washington</option>
+                                 <option class="models-select__option"
+                                    value="wv">West
+                                    Virginia</option>
+                                 <option class="models-select__option"
+                                    value="wi">
+                                    Wisconsin</option>
+                                 <option class="models-select__option"
+                                    value="wy">
+                                    Wyoming</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="my-info__column">
+                           <div class="my-info__line">
+                              <label class="my-info__label models-label"
+                                 for="info-phone">
+                                 Phone&#42;
+                              </label>
+                              <input class="my-info__input models-input"
+                                 id="info-phone" type="tel" name="phone"
+                                 minlength="8" maxlength="15"
+                                 placeholder="Phone" title="Phone number"
+                                 required>
+                           </div>
+                        </div>
+                        <div class="my-info__column">
+                           <div class="my-info__line">
+                              <label class="my-info__label models-label"
+                                 for="info-postal-code">
+                                 Postal Code&#42;
+                              </label>
+                              <input class="my-info__input models-input"
+                                 id="info-postal-code" type="text"
+                                 name="postalCode" pattern="[0-9]+"
+                                 placeholder="Postal Code" title="Only numbers"
+                                 required>
+                           </div>
+                        </div>
+                        <div class="my-info__column">
+                           <div class="my-info__line">
+                              <label class="my-info__label models-label"
+                                 for="info-delivery">
+                                 Delivery Instruction
+                              </label>
+                              <textarea
+                                 class="my-info__textarea models-textarea"
+                                 name="delivery" id="info-delivery"
+                                 placeholder="Delivery Instruction"
+                                 minlength="2" spellcheck="true"
+                                 title="Length of at least 2 letters"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="my-info__checkboxs-form checkboxs">
+                        <div class="my-info__line my-info__line--flex">
+                           <input
+                              class="my-info__input-checkbox models-checkbox"
+                              id="info-defaul-shippin-address" type="checkbox"
+                              name="defaulShippinAddress">
+                           <label
+                              class="my-info__label models-label  models-label--checkbox"
+                              for="info-defaul-shippin-address">
+                              Set as default shipping address
+                           </label>
+                        </div>
+                        <div class="my-info__line my-info__line--flex">
+                           <input
+                              class="my-info__input-checkbox models-checkbox"
+                              id="info-default-billing-address" type="checkbox"
+                              name="defaultBillingAddress">
+                           <label
+                              class="my-info__label models-label models-label--checkbox"
+                              for="info-default-billing-address">
+                              Set as default billing address
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="my-info__buttons-wrapper">
+                     <button class="my-info__btn my-info__btn--save"
+                        type="submit">Save</button>
+                     <button class="my-info__btn my-info__btn--cancel"
+                        type="submit">Cancel</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+
+         <div class="check-out" id="check-out">
+            <div class="check-out__container">
+               <h2 class="check-out__title section-title">check out</h2>
+               <h3 class="check-out__section-subtitle section-subtitle">Billing
+                  Details</h3>
+               <form class="check-out__user-form" action="#" method="POST"
+                  enctype="multipart/form-data" data-check-out-form>
+                  <div class="check-out__about-user">
+                     <div class="check-out__column">
+                        <div class="check-out__line">
+                           <label class="check-out__label models-label"
+                              for="check-out-first-name">
+                              First Name&#42;
+                           </label>
+                           <input class="check-out__input models-input"
+                              id="check-out-first-name" type="text"
+                              name="firstName" minlength="1" maxlength="20"
+                              placeholder="First Name"
+                              title="From 1 to 20 letters" required>
+                        </div>
+                     </div>
+                     <div class="check-out__column">
+                        <div class="check-out__line">
+                           <label class="check-out__label models-label"
+                              for="check-out-last-name">
+                              Last Name&#42;
+                           </label>
+                           <input class="check-out__input models-input"
+                              id="check-out-last-name" type="text"
+                              name="lastName" minlength="1" maxlength="20"
+                              placeholder="Last Name"
+                              title="From 1 to 20 letters" required>
+                        </div>
+                     </div>
+                     <div class="check-out__column">
+                        <div class="check-out__line">
+                           <label class="check-out__label models-label"
+                              for="check-out-country">
+                              Country &#47; Region&#42;
+                           </label>
+                           <input class="check-out__input models-input"
+                              id="check-out-country" type="text" name="country"
+                              minlength="1" maxlength="20"
+                              placeholder="Country &#47; Region"
+                              title="From 1 to 20 letters" required>
+                        </div>
+                     </div>
+                     <div class="check-out__column">
+                        <div class="check-out__line">
+                           <label class="check-out__label models-label"
+                              for="check-out-company">
+                              Company Name
+                           </label>
+                           <input
+                              class="check-out__input models-input models-input--ttransform"
+                              id="check-out-company" type="text" name="company"
+                              minlength="1" maxlength="30"
+                              placeholder="Company &#40;optional&#41;"
+                              title="From 1 to 30 letters">
+                        </div>
+                     </div>
+                     <div class="check-out__column">
+                        <div class="check-out__line">
+                           <label class="check-out__label models-label"
+                              for="check-out-street-address">
+                              Street Address&#42;
+                           </label>
+                           <input class="check-out__input models-input"
+                              id="check-out-street-address" type="text"
+                              name="streetAddress" minlength="1" maxlength="20"
+                              placeholder="House number and street name"
+                              title="From 1 to 20 letters" required>
+                        </div>
+                     </div>
+                     <div class="check-out__column">
+                        <div class="check-out__line">
+                           <label class="check-out__label models-label"
+                              for="check-out-apt">
+                              Apt, suite, unit
+                           </label>
+                           <input
+                              class="check-out__input models-input models-input--ttransform "
+                              id="check-out-apt" type="number" name="apt"
+                              min="1"
+                              placeholder="Apartment, suite, unit, etc. &#40;optional&#41;"
+                              title="Enter a number from 1">
+                        </div>
+                     </div>
+                     <div class="check-out__column check-out__column--width">
+                        <div class="check-out__line">
+                           <label class="check-out__label models-label"
+                              for="check-out-сity">
+                              City&#42;
+                           </label>
+                           <input class="check-out__input models-input"
+                              id="check-out-сity" type="text" name="сity"
+                              minlength="1" maxlength="30"
+                              placeholder="Town &#47; City"
+                              title="From 1 to 30 letters" required>
+                        </div>
+                     </div>
+                     <div class="check-out__column check-out__column--width">
+                        <div class="check-out__line ">
+                           <label class="check-out__label models-label"
+                              for="check-out-state">
+                              State&#42;
+                           </label>
+                           <select class="check-out__select models-select"
+                              id="check-out-state" name="state" required>
+                              <option class="models-select__option" value="">
+                                 State</option>
+                              <option class="models-select__option" value="al">
+                                 Alabama</option>
+                              <option class="models-select__option" value="ak">
+                                 Alaska</option>
+                              <option class="models-select__option" value="az">
+                                 Arizona</option>
+                              <option class="models-select__option" value="ar">
+                                 Arkansas</option>
+                              <option class="models-select__option" value="ca">
+                                 California</option>
+                              <option class="models-select__option" value="co">
+                                 Colorado</option>
+                              <option class="models-select__option" value="ct">
+                                 Connecticut</option>
+                              <option class="models-select__option" value="de">
+                                 Delaware</option>
+                              <option class="models-select__option" value="dc">
+                                 District Of Columbia
+                              </option>
+                              <option class="models-select__option" value="fl">
+                                 Florida</option>
+                              <option class="models-select__option" value="ga">
+                                 Georgia</option>
+                              <option class="models-select__option" value="hi">
+                                 Hawaii</option>
+                              <option class="models-select__option" value="id">
+                                 Idaho</option>
+                              <option class="models-select__option" value="il">
+                                 Illinois</option>
+                              <option class="models-select__option" value="in">
+                                 Indiana</option>
+                              <option class="models-select__option" value="ia">
+                                 Iowa
+                              </option>
+                              <option class="models-select__option" value="ks">
+                                 Kansas</option>
+                              <option class="models-select__option" value="ky">
+                                 Kentucky</option>
+                              <option class="models-select__option" value="la">
+                                 Louisiana</option>
+                              <option class="models-select__option" value="me">
+                                 Maine</option>
+                              <option class="models-select__option" value="md">
+                                 Maryland</option>
+                              <option class="models-select__option" value="ma">
+                                 Massachusetts</option>
+                              <option class="models-select__option" value="mi">
+                                 Michigan</option>
+                              <option class="models-select__option" value="mn">
+                                 Minnesota</option>
+                              <option class="models-select__option" value="ms">
+                                 Mississippi</option>
+                              <option class="models-select__option" value="mo">
+                                 Missouri</option>
+                              <option class="models-select__option" value="mt">
+                                 Montana</option>
+                              <option class="models-select__option" value="ne">
+                                 Nebraska</option>
+                              <option class="models-select__option" value="nv">
+                                 Nevada</option>
+                              <option class="models-select__option" value="nh">
+                                 New
+                                 Hampshire</option>
+                              <option class="models-select__option" value="nj">
+                                 New
+                                 Jersey</option>
+                              <option class="models-select__option" value="nm">
+                                 New
+                                 Mexico</option>
+                              <option class="models-select__option" value="ny">
+                                 New
+                                 York</option>
+                              <option class="models-select__option" value="nc">
+                                 North Carolina</option>
+                              <option class="models-select__option" value="nd">
+                                 North Dakota</option>
+                              <option class="models-select__option" value="oh">
+                                 Ohio
+                              </option>
+                              <option class="models-select__option" value="ok">
+                                 Oklahoma</option>
+                              <option class="models-select__option" value="or">
+                                 Oregon</option>
+                              <option class="models-select__option" value="pa">
+                                 Pennsylvania</option>
+                              <option class="models-select__option" value="ri">
+                                 Rhode Island</option>
+                              <option class="models-select__option" value="sc">
+                                 South Carolina</option>
+                              <option class="models-select__option" value="sd">
+                                 South Dakota</option>
+                              <option class="models-select__option" value="tn">
+                                 Tennessee</option>
+                              <option class="models-select__option" value="tx">
+                                 Texas</option>
+                              <option class="models-select__option" value="ut">
+                                 Utah
+                              </option>
+                              <option class="models-select__option" value="vt">
+                                 Vermont</option>
+                              <option class="models-select__option" value="va">
+                                 Virginia</option>
+                              <option class="models-select__option" value="wa">
+                                 Washington</option>
+                              <option class="models-select__option" value="wv">
+                                 West
+                                 Virginia</option>
+                              <option class="models-select__option" value="wi">
+                                 Wisconsin</option>
+                              <option class="models-select__option" value="wy">
+                                 Wyoming</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="check-out__column check-out__column--width">
+                        <div class="check-out__line">
+                           <label class="check-out__label models-label"
+                              for="check-out-postal-code">
+                              Postal Code&#42;
+                           </label>
+                           <input class="check-out__input models-input"
+                              id="check-out-postal-code" type="text"
+                              name="postalCode" pattern="[0-9]+"
+                              placeholder="Postal Code" title="Only numbers"
+                              required>
+                        </div>
+                     </div>
+                     <div class="check-out__column check-out__column--phone">
+                        <div class="check-out__line">
+                           <label class="check-out__label models-label"
+                              for="check-out-phone">
+                              Phone&#42;
+                           </label>
+                           <input class="check-out__input models-input"
+                              id="check-out-phone" type="tel" name="phone"
+                              minlength="8" maxlength="15" placeholder="Phone"
+                              title="Phone number" required>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="check-out__button" type="submit">Continue to
+                     delivery</button>
+                  <div class="check-out__line check-out__line--flex">
+                     <input class="check-out__input-checkbox models-checkbox"
+                        id="check-out-save-info" type="checkbox"
+                        name="saveInfo">
+                     <label
+                        class="check-out__label models-label models-label--checkbox"
+                        for="check-out-save-info">
+                        Save my information for a faster checkout
+                     </label>
+                  </div>
+               </form>
+               <form class="check-out__billing-form"
+                  enctype="multipart/form-data" action="#" method="POST"
+                  data-billing-form>
+                  <div class="check-out__shipping-address">
+                     <div class="check-out__explication">
+                        <h3
+                           class="check-out__section-subtitle section-subtitle">
+                           Shipping Address
+                        </h3>
+                        <p class="check-out__info">
+                           Select the address that matches your card or payment
+                           method.
+                        </p>
+                     </div>
+                     <div class="check-out__decor-wrapper">
+                        <div class="check-out__line check-out__line--radio">
+                           <input class="check-out__radio models-radio"
+                              id="different-address" type="radio"
+                              value="different-address" name="shippingAddress">
+                           <label
+                              class="check-out__radio-label models-label models-label--radio"
+                              for="different-address">
+                              Use a different shipping address
+                           </label>
+                        </div>
+                        <div class="check-out__line check-out__line--radio">
+                           <input class="check-out__radio models-radio"
+                              id="billing-address" type="radio"
+                              value="billing-address" name="shippingAddress">
+                           <label
+                              class="check-out__radio-label models-label models-label--radio"
+                              for="billing-address">
+                              Same as Billing address
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="check-out__shipping-method">
+                     <div class="check-out__explication">
+                        <h3
+                           class="check-out__section-subtitle section-subtitle">
+                           Shipping Method
+                        </h3>
+                     </div>
+                     <div class="check-out__decor-wrapper">
+                        <div class="check-out__text">
+                           <p>Arrives by Monday, June 7</p>
+                        </div>
+                        <div class="check-out__text ">
+                           <div class="check-out__path-text-flex">
+                              <h4 class="check-out__block-title">
+                                 Delivery Charges
+                              </h4>
+                              <p class="check-out__price">&#36;5.00</p>
+                           </div>
+                           <p class="check-out__note">Additional fess may apply
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="check-out__payment-method">
+                     <div class="check-out__explication">
+                        <h3
+                           class="check-out__section-subtitle section-subtitle">
+                           Payment Method
+                        </h3>
+                        <p class="check-out__info">
+                           All transactions are secure and encrypted.
+                        </p>
+                     </div>
+                     <div class="check-out__decor-wrapper">
+                        <div
+                           class="check-out__line check-out__line--radio check-out__line--radio-input">
+                           <input class="check-out__radio models-radio"
+                              id="card" type="radio" value="card"
+                              name="paymentMethod">
+                           <label
+                              class="check-out__radio-label model-label-block"
+                              for="card">
+                              <span>
+                                 <span class="models-label-title">Credit
+                                    Card</span>
+                                 <span class="models-label-description">
+                                    We accept all major credit cards.
+                                 </span>
+                              </span>
+                           </label>
+                           <div class="check-out__credit-card-block">
+                              <div class="check-out__payment-systems">
+                                 <div class="check-out__img-wrapper">
+                                    <img src="img/g-pay.svg" alt="google pay"
+                                       width="80">
+                                 </div>
+                                 <div class="check-out__img-wrapper">
+                                    <img src="img/visa.svg" alt="visa"
+                                       width="80">
+                                 </div>
+                                 <div class="check-out__img-wrapper">
+                                    <img src="img/paypal.svg" alt="paypal"
+                                       width="80">
+                                 </div>
+                                 <div class="check-out__img-wrapper">
+                                    <img src="img/paypass.svg" alt="paypass"
+                                       width="80">
+                                 </div>
+                              </div>
+                              <div class="check-out__credit-card-details">
+                                 <div
+                                    class="check-out__column check-out__column--padding">
+                                    <div class="check-out__input-wrapper">
+                                       <input
+                                          class="check-out__input models-input models-input--border"
+                                          name="cardNumber" type="text"
+                                          inputmode="numeric"
+                                          pattern="[0-9\\s]{13,19}"
+                                          autocomplete="cc-number"
+                                          maxlength="19"
+                                          placeholder="Card number"
+                                          title="Enter the card number"
+                                          required>
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="check-out__column check-out__column--padding">
+                                    <div class="check-out__input-wrapper">
+                                       <input
+                                          class="check-out__input models-input models-input--border"
+                                          name="nameCard" type="text"
+                                          maxlength="30"
+                                          placeholder="Name of card"
+                                          title="Enter the card name" required>
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="check-out__column check-out__column--padding">
+                                    <div class="check-out__input-wrapper">
+                                       <input
+                                          class="check-out__input models-input models-input--border"
+                                          type="text" name="cardExpirationDate"
+                                          placeholder="Expiration date (MM/YY)"
+                                          pattern="(0[1-9]|1[0-2])\/[0-9]{2}"
+                                          title="Enter the validity period of the card in month/year format"
+                                          required>
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="check-out__column check-out__column--padding">
+                                    <div class="check-out__input-wrapper">
+                                       <input
+                                          class="check-out__input models-input models-input--border"
+                                          type="password"
+                                          name="cardSecurityCode"
+                                          placeholder="Security Code"
+                                          pattern="[0-9]{3}" minlength="3"
+                                          title="Enter the three-digit card security code"
+                                          maxlength="3" required>
+                                       <button
+                                          class="check-out__security-button"
+                                          type="button"><img src="img/eye.svg"
+                                             alt="eye" width="20"></button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="check-out__line check-out__line--radio">
+                           <input class="check-out__radio models-radio"
+                              id="cash" type="radio" value="cash"
+                              name="paymentMethod">
+                           <label
+                              class="check-out__radio-label model-label-block"
+                              for="cash">
+                              <span>
+                                 <span class="models-label-title">
+                                    Cash on delivery
+                                 </span>
+                                 <span class="models-label-description">
+                                    Pay with cash upon delivery.
+                                 </span>
+                              </span>
+                           </label>
+                        </div>
+                        <div class="check-out__line check-out__line--radio">
+                           <input class="check-out__radio models-radio"
+                              id="paypol" type="radio" value="paypol"
+                              name="paymentMethod">
+                           <label
+                              class="check-out__radio-label model-label-block"
+                              for="paypol">
+                              <span>
+                                 <span class="models-label-title">
+                                    Paypol
+                                 </span>
+                              </span>
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="check-out__button check-out__button--padding"
+                     type="submit">Pay
+                     Now</button>
+               </form>
+            </div>
+         </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <ul class="footer__nav nav">
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg"
+                     href="#practice">Practice</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg" href="#my-info">My
+                     Info</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg"
+                     href="#check-out">Check
+                     Out</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg" href="#call-back">Call
+                     Back</a>
+            </ul>
+            <p class="footer__name">Fedorova Nataliya</p>
+         </div>
+      </footer>
+   </div>
+
+   <!-- <script src="js/models.js" type="module"></script> -->
+</body>
+
+</html>
