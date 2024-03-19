@@ -71,3 +71,8 @@ https://natashafedorova.github.io/lessons/lesson-15/
 Lesson-16. Form
 
 https://natashafedorova.github.io/lessons/lesson-16/
+
+
+Lesson-17. Adaptive layout
+
+https://natashafedorova.github.io/lessons/lesson-17/
