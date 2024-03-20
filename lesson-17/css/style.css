@@ -56,17 +56,25 @@
 
 .first-model__decor {
    display: none;
+   position: absolute;
+   width: 341px;
+   height: 419px;
+   background: url('../img/popular-product/decor-bg.webp');
+}
+
+@media (min-width: 500px) and (max-width: 899.98px) {
+   .first-model__decor {
+      display: block;
+      right: -5%;
+      bottom: -5%;
+   }
 }
 
 @media (min-width: 1203px) {
    .first-model__decor {
       display: block;
-      position: absolute;
       right: -26%;
       bottom: -13%;
-      width: 341px;
-      height: 419px;
-      background: url('../img/popular-product/decor-bg.webp');
    }
 }
 
