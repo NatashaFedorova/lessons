@@ -22,11 +22,18 @@
 
 .wrapper > *,
 .page > * {
-   --width: 100%;
-   margin-bottom: calc(var(--width) / 17);
+   margin-bottom: 30px;
 }
 
-@media (min-width: 1202.98px) {
+@media (min-width: 500px) {
+   .wrapper > *,
+   .page > * {
+      --width: 100%;
+      margin-bottom: calc(var(--width) / 17);
+   }
+}
+
+@media (min-width: 1203px) {
    .wrapper > *,
    .page > * {
       margin-bottom: 70px;
@@ -111,7 +118,7 @@
    }
 }
 
-@media (min-width: 1202.98px) {
+@media (min-width: 1203px) {
    .title-section {
       font-size: 58px;
       margin-bottom: 21px;
@@ -144,15 +151,13 @@
 
 @media (min-width: 500px) {
    .first-model__column {
-      padding: 0 24px;
       flex: 0 1 50%;
    }
 }
 
 @media (min-width: 900px) {
    .first-model__column {
-      padding: 0 24px;
-      flex: 1 1 33.3333%;
+      flex: 0 1 33.3333%;
    }
 }
 
@@ -202,7 +207,7 @@
    }
 }
 
-@media (min-width: 1202.98px) {
+@media (min-width: 1203px) {
    .first-model__text-link {
       font-size: 16px;
    }
@@ -235,7 +240,7 @@
    }
 }
 
-@media (min-width: 1202.98px) {
+@media (min-width: 1203px) {
    .first-model__link img {
       width: 24px;
       height: 24px;
@@ -261,6 +266,10 @@
    font-size: 24px;
    font-weight: 700;
    line-height: 1.4;
+}
+
+.third-model {
+   padding: 30px 0;
 }
 
 .second-model__container > *,
@@ -303,20 +312,14 @@
 
 @media (min-width: 500px) {
    .producs-list__column {
-      flex: 0 0 50%;
-      padding: 0 15px 10px 15px;
+      flex: 0 1 50%;
    }
 }
 
 @media (min-width: 900px) {
    .producs-list__column {
-      flex: 0 0 25%;
-      padding: 0 15px 10px 15px;
+      flex: 0 1 25%;
    }
-}
-
-.producs-list__item {
-   padding-bottom: 10px;
 }
 
 .producs-list__item > * {
@@ -380,6 +383,11 @@
    }
 }
 
+.third-model {
+   background-color: #04011f;
+   color: #ffffff;
+}
+
 .producs-list__img-link--b-radius {
    overflow: hidden;
    border-radius: 5px;
@@ -392,7 +400,7 @@
 .first-model__item > *:last-child,
 .title-section:last-child,
 .second-model__container > *:last-child,
-.second-model__item > *:last-child,
+.producs-list__item > *:last-child,
 .third-model__container > *:last-child {
    margin-bottom: 0;
 }
