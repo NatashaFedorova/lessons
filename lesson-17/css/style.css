@@ -462,10 +462,31 @@
 }
 
 .third-model {
+   position: relative;
    background-color: #04011f;
    color: #ffffff;
    margin-bottom: 0;
    padding: 50px 0;
+}
+
+.third-model__container {
+   position: relative;
+}
+
+.third-model__decor {
+   display: none;
+}
+
+@media (min-width: 1250px) {
+   .third-model__decor {
+      display: block;
+      position: absolute;
+      right: -42%;
+      bottom: 0%;
+      background: url('../img/third-model/third-model-decor.webp') center / contain no-repeat;
+      width: 451px;
+      height: 471px;
+   }
 }
 
 .producs-list__img-link--b-radius {
