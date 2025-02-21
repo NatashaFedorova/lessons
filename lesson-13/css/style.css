@@ -325,8 +325,6 @@ body {
 .flip__back {
    background-color: rgb(255, 0, 0);
    transform: rotateY(180deg);
-
-   transition: all 500ms;
 }
 
 .practice__item--flip:hover .flip__back {
