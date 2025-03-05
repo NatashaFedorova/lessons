@@ -1,0 +1,14 @@
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+.wrapper *:last-child {
+   margin-bottom: 0;
+}
