@@ -49,7 +49,7 @@ body {
 
 /* =============== CAR ======================= */
 .section__container {
-   background: url('/img/bg.webp') bottom 17% left 40% / cover no-repeat;
+  background: url('../img/bg.webp') bottom 17% left 40% / cover no-repeat;
    position: relative;
    padding: 50px;
    min-height: 500px;
