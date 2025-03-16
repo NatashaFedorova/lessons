@@ -37,7 +37,7 @@
 
 @keyframes translate {
    0% {
-      transform: translateX(-100%);
+      transform: translateX(-101%);
    }
    100% {
       transform: translateX(0%);
@@ -229,13 +229,13 @@ body {
    z-index: -1;
    content: '';
    position: absolute;
-   bottom: 35px;
+   bottom: 36px;
    left: 50px;
    width: 590px;
    height: 20px;
    border-radius: 0 0 20px 20px;
    background-color: transparent;
-   box-shadow: 0px 3px 11px 4px rgb(252, 168, 2);
+   box-shadow: 0px 4px 12px 6px rgb(252, 168, 2);
 }
 
 .hood {
@@ -1050,6 +1050,7 @@ body {
    justify-content: center;
    width: 90px;
    height: 90px;
+   background-color: transparent;
 }
 
 .indicator__item:not(:last-child)::after {
@@ -1059,7 +1060,80 @@ body {
    left: 100%;
    height: 2px;
    background-color: rgb(252, 106, 2);
-   animation: width 700ms linear forwards 1200ms;
+}
+
+/* -----------1------------ */
+.indicator__item:nth-child(1) > .indicator__bg:after {
+   animation: translate 1000ms linear both;
+}
+.indicator__item:nth-child(1) > .indicator__border:after {
+   animation: translate 1000ms linear both;
+}
+.indicator__item:nth-child(1)::after {
+   animation: width 1000ms linear forwards 1000ms;
+}
+
+/* -----------2------------ */
+.indicator__item:nth-child(2) > .indicator__bg:after {
+   animation: translate 1000ms linear both 2000ms;
+}
+.indicator__item:nth-child(2) > .indicator__border:after {
+   animation: translate 1000ms linear both 2000ms;
+}
+.indicator__item:nth-child(2)::after {
+   animation: width 1000ms linear forwards 3000ms;
+}
+
+/* -----------3------------ */
+.indicator__item:nth-child(3) > .indicator__bg:after {
+   animation: translate 1000ms linear both 4000ms;
+}
+.indicator__item:nth-child(3) > .indicator__border:after {
+   animation: translate 1000ms linear both 4000ms;
+}
+.indicator__item:nth-child(3)::after {
+   animation: width 1000ms linear forwards 5000ms;
+}
+
+/* -----------4------------ */
+.indicator__item:nth-child(4) > .indicator__bg:after {
+   animation: translate 1000ms linear both 6000ms;
+}
+.indicator__item:nth-child(4) > .indicator__border:after {
+   animation: translate 1000ms linear both 6000ms;
+}
+.indicator__item:nth-child(4)::after {
+   animation: width 1000ms linear forwards 7000ms;
+}
+
+/* -----------5------------ */
+.indicator__item:nth-child(5) > .indicator__bg:after {
+   animation: translate 1000ms linear both 8000ms;
+}
+.indicator__item:nth-child(5) > .indicator__border:after {
+   animation: translate 1000ms linear both 8000ms;
+}
+.indicator__item:nth-child(5)::after {
+   animation: width 1000ms linear forwards 9000ms;
+}
+
+/* -----------6------------ */
+.indicator__item:nth-child(6) > .indicator__bg:after {
+   animation: translate 1000ms linear both 10000ms;
+}
+.indicator__item:nth-child(6) > .indicator__border:after {
+   animation: translate 1000ms linear both 10000ms;
+}
+.indicator__item:nth-child(6)::after {
+   animation: width 1000ms linear forwards 11000ms;
+}
+
+/* -----------7------------ */
+.indicator__item:nth-child(7) > .indicator__bg:after {
+   animation: translate 1000ms linear both 12000ms;
+}
+.indicator__item:nth-child(7) > .indicator__border:after {
+   animation: translate 1000ms linear both 12000ms;
 }
 
 .indicator__border {
@@ -1102,4 +1176,6 @@ body {
 
 .indicator__text {
    position: relative;
+   color: #000;
+   font-weight: 500;
 }
