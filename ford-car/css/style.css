@@ -8,9 +8,111 @@
 /* Основні стилі */
 @import url('wrapper.css');
 
+@keyframes opacity {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+@keyframes scale {
+   0% {
+      transform: scale(1.2);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+@keyframes rotate {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(10deg);
+   }
+}
+
+@keyframes width {
+   0% {
+      width: 0px;
+   }
+   100% {
+      width: 32px;
+   }
+}
+
+@keyframes linear-gradient {
+   0% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 0%, rgba(0, 0, 0, 0) 5%);
+   }
+   5% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 5%, rgba(0, 0, 0, 0) 10%);
+   }
+   10% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 10%, rgba(0, 0, 0, 0) 15%);
+   }
+   15% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 15%, rgba(0, 0, 0, 0) 20%);
+   }
+   20% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 20%, rgba(0, 0, 0, 0) 25%);
+   }
+   25% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 25%, rgba(0, 0, 0, 0) 30%);
+   }
+   30% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 30%, rgba(0, 0, 0, 0) 30%);
+   }
+   35% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 35%, rgba(0, 0, 0, 0) 40%);
+   }
+   40% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 40%, rgba(0, 0, 0, 0) 45%);
+   }
+   45% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 45%, rgba(0, 0, 0, 0) 50%);
+   }
+   50% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 50%, rgba(0, 0, 0, 0) 55%);
+   }
+   55% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 55%, rgba(0, 0, 0, 0) 60%);
+   }
+   60% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 60%, rgba(0, 0, 0, 0) 65%);
+   }
+   65% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 65%, rgba(0, 0, 0, 0) 70%);
+   }
+   70% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 70%, rgba(0, 0, 0, 0) 75%);
+   }
+   75% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 75%, rgba(0, 0, 0, 0) 80%);
+   }
+   80% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 80%, rgba(0, 0, 0, 0) 85%);
+   }
+   85% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 85%, rgba(0, 0, 0, 0) 90%);
+   }
+   90% {
+      background: linear-gradient(90deg, rgb(252, 168, 2) 90%, rgba(0, 0, 0, 0) 95%);
+   }
+   95% {
+      background: linear-gradient(95deg, rgb(252, 168, 2) 95%, rgba(0, 0, 0, 0) 100%);
+   }
+   100% {
+      background: linear-gradient(0deg, rgb(252, 168, 2) 100%, rgba(0, 0, 0, 0) 100%);
+   }
+}
+
 /* -------------------------------------------- */
 body {
-   background-color: #26262d;
+   background-color: #0f1316;
    color: #fff;
    font-family: 'Montserrat', sans-serif;
 }
@@ -21,7 +123,7 @@ body {
    margin: 0 auto;
 }
 
-.header {
+/* .header {
    padding: 10px 0;
    min-height: 70px;
    border-bottom: 1px solid #fff;
@@ -38,7 +140,7 @@ body {
    font-size: 36px;
    font-weight: 700;
    text-align: center;
-}
+} */
 
 .name {
    font-family: 'Ephesis', cursive;
@@ -49,13 +151,15 @@ body {
 
 /* =============== CAR ======================= */
 .section__container {
-   background: url('../img/bg.webp') bottom 13% left 43% / auto no-repeat;
+   background: url(../img/bg.webp) bottom 0% left 40% / auto no-repeat;
    position: relative;
-   padding: 50px;
-   min-height: 500px;
+   padding: 70px;
+   min-height: 550px;
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: flex-end;
+   flex-direction: column;
+   gap: 50px;
 }
 
 .car {
@@ -103,7 +207,7 @@ body {
 .upper-path__windshield {
    z-index: 1;
    position: absolute;
-   right: 22px;
+   right: 23px;
    bottom: -52px;
    width: 30px;
    height: 51px;
@@ -170,26 +274,31 @@ body {
    width: 700px;
 }
 
-.lower-path::after {
-   content: '';
-   z-index: 10;
-   position: absolute;
-   top: 7px;
-   left: 0;
-   height: 1px;
-   width: 700px;
-}
-
 .lower-path__body {
+   z-index: 0;
    position: relative;
    width: 100%;
    height: 100%;
 }
 
+/* neon------------------------------- */
+.lower-path__body::after {
+   z-index: -1;
+   content: '';
+   position: absolute;
+   bottom: 35px;
+   left: 50px;
+   width: 590px;
+   height: 20px;
+   border-radius: 0 0 20px 20px;
+   background-color: transparent;
+   box-shadow: 0px 3px 11px 4px rgb(252, 168, 2);
+}
+
 .hood {
    position: absolute;
    top: -5px;
-   left: 112px;
+   left: 110px;
    width: 140px;
    height: 15px;
    transform: rotate(3deg);
@@ -233,17 +342,6 @@ body {
    width: 80%;
    height: 100%;
    background-color: rgb(252, 168, 2);
-}
-
-/* NEON------------------------------- */
-.lower-path__body::after {
-   content: '';
-   position: absolute;
-   bottom: 30px;
-   left: 47px;
-   width: 590px;
-   height: 0px;
-   box-shadow: 0px 0px 11px 4px rgb(252, 168, 2);
 }
 
 .lower-path__front {
@@ -994,18 +1092,32 @@ body {
    transform: scaleX(3);
 }
 
-/* .upper-path {
-   opacity: 0;
+/* indicator ======================= */
+.indicator__list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
 }
 
-.lower-path {
-   opacity: 0;
+.indicator__item {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   border: 2px solid rgb(252, 106, 2);
+   animation: linear-gradient 700ms linear forwards 300ms;
 }
 
-.car__door {
-   opacity: 0;
+.indicator__item:not(:last-child)::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 100%;
+   height: 2px;
+   background-color: rgb(252, 106, 2);
+   animation: width 700ms linear forwards 1000ms;
 }
-
-.side-window {
-   opacity: 0;
-} */
