@@ -8,34 +8,120 @@
 /* Основні стилі */
 @import url('wrapper.css');
 
-@keyframes opacity {
-   0% {
-      opacity: 0;
-   }
-   100% {
-      opacity: 1;
-   }
-}
+/* 
+   1. body - 3000ms
+   2. wheels - 5
+*/
 
+/* 
+   lower-path  500ms
+*/
 @keyframes scale {
    0% {
-      transform: scale(1.2);
+      transform: scaleY(0);
    }
    100% {
-      transform: scale(1);
+      transform: scaleY(1);
    }
 }
 
-@keyframes rotate {
+/* 
+   wheels__tyre   500ms
+*/
+@keyframes translate-x-half-scale {
    0% {
-      transform: rotate(0deg);
+      transform: translateX(-50%) scale(0);
+   }
+   70% {
+      transform: translateX(-50%) scale(1);
    }
    100% {
-      transform: rotate(10deg);
+      transform: translateX(-50%) scale(1);
    }
 }
 
-@keyframes translate {
+/* 
+   wheels__circle   500ms
+*/
+@keyframes circle-scale {
+   0% {
+      transform: translate(-50%, -50%) scale(0);
+      box-shadow: 0px 0px 4px 0px inset rgb(252, 168, 2);
+   }
+   60% {
+      transform: translate(-50%, -50%) scale(1);
+      box-shadow: 0px 0px 4px 1px inset rgb(252, 168, 2);
+   }
+   100% {
+      transform: translate(-50%, -50%) scale(1);
+      box-shadow: 0px 0px 4px 7px inset rgb(252, 168, 2);
+   }
+}
+
+/* 
+   wheels__small-circle   500ms
+*/
+@keyframes small-circle-scale {
+   0% {
+      transform: translate(-50%, -50%) scale(0);
+      box-shadow: 0px 0px 0px 0px #000;
+   }
+   100% {
+      transform: translate(-50%, -50%) scale(1);
+      box-shadow: 0px 0px 3px 1px #000;
+   }
+}
+
+/* 
+   line  500ms
+*/
+@keyframes line-height {
+   0% {
+      height: 0;
+      transform: translate(-50%, -50%) rotate(0);
+   }
+
+   30% {
+      height: 72px;
+      transform: translate(-50%, -50%) rotate(0);
+   }
+   100% {
+      height: 72px;
+      transform: translate(-50%, -50%) rotate(180);
+   }
+}
+/* 
+   .line:before,
+   .line:after
+*/
+@keyframes line-before-after-box-shadow {
+   0% {
+      box-shadow: 0px 2px 0px 0px #000000;
+   }
+   100% {
+      box-shadow: 0px 2px 3px 1px #000;
+   }
+}
+
+/* 
+.wheels__wrapper::after 500ms
+*/
+@keyframes wheels-wrapper-shadow {
+   0% {
+      height: 0px;
+      box-shadow: 0px 6px 12px -18px inset #000, 0px 0px 0px 0px inset rgb(252, 168, 2);
+   }
+   100% {
+      height: 75px;
+      box-shadow: 0px 6px 12px -8px inset #000, 0px 2px 0px 1px inset rgb(252, 168, 2);
+   }
+}
+
+/*
+   .indicator__border:after 1500ms
+   .indicator__bg:after 1500ms
+*/
+@keyframes translate-x {
    0% {
       transform: translateX(-101%);
    }
@@ -44,6 +130,64 @@
    }
 }
 
+/*
+   .wheels__bg 500ms
+   
+*/
+@keyframes translate-half-scale {
+   0% {
+      transform: translate(-50%, 100%) scaleY(0);
+   }
+   50% {
+      transform: translate(-50%, 50%) scaleY(0);
+   }
+   100% {
+      transform: translate(-50%, 0%) scaleX(1);
+   }
+}
+
+/*
+   .lower-path__front::before 500ms / 500ms
+   .lower-path__front::after  500ms / 500ms
+*/
+@keyframes left {
+   0% {
+      left: 0;
+   }
+   100% {
+      left: -14px;
+   }
+}
+
+/*
+   .upper-path 300ms / 600ms
+*/
+@keyframes translate-y-scale-y {
+   0% {
+      transform: translateY(100%) scaleY(0);
+   }
+   100% {
+      transform: translateY(0%) scaleY(1);
+   }
+}
+
+/* 
+   .lower-path__center-back::after 300ms
+
+*/
+@keyframes top {
+   0% {
+      top: 0;
+   }
+   100% {
+      top: -5px;
+   }
+}
+
+/* 
+   .indicator__item::after 1500ms
+
+*/
 @keyframes width {
    0% {
       width: 0px;
@@ -115,6 +259,7 @@ body {
    position: relative;
    height: 60px;
    width: 700px;
+   animation: translate-y-scale-y 500ms linear both 1000ms;
 }
 
 .upper-path__body {
@@ -160,7 +305,13 @@ body {
    border-right: 2px solid #2c2b2b;
    border-bottom: 3px solid #2c2b2b;
    box-shadow: -4px 0px 0px -3px inset #000000;
-   transform: skewX(-61deg);
+   transform: skewX(-61deg) translateY(0%) scaleY(1);
+   transition: all 500ms linear;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.upper-path__windshield:hover {
+   transform: skewX(-61deg) translateY(50%) scaleY(0);
 }
 
 .upper-path__bottom-to-top-center {
@@ -215,6 +366,7 @@ body {
    position: relative;
    height: 140px;
    width: 700px;
+   animation: scale 500ms linear both;
 }
 
 .lower-path__body {
@@ -227,7 +379,7 @@ body {
 /* neon------------------------------- */
 .lower-path__body::after {
    z-index: -1;
-   content: '';
+   /* content: ''; */
    position: absolute;
    bottom: 36px;
    left: 50px;
@@ -309,18 +461,20 @@ body {
    border-radius: 63px 0px 0px 35px / 17px 0px 0px 10px;
    box-shadow: 9px 1px 10px -10px inset #000;
    transform: rotate(-15deg);
+   animation: left 500ms linear both 500ms;
 }
 
 .lower-path__front::after {
    content: '';
    position: absolute;
    bottom: 0px;
-   left: -13px;
+   left: -14px;
    width: 60px;
    height: 38px;
    background-color: rgb(252, 168, 2);
    border-radius: 15px 30px 0px 70px / 9px 2px 0px 60px;
    box-shadow: 8px -6px 11px -10px inset #000;
+   animation: left 500ms linear both 500ms;
 }
 
 .lower-path__center-back {
@@ -336,13 +490,13 @@ body {
 .lower-path__center-back::after {
    content: '';
    position: absolute;
-   top: -5px;
    right: 14px;
    width: 22px;
    height: 27px;
    background-color: rgb(252, 168, 2);
    border-radius: 50%;
    transform: rotate(312deg);
+   animation: top 300ms linear both 500ms;
 }
 
 .lower-path__exhaust {
@@ -681,12 +835,12 @@ body {
    position: absolute;
    top: 0;
    left: 50%;
-   transform: translateX(-50%);
    width: 124px;
    height: 75px;
    background-color: #3a3737;
    border-radius: 51% 51% 0% 0% / 68% 68% 0% 0%;
    box-shadow: 0px 20px 40px 0px inset #000, 0px -2px 1px -1px rgb(252, 168, 2);
+   animation: translate-half-scale 500ms linear both 2500ms;
 }
 
 .wheels__block--rear > .wheels__bg {
@@ -703,20 +857,19 @@ body {
    width: 106px;
    height: 106px;
    border-radius: 50%;
-   background: rgb(255, 255, 255);
    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 70%);
+   animation: translate-x-half-scale 500ms linear both 3500ms;
 }
 
 .wheels__circle {
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%);
    width: 76px;
    height: 76px;
    border-radius: 50%;
    background: radial-gradient(circle, rgb(82 80 80) 65%, rgb(255 255 255) 100%);
-   box-shadow: 0px 0px 4px 7px inset rgb(252, 168, 2);
+   animation: circle-scale 500ms linear both 4000ms;
 }
 
 .wheels__lines-block {
@@ -732,9 +885,9 @@ body {
    position: absolute;
    top: 50%;
    left: 50%;
-   height: 71px;
    width: 1px;
    background-color: rgb(252, 168, 2);
+   animation: line-height 500ms linear both 4500ms;
 }
 
 .line:before,
@@ -745,7 +898,7 @@ body {
    left: 0;
    width: 1px;
    height: 50%;
-   box-shadow: 0px 2px 3px 1px #000;
+   animation: line-before-after-box-shadow 500ms linear both 5000ms;
 }
 
 .line:before {
@@ -776,7 +929,6 @@ body {
 .line--1 {
    transform: translate(-50%, -50%) rotate(0);
 }
-
 .line--2 {
    transform: translate(-50%, -50%) rotate(10deg);
 }
@@ -789,7 +941,6 @@ body {
 .line--5 {
    transform: translate(-50%, -50%) rotate(40deg);
 }
-
 .line--6 {
    transform: translate(-50%, -50%) rotate(50deg);
 }
@@ -805,11 +956,9 @@ body {
 .line--10 {
    transform: translate(-50%, -50%) rotate(90deg);
 }
-
 .line--11 {
    transform: translate(-50%, -50%) rotate(100deg);
 }
-
 .line--12 {
    transform: translate(-50%, -50%) rotate(110deg);
 }
@@ -822,7 +971,6 @@ body {
 .line--15 {
    transform: translate(-50%, -50%) rotate(140deg);
 }
-
 .line--16 {
    transform: translate(-50%, -50%) rotate(150deg);
 }
@@ -849,7 +997,7 @@ body {
    border-radius: 50%;
    border: 1px solid rgb(252, 106, 2);
    background-color: rgb(14 14 14);
-   box-shadow: 0px 0px 3px 1px #000;
+   animation: small-circle-scale 500ms linear both 5000ms;
 }
 
 .name--size {
@@ -878,9 +1026,8 @@ body {
    left: 50%;
    transform: translateX(-50%);
    width: 100%;
-   height: 75px;
    border-radius: 51% 51% 0% 0% / 68% 68% 0% 0%;
-   box-shadow: 0px 6px 12px -8px inset #000, 0px 2px 0px 1px inset rgb(252, 168, 2);
+   animation: wheels-wrapper-shadow 500ms linear both 2500ms;
 }
 
 .wheels__block--rear > .wheels__wrapper {
@@ -1062,45 +1209,45 @@ body {
    background-color: rgb(252, 106, 2);
 }
 
-/* -----------1------------ */
+/* -----------1  -  timing-function -  2500ms -  ------------ */
 .indicator__item:nth-child(1) > .indicator__bg:after {
-   animation: translate 1000ms linear both;
+   animation: translate-x 1500ms linear both;
 }
 .indicator__item:nth-child(1) > .indicator__border:after {
-   animation: translate 1000ms linear both;
+   animation: translate-x 1500ms linear both;
 }
 .indicator__item:nth-child(1)::after {
-   animation: width 1000ms linear forwards 1000ms;
+   animation: width 1000ms linear forwards 1500ms;
 }
 
-/* -----------2------------ */
+/* -----------2  - timing-function - 3500ms ------------ */
 .indicator__item:nth-child(2) > .indicator__bg:after {
-   animation: translate 1000ms linear both 2000ms;
+   animation: translate-x 2500ms linear both 2500ms;
 }
 .indicator__item:nth-child(2) > .indicator__border:after {
-   animation: translate 1000ms linear both 2000ms;
+   animation: translate-x 2500ms linear both 2500ms;
 }
 .indicator__item:nth-child(2)::after {
-   animation: width 1000ms linear forwards 3000ms;
+   animation: width 1000ms linear forwards 5000ms;
 }
 
 /* -----------3------------ */
 .indicator__item:nth-child(3) > .indicator__bg:after {
-   animation: translate 1000ms linear both 4000ms;
+   animation: translate-x 1000ms linear both 6500ms;
 }
 .indicator__item:nth-child(3) > .indicator__border:after {
-   animation: translate 1000ms linear both 4000ms;
+   animation: translate-x 1000ms linear both 6500ms;
 }
 .indicator__item:nth-child(3)::after {
-   animation: width 1000ms linear forwards 5000ms;
+   animation: width 1000ms linear forwards 700ms;
 }
 
 /* -----------4------------ */
 .indicator__item:nth-child(4) > .indicator__bg:after {
-   animation: translate 1000ms linear both 6000ms;
+   animation: translate-x 1000ms linear both 6000ms;
 }
 .indicator__item:nth-child(4) > .indicator__border:after {
-   animation: translate 1000ms linear both 6000ms;
+   animation: translate-x 1000ms linear both 6000ms;
 }
 .indicator__item:nth-child(4)::after {
    animation: width 1000ms linear forwards 7000ms;
@@ -1108,10 +1255,10 @@ body {
 
 /* -----------5------------ */
 .indicator__item:nth-child(5) > .indicator__bg:after {
-   animation: translate 1000ms linear both 8000ms;
+   animation: translate-x 1000ms linear both 8000ms;
 }
 .indicator__item:nth-child(5) > .indicator__border:after {
-   animation: translate 1000ms linear both 8000ms;
+   animation: translate-x 1000ms linear both 8000ms;
 }
 .indicator__item:nth-child(5)::after {
    animation: width 1000ms linear forwards 9000ms;
@@ -1119,10 +1266,10 @@ body {
 
 /* -----------6------------ */
 .indicator__item:nth-child(6) > .indicator__bg:after {
-   animation: translate 1000ms linear both 10000ms;
+   animation: translate-x 1000ms linear both 10000ms;
 }
 .indicator__item:nth-child(6) > .indicator__border:after {
-   animation: translate 1000ms linear both 10000ms;
+   animation: translate-x 1000ms linear both 10000ms;
 }
 .indicator__item:nth-child(6)::after {
    animation: width 1000ms linear forwards 11000ms;
@@ -1130,10 +1277,10 @@ body {
 
 /* -----------7------------ */
 .indicator__item:nth-child(7) > .indicator__bg:after {
-   animation: translate 1000ms linear both 12000ms;
+   animation: translate-x 1000ms linear both 12000ms;
 }
 .indicator__item:nth-child(7) > .indicator__border:after {
-   animation: translate 1000ms linear both 12000ms;
+   animation: translate-x 1000ms linear both 12000ms;
 }
 
 .indicator__border {
@@ -1152,7 +1299,6 @@ body {
    width: 100%;
    height: 100%;
    background-color: rgb(252, 106, 2);
-   animation: translate 1000ms linear both 200ms;
 }
 
 .indicator__bg {
@@ -1171,11 +1317,15 @@ body {
    width: 100%;
    height: 100%;
    background-color: rgb(252, 168, 2);
-   animation: translate 1000ms linear both;
 }
 
 .indicator__text {
    position: relative;
    color: #000;
    font-weight: 500;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.section__indicator {
+   /* display: none; */
 }
