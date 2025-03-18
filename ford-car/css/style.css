@@ -8,194 +8,8 @@
 /* Основні стилі */
 @import url('wrapper.css');
 
-/* 
-   1. body - 3000ms
-   2. wheels - 5
-*/
-
-/* 
-   lower-path  500ms
-*/
-@keyframes scale {
-   0% {
-      transform: scaleY(0);
-   }
-   100% {
-      transform: scaleY(1);
-   }
-}
-
-/* 
-   wheels__tyre   500ms
-*/
-@keyframes translate-x-half-scale {
-   0% {
-      transform: translateX(-50%) scale(0);
-   }
-   70% {
-      transform: translateX(-50%) scale(1);
-   }
-   100% {
-      transform: translateX(-50%) scale(1);
-   }
-}
-
-/* 
-   wheels__circle   500ms
-*/
-@keyframes circle-scale {
-   0% {
-      transform: translate(-50%, -50%) scale(0);
-      box-shadow: 0px 0px 4px 0px inset rgb(252, 168, 2);
-   }
-   60% {
-      transform: translate(-50%, -50%) scale(1);
-      box-shadow: 0px 0px 4px 1px inset rgb(252, 168, 2);
-   }
-   100% {
-      transform: translate(-50%, -50%) scale(1);
-      box-shadow: 0px 0px 4px 7px inset rgb(252, 168, 2);
-   }
-}
-
-/* 
-   wheels__small-circle   500ms
-*/
-@keyframes small-circle-scale {
-   0% {
-      transform: translate(-50%, -50%) scale(0);
-      box-shadow: 0px 0px 0px 0px #000;
-   }
-   100% {
-      transform: translate(-50%, -50%) scale(1);
-      box-shadow: 0px 0px 3px 1px #000;
-   }
-}
-
-/* 
-   line  500ms
-*/
-@keyframes line-height {
-   0% {
-      height: 0;
-      transform: translate(-50%, -50%) rotate(0);
-   }
-
-   30% {
-      height: 72px;
-      transform: translate(-50%, -50%) rotate(0);
-   }
-   100% {
-      height: 72px;
-      transform: translate(-50%, -50%) rotate(180);
-   }
-}
-/* 
-   .line:before,
-   .line:after
-*/
-@keyframes line-before-after-box-shadow {
-   0% {
-      box-shadow: 0px 2px 0px 0px #000000;
-   }
-   100% {
-      box-shadow: 0px 2px 3px 1px #000;
-   }
-}
-
-/* 
-.wheels__wrapper::after 500ms
-*/
-@keyframes wheels-wrapper-shadow {
-   0% {
-      height: 0px;
-      box-shadow: 0px 6px 12px -18px inset #000, 0px 0px 0px 0px inset rgb(252, 168, 2);
-   }
-   100% {
-      height: 75px;
-      box-shadow: 0px 6px 12px -8px inset #000, 0px 2px 0px 1px inset rgb(252, 168, 2);
-   }
-}
-
-/*
-   .indicator__border:after 1500ms
-   .indicator__bg:after 1500ms
-*/
-@keyframes translate-x {
-   0% {
-      transform: translateX(-101%);
-   }
-   100% {
-      transform: translateX(0%);
-   }
-}
-
-/*
-   .wheels__bg 500ms
-   
-*/
-@keyframes translate-half-scale {
-   0% {
-      transform: translate(-50%, 100%) scaleY(0);
-   }
-   50% {
-      transform: translate(-50%, 50%) scaleY(0);
-   }
-   100% {
-      transform: translate(-50%, 0%) scaleX(1);
-   }
-}
-
-/*
-   .lower-path__front::before 500ms / 500ms
-   .lower-path__front::after  500ms / 500ms
-*/
-@keyframes left {
-   0% {
-      left: 0;
-   }
-   100% {
-      left: -14px;
-   }
-}
-
-/*
-   .upper-path 300ms / 600ms
-*/
-@keyframes translate-y-scale-y {
-   0% {
-      transform: translateY(100%) scaleY(0);
-   }
-   100% {
-      transform: translateY(0%) scaleY(1);
-   }
-}
-
-/* 
-   .lower-path__center-back::after 300ms
-
-*/
-@keyframes top {
-   0% {
-      top: 0;
-   }
-   100% {
-      top: -5px;
-   }
-}
-
-/* 
-   .indicator__item::after 1500ms
-
-*/
-@keyframes width {
-   0% {
-      width: 0px;
-   }
-   100% {
-      width: 32px;
-   }
-}
+/* Анімації */
+@import url('animation.css');
 
 /* -------------------------------------------- */
 body {
@@ -259,7 +73,9 @@ body {
    position: relative;
    height: 60px;
    width: 700px;
-   animation: translate-y-scale-y 500ms linear both 1000ms;
+
+   animation: translate-y-scale-y 500ms linear both 1s;
+   /* translateY, scaleY */
 }
 
 .upper-path__body {
@@ -305,13 +121,9 @@ body {
    border-right: 2px solid #2c2b2b;
    border-bottom: 3px solid #2c2b2b;
    box-shadow: -4px 0px 0px -3px inset #000000;
-   transform: skewX(-61deg) translateY(0%) scaleY(1);
-   transition: all 500ms linear;
-}
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.upper-path__windshield:hover {
-   transform: skewX(-61deg) translateY(50%) scaleY(0);
+   animation: transform-windshield 500ms linear both 6s;
+   /*  skewX, translateY, scaleY */
 }
 
 .upper-path__bottom-to-top-center {
@@ -340,33 +152,34 @@ body {
    transform: rotate(18deg);
 }
 
-.upper-path__decor {
+.decor-rear-window {
    position: absolute;
-   top: 28px;
+   top: 31px;
    left: -2px;
    width: 141px;
    height: 7px;
-   box-shadow: -2px -4px 1px 0px inset #2a2a2a;
-   border-radius: 7px 7px 7px 7px;
+   border-radius: 2px 7px 7px 7px;
    transform: rotate(15deg);
    display: flex;
+
+   animation: box-shadow-rear-window 500ms linear both 6500ms;
 }
 
 .decor-rear-window__block {
    width: 28px;
    height: 7px;
    border-radius: 4px 17px 2px 28px / 2px 17px 2px 28px;
-   background-color: #1b1a1a;
-   transform: rotate(349deg);
-   border-bottom: 1px solid #121212;
-   box-shadow: 0px 1px 3px 0px inset #454545;
+
+   animation: transform-rear-window-block 1s linear both 7s;
+   /* background-color,  border-bottom, box-shadow, transform: rotate */
 }
 
 .lower-path {
    position: relative;
    height: 140px;
    width: 700px;
-   animation: scale 500ms linear both;
+
+   animation: scale-y 500ms linear both;
 }
 
 .lower-path__body {
@@ -392,12 +205,13 @@ body {
 
 .hood {
    position: absolute;
-   top: -5px;
    left: 110px;
    width: 140px;
    height: 15px;
-   transform: rotate(3deg);
    overflow: hidden;
+
+   animation: top-hood 500ms linear both 500ms;
+   /* top, transform: rotate */
 }
 
 .hood::after {
@@ -454,27 +268,25 @@ body {
    content: '';
    position: absolute;
    top: 17px;
-   left: -14px;
    width: 47px;
    height: 12px;
-   background-color: rgb(252, 168, 2);
    border-radius: 63px 0px 0px 35px / 17px 0px 0px 10px;
-   box-shadow: 9px 1px 10px -10px inset #000;
    transform: rotate(-15deg);
-   animation: left 500ms linear both 500ms;
+
+   animation: lower-path-front-before-position 500ms linear both 12s;
+   /* left, box-shadow, background-color */
 }
 
 .lower-path__front::after {
    content: '';
    position: absolute;
    bottom: 0px;
-   left: -14px;
    width: 60px;
    height: 38px;
-   background-color: rgb(252, 168, 2);
    border-radius: 15px 30px 0px 70px / 9px 2px 0px 60px;
-   box-shadow: 8px -6px 11px -10px inset #000;
-   animation: left 500ms linear both 500ms;
+
+   animation: lower-path-front-after-position 500ms linear both 12s;
+   /* left, box-shadow, background-color */
 }
 
 .lower-path__center-back {
@@ -496,7 +308,8 @@ body {
    background-color: rgb(252, 168, 2);
    border-radius: 50%;
    transform: rotate(312deg);
-   animation: top 300ms linear both 500ms;
+
+   animation: top-px 300ms linear both 500ms;
 }
 
 .lower-path__exhaust {
@@ -557,15 +370,14 @@ body {
 
 .headlight {
    position: absolute;
-   top: 24px;
-   left: 15px;
    width: 41px;
-   height: 35px;
-   border-right: 2px solid rgb(34, 34, 34);
    border-radius: 52px 66px 5px 6px / 14px 32px 5px 6px;
    background-color: transparent;
    overflow: hidden;
    transform: skew(15deg);
+
+   animation: draw-headlight 0.5s linear both 12.5s;
+   /* top, left, height, border-right */
 }
 
 .headlight::before {
@@ -840,7 +652,9 @@ body {
    background-color: #3a3737;
    border-radius: 51% 51% 0% 0% / 68% 68% 0% 0%;
    box-shadow: 0px 20px 40px 0px inset #000, 0px -2px 1px -1px rgb(252, 168, 2);
+
    animation: translate-half-scale 500ms linear both 2500ms;
+   /*  translate, scaleY */
 }
 
 .wheels__block--rear > .wheels__bg {
@@ -858,7 +672,8 @@ body {
    height: 106px;
    border-radius: 50%;
    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 70%);
-   animation: translate-x-half-scale 500ms linear both 3500ms;
+
+   animation: translate-x-half-scale 500ms linear both 3.5s;
 }
 
 .wheels__circle {
@@ -869,7 +684,9 @@ body {
    height: 76px;
    border-radius: 50%;
    background: radial-gradient(circle, rgb(82 80 80) 65%, rgb(255 255 255) 100%);
-   animation: circle-scale 500ms linear both 4000ms;
+
+   animation: transform-circle 500ms linear both 4s;
+   /* transform: translate, scale, box-shadow */
 }
 
 .wheels__lines-block {
@@ -887,7 +704,9 @@ body {
    left: 50%;
    width: 1px;
    background-color: rgb(252, 168, 2);
-   animation: line-height 500ms linear both 4500ms;
+
+   animation: transform-line 500ms linear both 4500ms;
+   /* height, transform: translate,rotate */
 }
 
 .line:before,
@@ -898,7 +717,8 @@ body {
    left: 0;
    width: 1px;
    height: 50%;
-   animation: line-before-after-box-shadow 500ms linear both 5000ms;
+
+   animation: line-before-after-box-shadow 500ms linear both 5s;
 }
 
 .line:before {
@@ -997,7 +817,9 @@ body {
    border-radius: 50%;
    border: 1px solid rgb(252, 106, 2);
    background-color: rgb(14 14 14);
-   animation: small-circle-scale 500ms linear both 5000ms;
+
+   animation: small-circle-transform 500ms linear both 5s;
+   /* transform: translate, scale, box-shadow */
 }
 
 .name--size {
@@ -1027,7 +849,8 @@ body {
    transform: translateX(-50%);
    width: 100%;
    border-radius: 51% 51% 0% 0% / 68% 68% 0% 0%;
-   animation: wheels-wrapper-shadow 500ms linear both 2500ms;
+
+   animation: wheels-wrapper-height-shadow 500ms linear both 2500ms;
 }
 
 .wheels__block--rear > .wheels__wrapper {
@@ -1045,11 +868,14 @@ body {
 
 .car__door {
    position: absolute;
-   top: 55px;
+   bottom: 35px;
    right: 221px;
    width: 185px;
    height: 110px;
    overflow-y: hidden;
+   transform-origin: center;
+
+   animation: width-height-door 500ms linear both 9s;
 }
 
 .car__door::before {
@@ -1076,12 +902,25 @@ body {
    border-radius: 0px 130px 30px 0px / 0px 84px 104px 0px;
 }
 
+.car__handle {
+   position: absolute;
+   top: 11px;
+   right: 20px;
+   width: 9px;
+   height: 5px;
+   border-radius: 5px 2px 2px 5px;
+   background-color: rgb(49 48 48);
+
+   animation: transform-scale-x-door 500ms linear both 10s;
+}
+
 .car__side-window {
    position: absolute;
-   top: 10px;
-   left: 279px;
-   width: 200px;
    height: 48px;
+   width: 179px;
+
+   animation: transform-side-window 500ms linear both 9.5s;
+   /* top, left, transform: rotate, opacity */
 }
 
 .side-window__front {
@@ -1094,7 +933,7 @@ body {
 
 .side-window__back {
    position: absolute;
-   right: 0px;
+   right: 0;
    bottom: 0;
    width: 112px;
    height: 48px;
@@ -1120,7 +959,7 @@ body {
 .front__bg {
    position: absolute;
    top: 8px;
-   left: 21px;
+   left: 0;
    width: 0;
    height: 0;
    border-bottom: 40px solid rgb(55 54 54);
@@ -1130,17 +969,17 @@ body {
 .front__top-line {
    position: absolute;
    top: -16px;
-   left: 57px;
+   left: 36px;
    width: 3px;
    height: 83px;
    transform: rotate(59deg);
    background-color: #2c2b2b;
-   border-radius: 5px 0px 2px 5px / 10px 0px 3px 5px;
+   border-radius: 5px 1px 2px 5px / 10px 3px 3px 5px;
 }
 
 .front__bottom-line {
    position: absolute;
-   left: 21px;
+   left: 0;
    bottom: 0;
    width: 168px;
    height: 3px;
@@ -1150,7 +989,7 @@ body {
 
 .car__side-mirror {
    position: absolute;
-   left: 29px;
+   left: 8px;
    bottom: 3px;
    width: 0;
    height: 0;
@@ -1166,20 +1005,8 @@ body {
    width: 16px;
    height: 12px;
    border-radius: 17px 3px 3px 4px / 17px 4px 4px 4px;
-   box-shadow: 1px 0px 2px 0px inset rgb(243 243 243 / 45%), -4px 2px 0px -1px rgb(38 28 28 / 45%);
-   background-color: rgb(252, 168, 2);
-   transform: scaleX(2);
-}
 
-.car__handle {
-   position: absolute;
-   top: 11px;
-   right: 20px;
-   width: 9px;
-   height: 5px;
-   border-radius: 5px 2px 2px 5px;
-   background-color: rgb(49 48 48);
-   transform: scaleX(3);
+   animation: shadow-bg-scale-x-mirror 500ms linear forwards 10.5s;
 }
 
 /* indicator ======================= */
@@ -1209,7 +1036,7 @@ body {
    background-color: rgb(252, 106, 2);
 }
 
-/* -----------1  -  timing-function -  2500ms -  ------------ */
+/* -----------1- Body -  timing-function -  2500ms -  ------------ */
 .indicator__item:nth-child(1) > .indicator__bg:after {
    animation: translate-x 1500ms linear both;
 }
@@ -1217,10 +1044,10 @@ body {
    animation: translate-x 1500ms linear both;
 }
 .indicator__item:nth-child(1)::after {
-   animation: width 1000ms linear forwards 1500ms;
+   animation: width 1s linear forwards 1500ms;
 }
 
-/* -----------2  - timing-function - 3500ms ------------ */
+/* -----------2  - Wheels - timing-function - 3.5s ------------ */
 .indicator__item:nth-child(2) > .indicator__bg:after {
    animation: translate-x 2500ms linear both 2500ms;
 }
@@ -1228,59 +1055,59 @@ body {
    animation: translate-x 2500ms linear both 2500ms;
 }
 .indicator__item:nth-child(2)::after {
-   animation: width 1000ms linear forwards 5000ms;
+   animation: width 1s linear forwards 5s;
 }
 
-/* -----------3------------ */
+/* -----------3 - Windows  - timing-function - 3s------------ */
 .indicator__item:nth-child(3) > .indicator__bg:after {
-   animation: translate-x 1000ms linear both 6500ms;
+   animation: translate-x 2s linear both 6s;
 }
 .indicator__item:nth-child(3) > .indicator__border:after {
-   animation: translate-x 1000ms linear both 6500ms;
+   animation: translate-x 2s linear both 6s;
 }
 .indicator__item:nth-child(3)::after {
-   animation: width 1000ms linear forwards 700ms;
+   animation: width 1s linear forwards 8s;
 }
 
-/* -----------4------------ */
+/* -----------4 - Door  - timing-function - 3s  ----------- */
 .indicator__item:nth-child(4) > .indicator__bg:after {
-   animation: translate-x 1000ms linear both 6000ms;
+   animation: translate-x 2s linear both 9s;
 }
 .indicator__item:nth-child(4) > .indicator__border:after {
-   animation: translate-x 1000ms linear both 6000ms;
+   animation: translate-x 2s linear both 9s;
 }
 .indicator__item:nth-child(4)::after {
-   animation: width 1000ms linear forwards 7000ms;
+   animation: width 1s linear forwards 11s;
 }
 
-/* -----------5------------ */
+/* -----------5  - Front  - timing-function - 3s------------ */
 .indicator__item:nth-child(5) > .indicator__bg:after {
-   animation: translate-x 1000ms linear both 8000ms;
+   animation: translate-x 1s linear both 12s;
 }
 .indicator__item:nth-child(5) > .indicator__border:after {
-   animation: translate-x 1000ms linear both 8000ms;
+   animation: translate-x 1s linear both 12s;
 }
 .indicator__item:nth-child(5)::after {
-   animation: width 1000ms linear forwards 9000ms;
+   animation: width 1s linear forwards 12s;
 }
 
 /* -----------6------------ */
 .indicator__item:nth-child(6) > .indicator__bg:after {
-   animation: translate-x 1000ms linear both 10000ms;
+   animation: translate-x 1s linear both 10000ms;
 }
 .indicator__item:nth-child(6) > .indicator__border:after {
-   animation: translate-x 1000ms linear both 10000ms;
+   animation: translate-x 1s linear both 10000ms;
 }
 .indicator__item:nth-child(6)::after {
-   animation: width 1000ms linear forwards 11000ms;
+   animation: width 1s linear forwards 11s;
 }
 
 /* -----------7------------ */
 .indicator__item:nth-child(7) > .indicator__bg:after {
-   animation: translate-x 1000ms linear both 12000ms;
+   animation: translate-x 1s linear both 12s;
 }
 .indicator__item:nth-child(7) > .indicator__border:after {
-   animation: translate-x 1000ms linear both 12000ms;
+   animation: translate-x 1s linear both 12s;
 }
 
 .indicator__border {
@@ -1329,3 +1156,24 @@ body {
 .section__indicator {
    /* display: none; */
 }
+
+/* .start {
+   padding: 20px;
+   background-color: red;
+}
+
+.section__car.car {
+   display: none;
+}
+
+.start:hover + .car {
+   display: block;
+}
+
+.section__indicator.indicator {
+   display: none;
+}
+
+.start:hover + .car + .indicator {
+   display: block;
+} */
