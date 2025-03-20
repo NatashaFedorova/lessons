@@ -1174,10 +1174,10 @@ body {
 
 /* -----------7------------ */
 .indicator__item:nth-child(7) > .indicator__bg:after {
-   animation: translate-x 2.5s linear backwards 22.5s;
+   animation: translate-x 4s linear backwards 18.5s;
 }
 .indicator__item:nth-child(7) > .indicator__border:after {
-   animation: translate-x 2.5s linear backwards 22.5s;
+   animation: translate-x 4s linear backwards 18.5s;
 }
 
 .indicator__border {
