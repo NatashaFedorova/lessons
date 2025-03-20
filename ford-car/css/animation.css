@@ -2,13 +2,42 @@
    1. body - 2500ms
    2. wheels - 3.5s
    3. Window - 2s
-   3. Door - 3s
+   4. Door - 3s
+   5.other details - 2.5s
+   6.light - 2s
+   7.other details - 3s
+
 */
 
 /*
-   .upper-path 300ms / 600ms
+   neon 0.5s 
 */
-@keyframes translate-y-scale-y {
+@keyframes opacity {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+/* 
+.lower-path__front 
+*/
+
+@keyframes lower-path-front-shadow {
+   0% {
+      box-shadow: 9px -6px 10px -10px inset rgba(0, 0, 0, 0);
+   }
+   100% {
+      box-shadow: 9px -6px 10px -10px inset rgb(0, 0, 0);
+   }
+}
+
+/*
+   .upper-path .5s
+*/
+@keyframes transform-upper-path {
    0% {
       transform: translateY(100%) scaleY(0);
    }
@@ -34,7 +63,7 @@
    decor-rear-window  500ms
 */
 
-@keyframes box-shadow-rear-window {
+@keyframes shadow-rear-window {
    0% {
       box-shadow: 0px 1px 0px 0px inset #00000000;
    }
@@ -75,6 +104,44 @@
 }
 
 /* 
+   decor__shadow-center::before
+*/
+@keyframes width-shadow-line {
+   0% {
+      transform: rotate(0deg);
+      width: 0px;
+   }
+   100% {
+      transform: rotate(4deg);
+      width: 228px;
+   }
+}
+
+/* 
+   picture-center:after - from 
+*/
+@keyframes shadow {
+   0% {
+      box-shadow: -649px 0px 91px -80px inset rgb(252, 168, 2);
+   }
+   100% {
+      box-shadow: 0px 0px 91px -80px inset rgb(252, 168, 2);
+   }
+}
+
+/* 
+   lower-path__exhaust  500ms
+*/
+@keyframes position-exhaust {
+   0% {
+      right: 50px;
+   }
+   100% {
+      right: 23px;
+   }
+}
+
+/* 
    lower-path  500ms
 */
 @keyframes scale-y {
@@ -100,7 +167,7 @@
 }
 
 /*
-   .lower-path__front::before 500ms  
+   .lower-path__front::before 0.5s   
 */
 @keyframes lower-path-front-before-position {
    0% {
@@ -116,7 +183,7 @@
 }
 
 /*
-   .lower-path__front::after 500ms  
+   .lower-path__front::after 0.5s   
 */
 @keyframes lower-path-front-after-position {
    0% {
@@ -132,7 +199,7 @@
 }
 
 /*
-   hood 500ms 
+   hood 0.5s  
 */
 @keyframes top-hood {
    0% {
@@ -146,7 +213,47 @@
 }
 
 /*
-   headlight 500ms 
+  decor__outline 0.5s  
+*/
+@keyframes width-height-decor-outline {
+   0% {
+      width: 0px;
+      height: 0px;
+   }
+   100% {
+      width: 39px;
+      height: 47px;
+   }
+}
+
+/*
+  decor__outline:before 0.5s  
+*/
+@keyframes appearance-decor-line {
+   0% {
+      opacity: 0;
+      width: 0px;
+   }
+   100% {
+      opacity: 1;
+      width: 20px;
+   }
+}
+
+/*
+  .decor__shadow-start-center .5s 
+*/
+@keyframes width-shadow-start-center {
+   0% {
+      width: 0px;
+   }
+   100% {
+      width: 450px;
+   }
+}
+
+/*
+   headlight 0.5s  
 */
 @keyframes draw-headlight {
    0% {
@@ -162,10 +269,82 @@
       border-right: 2px solid rgb(34, 34, 34);
    }
    100% {
-      top: 24px;
-      left: 15px;
-      height: 35px;
-      border-right: 2px solid rgb(34, 34, 34);
+   }
+}
+
+/* 
+   decor__bumper-path - 0.5s
+*/
+@keyframes position-bumper {
+   0% {
+      left: 4px;
+      width: 0px;
+   }
+   100% {
+      left: 34px;
+      width: 10px;
+   }
+}
+
+/* 
+   position-bumper-after - 0.5s
+*/
+@keyframes width-bumper-after {
+   0% {
+      width: 0px;
+   }
+   50% {
+      width: 0px;
+   }
+   100% {
+      width: 2px;
+   }
+}
+
+/* 
+   .black-triangle - 0.5s
+*/
+@keyframes appearance-black-triangle {
+   0% {
+      width: 0px;
+      height: 0px;
+   }
+   100% {
+      width: 7px;
+      height: 20px;
+   }
+}
+
+/* 
+   .silver-triangle - 0.5s
+*/
+@keyframes appearance-scale {
+   0% {
+      transform: scale(1.2);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+/*
+   .small-lamp- 0.5s
+*/
+@keyframes appearance-small-lamp {
+   0% {
+      opacity: 0;
+      transform: scale(0.8);
+      box-shadow: 0px 0px 2px 1px inset #303030, 0px 0px 0px 1px rgba(255, 255, 255, 0);
+   }
+   50% {
+      opacity: 1;
+      transform: scale(1);
+      box-shadow: 0px 0px 2px 1px inset #303030, 0px 0px 0px 1px rgba(48, 48, 48, 0);
+   }
+   100% {
+      opacity: 1;
+      transform: scale(1);
+      box-shadow: 0px 0px 2px 1px inset #303030, 0px 0px 0px 1px #303030;
    }
 }
 

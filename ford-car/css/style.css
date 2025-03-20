@@ -73,8 +73,9 @@ body {
    position: relative;
    height: 60px;
    width: 700px;
+   transform: translateY(0%) scaleY(1);
 
-   animation: translate-y-scale-y 500ms linear both 1s;
+   animation: transform-upper-path 0.5s linear backwards 1s;
    /* translateY, scaleY */
 }
 
@@ -121,8 +122,9 @@ body {
    border-right: 2px solid #2c2b2b;
    border-bottom: 3px solid #2c2b2b;
    box-shadow: -4px 0px 0px -3px inset #000000;
+   transform: skewX(-61deg) translateY(0%) scaleY(1);
 
-   animation: transform-windshield 500ms linear both 6s;
+   animation: transform-windshield 0.5s linear backwards 6s;
    /*  skewX, translateY, scaleY */
 }
 
@@ -155,22 +157,27 @@ body {
 .decor-rear-window {
    position: absolute;
    top: 31px;
-   left: -2px;
+   left: -1px;
    width: 141px;
    height: 7px;
    border-radius: 2px 7px 7px 7px;
    transform: rotate(15deg);
    display: flex;
+   box-shadow: 141px 0px 1px 0px inset #2a2a2a;
 
-   animation: box-shadow-rear-window 500ms linear both 6500ms;
+   animation: shadow-rear-window 0.5s linear backwards 6.5s;
 }
 
 .decor-rear-window__block {
    width: 28px;
    height: 7px;
    border-radius: 4px 17px 2px 28px / 2px 17px 2px 28px;
+   background-color: rgba(27, 26, 26, 1);
+   border-bottom: 1px solid #121212;
+   box-shadow: 0px 1px 3px 0px inset #454545;
+   transform: rotate(349deg);
 
-   animation: transform-rear-window-block 1s linear both 7s;
+   animation: transform-rear-window-block 1s linear backwards 7s;
    /* background-color,  border-bottom, box-shadow, transform: rotate */
 }
 
@@ -179,7 +186,7 @@ body {
    height: 140px;
    width: 700px;
 
-   animation: scale-y 500ms linear both;
+   animation: scale-y 0.5s linear backwards;
 }
 
 .lower-path__body {
@@ -192,7 +199,7 @@ body {
 /* neon------------------------------- */
 .lower-path__body::after {
    z-index: -1;
-   /* content: ''; */
+   content: '';
    position: absolute;
    bottom: 36px;
    left: 50px;
@@ -201,16 +208,20 @@ body {
    border-radius: 0 0 20px 20px;
    background-color: transparent;
    box-shadow: 0px 4px 12px 6px rgb(252, 168, 2);
+
+   animation: opacity 0.5s linear backwards 17s;
 }
 
 .hood {
    position: absolute;
    left: 110px;
+   top: -5px;
    width: 140px;
    height: 15px;
+   transform: rotate(3deg);
    overflow: hidden;
 
-   animation: top-hood 500ms linear both 500ms;
+   animation: top-hood 0.5s linear backwards 0.5s;
    /* top, transform: rotate */
 }
 
@@ -260,32 +271,40 @@ body {
    width: 220px;
    height: 106px;
    border-radius: 175px 0px 0px 35px / 25px 0px 0px 14px;
-   box-shadow: 9px -6px 10px -10px inset #000;
    background-color: rgb(252, 168, 2);
+   box-shadow: 9px -6px 10px -10px inset rgb(0, 0, 0);
+
+   animation: lower-path-front-shadow 0.5s linear backwards 19s;
 }
 
 .lower-path__front::before {
    content: '';
    position: absolute;
    top: 17px;
+   left: -14px;
    width: 47px;
    height: 12px;
+   box-shadow: 9px 1px 10px -10px inset #000;
+   background-color: rgb(252, 168, 2);
    border-radius: 63px 0px 0px 35px / 17px 0px 0px 10px;
    transform: rotate(-15deg);
 
-   animation: lower-path-front-before-position 500ms linear both 12s;
+   animation: lower-path-front-before-position 0.5s linear backwards 12s;
    /* left, box-shadow, background-color */
 }
 
 .lower-path__front::after {
    content: '';
    position: absolute;
+   left: -14px;
    bottom: 0px;
    width: 60px;
    height: 38px;
+   box-shadow: 8px -6px 11px -10px inset #000;
+   background-color: rgb(252, 168, 2);
    border-radius: 15px 30px 0px 70px / 9px 2px 0px 60px;
 
-   animation: lower-path-front-after-position 500ms linear both 12s;
+   animation: lower-path-front-after-position 0.5s linear backwards 12s;
    /* left, box-shadow, background-color */
 }
 
@@ -302,6 +321,7 @@ body {
 .lower-path__center-back::after {
    content: '';
    position: absolute;
+   top: -5px;
    right: 14px;
    width: 22px;
    height: 27px;
@@ -309,18 +329,20 @@ body {
    border-radius: 50%;
    transform: rotate(312deg);
 
-   animation: top-px 300ms linear both 500ms;
+   animation: top-px 0.3s linear backwards 0.5s;
 }
 
 .lower-path__exhaust {
    position: absolute;
-   bottom: 37px;
    right: 23px;
+   bottom: 37px;
    width: 50px;
    height: 12px;
    background-color: #dddbdb;
    border-radius: 2px;
    box-shadow: 4px -4px 4px -2px inset #000000, 10px 5px 4px 1px inset #0a0a0a;
+
+   animation: position-exhaust 0.5s linear backwards 13.5s;
 }
 
 .lower-path__decor {
@@ -356,6 +378,8 @@ body {
    border-radius: 61px 78px 0px 6px / 42px 24px 0px 6px;
    transform: skew(15deg);
    box-shadow: 1px 0px 2px -1px rgb(48 48 48 / 45%);
+
+   animation: width-height-decor-outline 0.5s linear backwards 18.5s;
 }
 
 .decor__outline::before {
@@ -366,17 +390,24 @@ body {
    width: 20px;
    height: 3px;
    box-shadow: 0px -1px 2px -1px rgb(48 48 48 / 45%);
+
+   animation: appearance-decor-line 0.5s linear backwards 19s;
+   /* opacity, width */
 }
 
 .headlight {
    position: absolute;
+   top: 24px;
+   left: 15px;
+   height: 35px;
    width: 41px;
+   border-right: 2px solid rgb(34, 34, 34);
    border-radius: 52px 66px 5px 6px / 14px 32px 5px 6px;
    background-color: transparent;
    overflow: hidden;
    transform: skew(15deg);
 
-   animation: draw-headlight 0.5s linear both 12.5s;
+   animation: draw-headlight 0.5s linear backwards 15.5s;
    /* top, left, height, border-right */
 }
 
@@ -440,9 +471,7 @@ body {
    left: 34px;
    width: 10px;
    height: 10px;
-   border-radius: 1px 5px 5px 2px;
-   background: rgb(0, 0, 0);
-
+   border-radius: 3px 5px 5px 3px;
    background: linear-gradient(
       -3deg,
       rgb(56, 55, 55) 33%,
@@ -451,31 +480,41 @@ body {
    );
    transform-style: preserve-3d;
    transform: scaleX(7);
+
+   animation: position-bumper 0.5s linear backwards 12.5s;
+   /* width, left */
 }
 
-.decor__bumper-path::after {
-   content: '';
-   position: absolute;
-   top: -2px;
-   left: 0px;
-   width: 3px;
-   height: 4px;
-   border-radius: 4px 1px 1px 1px;
-   background-color: #434343;
-   transform: rotate(10deg);
-   transform: scale(1) translateZ(-1px);
-   transform: scaleX(0.9) translateZ(-1px) rotate(1deg);
-}
 .decor__wrapper-picture-center {
    position: relative;
    padding-top: 26px;
    transform: rotate(-0.5deg);
+   width: 100%;
+}
+
+.car:hover .decor__wrapper-picture-center {
 }
 
 .picture-center {
+   position: relative;
    width: 460px;
    height: 60px;
    transform: skewX(20deg);
+
+   animation: shadow 2s linear both 2s;
+}
+
+/* ! -- service element */
+.picture-center:after {
+   content: '';
+   position: absolute;
+   top: -2px;
+   right: -1px;
+   width: 103%;
+   height: 104%;
+   box-shadow: 0px 0px 0px 0px inset rgb(252, 168, 2);
+
+   animation: shadow 1s linear both 20.5s;
 }
 
 .picture-center__dark-block {
@@ -517,12 +556,17 @@ body {
    left: -1px;
    color: #303030;
    background-color: rgb(252, 168, 2);
+
+   animation: opacity 0.5s linear backwards 21.5s, appearance-scale 0.5s linear backwards 21.5s;
 }
+
 .picture-center__text--yellow {
    top: 25px;
    left: 5px;
    letter-spacing: 1px;
    color: rgb(252, 168, 2);
+
+   animation: opacity 0.5s linear backwards 22s, appearance-scale 0.5s linear backwards 22s;
 }
 
 .decor__gradient {
@@ -544,6 +588,8 @@ body {
    height: 21px;
    overflow: hidden;
    transform: rotate(-0.5deg);
+
+   animation: width-shadow-start-center 1s linear backwards 19s;
 }
 
 .decor__shadow-start-center::before {
@@ -575,6 +621,8 @@ body {
    border-radius: 108px 0px 0px 0px / 22px 0px 0px 0px;
    transform: rotate(4deg);
    box-shadow: 0px 1px 5px -2px inset #00000070;
+
+   animation: width-shadow-line 0.5s linear backwards 20s;
 }
 
 .black-triangle {
@@ -587,6 +635,9 @@ body {
    box-shadow: 0px 3px 1px 0px #000;
    background-color: #292929;
    transform: skew(292deg) rotate(271deg);
+
+   animation: appearance-black-triangle 0.5s linear backwards 13s;
+   /* -width, height  */
 }
 
 .silver-triangle {
@@ -598,6 +649,8 @@ body {
    background-color: #959191;
    border-radius: 3px 0px 19px 3px;
    box-shadow: 0px 1px 5px -1px inset #000000;
+
+   animation: opacity 0.5s linear backwards 14s, appearance-scale 0.5s linear backwards 14s;
 }
 
 .small-lamp {
@@ -612,6 +665,8 @@ body {
 .small-lamp--start {
    top: 80px;
    left: 67px;
+   animation: appearance-small-lamp 0.5s linear backwards 16s;
+   /*  opacity , transform: scale, box-shadow */
 }
 
 .small-lamp--end {
@@ -619,6 +674,8 @@ body {
    top: 62px;
    right: 28px;
    background-color: rgb(155, 2, 2);
+   animation: appearance-small-lamp 0.5s linear backwards 16.5s;
+   /*  opacity , transform: scale, box-shadow */
 }
 
 .lower-path__wheels {
@@ -649,11 +706,12 @@ body {
    left: 50%;
    width: 124px;
    height: 75px;
+   transform: translate(-50%, 0%);
    background-color: #3a3737;
    border-radius: 51% 51% 0% 0% / 68% 68% 0% 0%;
    box-shadow: 0px 20px 40px 0px inset #000, 0px -2px 1px -1px rgb(252, 168, 2);
 
-   animation: translate-half-scale 500ms linear both 2500ms;
+   animation: translate-half-scale 0.5s linear backwards 2.5s;
    /*  translate, scaleY */
 }
 
@@ -673,7 +731,7 @@ body {
    border-radius: 50%;
    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 70%);
 
-   animation: translate-x-half-scale 500ms linear both 3.5s;
+   animation: translate-x-half-scale 0.5s linear backwards 3.5s;
 }
 
 .wheels__circle {
@@ -683,9 +741,11 @@ body {
    width: 76px;
    height: 76px;
    border-radius: 50%;
+   transform: translate(-50%, -50%);
+   box-shadow: 0px 0px 4px 7px inset rgb(252, 168, 2);
    background: radial-gradient(circle, rgb(82 80 80) 65%, rgb(255 255 255) 100%);
 
-   animation: transform-circle 500ms linear both 4s;
+   animation: transform-circle 0.5s linear backwards 4s;
    /* transform: translate, scale, box-shadow */
 }
 
@@ -703,9 +763,11 @@ body {
    top: 50%;
    left: 50%;
    width: 1px;
+   height: 72px;
+   transform: translate(-50%, -50%) rotate(180);
    background-color: rgb(252, 168, 2);
 
-   animation: transform-line 500ms linear both 4500ms;
+   animation: transform-line 0.5s linear backwards 4.5s;
    /* height, transform: translate,rotate */
 }
 
@@ -717,8 +779,9 @@ body {
    left: 0;
    width: 1px;
    height: 50%;
+   box-shadow: 0px 2px 3px 1px #000;
 
-   animation: line-before-after-box-shadow 500ms linear both 5s;
+   animation: line-before-after-box-shadow 0.5s linear backwards 5s;
 }
 
 .line:before {
@@ -817,8 +880,9 @@ body {
    border-radius: 50%;
    border: 1px solid rgb(252, 106, 2);
    background-color: rgb(14 14 14);
+   box-shadow: 0px 0px 3px 1px #000;
 
-   animation: small-circle-transform 500ms linear both 5s;
+   animation: small-circle-transform 0.5s linear backwards 5s;
    /* transform: translate, scale, box-shadow */
 }
 
@@ -847,10 +911,12 @@ body {
    top: -11px;
    left: 50%;
    transform: translateX(-50%);
+   height: 75px;
    width: 100%;
    border-radius: 51% 51% 0% 0% / 68% 68% 0% 0%;
+   box-shadow: 0px 6px 12px -8px inset #000, 0px 2px 0px 1px inset rgb(252, 168, 2);
 
-   animation: wheels-wrapper-height-shadow 500ms linear both 2500ms;
+   animation: wheels-wrapper-height-shadow 0.5s linear backwards 2.5s;
 }
 
 .wheels__block--rear > .wheels__wrapper {
@@ -859,7 +925,7 @@ body {
 
 .wheels__block--rear > .wheels__wrapper::after {
    top: -10px;
-   width: 117px;
+   width: 114px;
    height: 75px;
    border-radius: 50% 50% 90% 0% / 70% 70% 0% 0%;
    box-shadow: 1px 6px 12px -8px inset #000, 0px 7px 0px 1px inset rgb(252, 168, 2),
@@ -875,7 +941,7 @@ body {
    overflow-y: hidden;
    transform-origin: center;
 
-   animation: width-height-door 500ms linear both 9s;
+   animation: width-height-door 0.5s linear backwards 9s;
 }
 
 .car__door::before {
@@ -910,16 +976,19 @@ body {
    height: 5px;
    border-radius: 5px 2px 2px 5px;
    background-color: rgb(49 48 48);
+   transform: scaleX(3);
 
-   animation: transform-scale-x-door 500ms linear both 10s;
+   animation: transform-scale-x-door 0.5s linear backwards 10s;
 }
 
 .car__side-window {
    position: absolute;
+   top: 10px;
+   left: 300px;
    height: 48px;
    width: 179px;
 
-   animation: transform-side-window 500ms linear both 9.5s;
+   animation: transform-side-window 0.5s linear backwards 9.5s;
    /* top, left, transform: rotate, opacity */
 }
 
@@ -1006,7 +1075,7 @@ body {
    height: 12px;
    border-radius: 17px 3px 3px 4px / 17px 4px 4px 4px;
 
-   animation: shadow-bg-scale-x-mirror 500ms linear forwards 10.5s;
+   animation: shadow-bg-scale-x-mirror 0.5s linear forwards 10.5s;
 }
 
 /* indicator ======================= */
@@ -1032,82 +1101,83 @@ body {
    position: absolute;
    top: 50%;
    left: 100%;
+   width: 32px;
    height: 2px;
    background-color: rgb(252, 106, 2);
 }
 
-/* -----------1- Body -  timing-function -  2500ms -  ------------ */
+/* -----------1- Body -  timing-function -  2.5s -  ------------ */
 .indicator__item:nth-child(1) > .indicator__bg:after {
-   animation: translate-x 1500ms linear both;
+   animation: translate-x 1.5s linear backwards;
 }
 .indicator__item:nth-child(1) > .indicator__border:after {
-   animation: translate-x 1500ms linear both;
+   animation: translate-x 1.5s linear backwards;
 }
 .indicator__item:nth-child(1)::after {
-   animation: width 1s linear forwards 1500ms;
+   animation: width 1s linear backwards 1.5s;
 }
 
 /* -----------2  - Wheels - timing-function - 3.5s ------------ */
 .indicator__item:nth-child(2) > .indicator__bg:after {
-   animation: translate-x 2500ms linear both 2500ms;
+   animation: translate-x 2.5s linear backwards 2.5s;
 }
 .indicator__item:nth-child(2) > .indicator__border:after {
-   animation: translate-x 2500ms linear both 2500ms;
+   animation: translate-x 2.5s linear backwards 2.5s;
 }
 .indicator__item:nth-child(2)::after {
-   animation: width 1s linear forwards 5s;
+   animation: width 1s linear backwards 5s;
 }
 
 /* -----------3 - Windows  - timing-function - 3s------------ */
 .indicator__item:nth-child(3) > .indicator__bg:after {
-   animation: translate-x 2s linear both 6s;
+   animation: translate-x 2s linear backwards 6s;
 }
 .indicator__item:nth-child(3) > .indicator__border:after {
-   animation: translate-x 2s linear both 6s;
+   animation: translate-x 2s linear backwards 6s;
 }
 .indicator__item:nth-child(3)::after {
-   animation: width 1s linear forwards 8s;
+   animation: width 1s linear backwards 8s;
 }
 
 /* -----------4 - Door  - timing-function - 3s  ----------- */
 .indicator__item:nth-child(4) > .indicator__bg:after {
-   animation: translate-x 2s linear both 9s;
+   animation: translate-x 2s linear backwards 9s;
 }
 .indicator__item:nth-child(4) > .indicator__border:after {
-   animation: translate-x 2s linear both 9s;
+   animation: translate-x 2s linear backwards 9s;
 }
 .indicator__item:nth-child(4)::after {
-   animation: width 1s linear forwards 11s;
+   animation: width 1s linear backwards 11s;
 }
 
-/* -----------5  - Front  - timing-function - 3s------------ */
+/* -----------5  - other details  - timing-function - 3.5s------------ */
 .indicator__item:nth-child(5) > .indicator__bg:after {
-   animation: translate-x 1s linear both 12s;
+   animation: translate-x 2.5s linear backwards 12s;
 }
 .indicator__item:nth-child(5) > .indicator__border:after {
-   animation: translate-x 1s linear both 12s;
+   animation: translate-x 2.5s linear backwards 12s;
 }
 .indicator__item:nth-child(5)::after {
-   animation: width 1s linear forwards 12s;
+   animation: width 1s linear backwards 14.5s;
 }
 
-/* -----------6------------ */
+/* -----------6 - light  - timing-function - 3.5s ------------ */
 .indicator__item:nth-child(6) > .indicator__bg:after {
-   animation: translate-x 1s linear both 10000ms;
+   animation: translate-x 2s linear backwards 15.5s;
 }
 .indicator__item:nth-child(6) > .indicator__border:after {
-   animation: translate-x 1s linear both 10000ms;
+   animation: translate-x 2s linear backwards 15.5s;
 }
 .indicator__item:nth-child(6)::after {
-   animation: width 1s linear forwards 11s;
+   animation: width 1s linear backwards 17.5s;
 }
 
 /* -----------7------------ */
 .indicator__item:nth-child(7) > .indicator__bg:after {
-   animation: translate-x 1s linear both 12s;
+   animation: translate-x 2.5s linear backwards 22.5s;
 }
 .indicator__item:nth-child(7) > .indicator__border:after {
-   animation: translate-x 1s linear both 12s;
+   animation: translate-x 2.5s linear backwards 22.5s;
 }
 
 .indicator__border {
@@ -1150,6 +1220,10 @@ body {
    position: relative;
    color: #000;
    font-weight: 500;
+}
+
+.indicator__text--center {
+   text-align: center;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
