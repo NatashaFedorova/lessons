@@ -24,25 +24,6 @@ body {
    margin: 0 auto;
 }
 
-/* .header {
-   padding: 10px 0;
-   min-height: 70px;
-   border-bottom: 1px solid #fff;
-}
-
-.header__container {
-   min-height: 50px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.header__title {
-   font-size: 36px;
-   font-weight: 700;
-   text-align: center;
-} */
-
 .name {
    font-family: 'Ephesis', cursive;
    font-size: 24px;
@@ -391,8 +372,7 @@ body {
    height: 3px;
    box-shadow: 0px -1px 2px -1px rgb(48 48 48 / 45%);
 
-   animation: appearance-decor-line 0.5s linear backwards 19s;
-   /* opacity, width */
+   animation: opacity 0.5s linear backwards 19s, width-decor-line 0.5s linear backwards 19s;
 }
 
 .headlight {
@@ -490,9 +470,6 @@ body {
    padding-top: 26px;
    transform: rotate(-0.5deg);
    width: 100%;
-}
-
-.car:hover .decor__wrapper-picture-center {
 }
 
 .picture-center {
@@ -665,7 +642,7 @@ body {
 .small-lamp--start {
    top: 80px;
    left: 67px;
-   animation: appearance-small-lamp 0.5s linear backwards 16s;
+   animation: opacity 0.5s linear backwards 16s, appearance-small-lamp 0.5s linear backwards 16s;
    /*  opacity , transform: scale, box-shadow */
 }
 
@@ -674,7 +651,7 @@ body {
    top: 62px;
    right: 28px;
    background-color: rgb(155, 2, 2);
-   animation: appearance-small-lamp 0.5s linear backwards 16.5s;
+   animation: opacity 0.5s linear backwards 16.5s, appearance-small-lamp 0.5s linear backwards 16.5s;
    /*  opacity , transform: scale, box-shadow */
 }
 
@@ -764,7 +741,7 @@ body {
    left: 50%;
    width: 1px;
    height: 72px;
-   transform: translate(-50%, -50%) rotate(180);
+   transform: translate(-50%, -50%) rotate(180deg);
    background-color: rgb(252, 168, 2);
 
    animation: transform-line 0.5s linear backwards 4.5s;
@@ -1172,7 +1149,7 @@ body {
    animation: width 1s linear backwards 17.5s;
 }
 
-/* -----------7------------ */
+/* -----------7   decor  - timing-function - 4s ------------ */
 .indicator__item:nth-child(7) > .indicator__bg:after {
    animation: translate-x 4s linear backwards 18.5s;
 }
@@ -1226,11 +1203,7 @@ body {
    text-align: center;
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.section__indicator {
-   /* display: none; */
-}
-
+/* ------------------------------------------------- */
 /* .start {
    padding: 20px;
    background-color: red;
