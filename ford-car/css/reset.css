@@ -48,6 +48,11 @@ textarea {
    line-height: inherit;
 }
 
+a,
+button {
+   cursor: pointer;
+}
+
 button {
    color: inherit;
    background-color: transparent;
