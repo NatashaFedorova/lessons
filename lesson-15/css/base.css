@@ -1,0 +1,95 @@
+.body {
+   font-family: 'Causten', sant-serif;
+   background-color: #ffffff;
+   color: #0a0a0a;
+   font-size: 20px;
+}
+
+[class*='__container'] {
+   max-width: 1270px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+.header,
+.footer {
+   padding: 30px 0;
+}
+
+.practice {
+   padding: 50px 0;
+}
+
+.header__container > *,
+.footer__container > * {
+   margin-bottom: 30px;
+}
+
+.header__container > *:last-child,
+.footer__container > *:last-child {
+   margin-bottom: 0;
+}
+
+.footer__nav {
+   position: relative;
+}
+
+.nav {
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+}
+
+.nav__link {
+   font-size: 20px;
+   font-weight: 600;
+   padding: 15px 0;
+   border-radius: 4px;
+
+   transition: color 300ms;
+}
+
+.nav__link--active {
+   color: #d43900;
+}
+
+.nav__link:hover {
+   color: #d43900;
+}
+
+.nav__link:focus {
+   color: #d43900;
+   outline: 2px solid #d43900;
+}
+
+.nav__link:active {
+   color: #d43900;
+   outline: 2px solid transparent;
+}
+
+.hero {
+   background: #0a0a0a url('../img/hero-bg.webp') center/cover no-repeat;
+   padding: 150px 0;
+}
+
+.hero__title {
+   font-size: 32px;
+   text-align: center;
+   font-weight: 700;
+}
+
+.footer__nav::after {
+   content: '';
+   position: absolute;
+   bottom: -3px;
+   background-color: #0a0a0a;
+   width: 100vw;
+   height: 1px;
+}
+
+.footer__name {
+   font-family: 'Ephesis', cursive;
+   font-size: 24px;
+   line-height: 1.5;
+   text-align: center;
+}
