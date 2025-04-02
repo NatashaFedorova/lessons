@@ -348,6 +348,7 @@
 }
 
 .card__link {
+   flex: 0 0 auto;
    padding: 15px 0;
    transform: scale(1);
 
