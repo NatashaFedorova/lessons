@@ -32,7 +32,7 @@ img {
 
 [class*='__icon'] {
    fill: #1b1a1a;
-   transition: fill 0.3s linear;
+   transition: fill 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .f-header__container,
@@ -101,7 +101,6 @@ img {
    font-size: 14px;
    text-transform: capitalize;
    width: max-content;
-   height: 100%;
    padding: 16px;
    overflow: hidden;
 }
@@ -112,7 +111,7 @@ img {
    position: absolute;
    height: 100%;
    width: 100%;
-   transition: all 0.3s linear;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-template::before {
@@ -183,7 +182,7 @@ img {
    font-weight: 400;
    color: #555555;
    letter-spacing: -0.7px;
-   transition: color 0.3s linear;
+   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .f-logo:hover > .f-logo__icon,
@@ -211,7 +210,7 @@ img {
    font-size: 16px;
    padding: 5px 0;
    width: max-content;
-   transition: color 0.3s linear;
+   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .f-nav__link::before {
@@ -223,7 +222,7 @@ img {
    width: 100%;
    height: 1px;
    background-color: #608e3e;
-   transition: transform 0.3s linear;
+   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .f-nav__link:hover,
@@ -271,7 +270,7 @@ img {
    width: 0;
    height: 1px;
    background-color: #608e3e;
-   transition: width 0.3s linear;
+   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .search-basket__input:hover + .search-basket__label:after {
@@ -409,7 +408,7 @@ img {
    line-height: 1.1;
    font-weight: 600;
    color: #282828;
-   transition: color 0.3s linear;
+   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-product__link-title:hover {
@@ -477,7 +476,6 @@ img {
 
 .reviews__list {
    display: flex;
-   align-items: flex-start;
    flex-wrap: wrap;
    row-gap: 30px;
    margin-left: -15px;
@@ -490,14 +488,17 @@ img {
 
 .reviews__column {
    flex: 0 0 25%;
-   height: 100%;
    padding-left: 15px;
    padding-right: 15px;
 }
 
 .reviews__item {
+   display: flex;
+   flex-direction: column;
+   padding-top: 30px;
+   min-height: 100%;
    transform: translateY(0);
-   transition: transform 0.3s linear;
+   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .reviews__item:hover {
@@ -505,9 +506,13 @@ img {
 }
 
 .reviews__avatar {
-   position: relative;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
    width: 110px;
    height: 110px;
+   /* для alt */
    text-align: center;
    margin-left: auto;
    margin-right: auto;
@@ -528,11 +533,11 @@ img {
 }
 
 .reviews__main-content {
+   flex: 1 0 100%;
    color: #999999;
    line-height: 1.2;
    text-align: center;
    padding: 100px 20px 30px;
-   margin-top: -70px;
    background-color: rgb(255, 255, 255);
 }
 
@@ -582,7 +587,6 @@ img {
 }
 
 .reviews__text {
-   flex: 0 0 auto;
    font-weight: 300;
 }
 
@@ -651,7 +655,7 @@ img {
    width: 25px;
    stroke: #1b1a1a;
    border: 1px solid rgba(95, 142, 62, 0);
-   transition: all 0.3s linear;
+   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slider__btn:hover {
@@ -664,7 +668,7 @@ img {
 }
 
 .slider__list {
-   flex: 0 1 auto;
+   flex: 1 1 auto;
    display: flex;
    align-self: center;
    margin-left: -15px;
@@ -672,12 +676,118 @@ img {
 }
 
 .slider__column {
-   flex: 0 1 auto;
+   flex: 0 1 33.333%;
    padding-left: 15px;
    padding-right: 15px;
 }
 
-.slider__img {
-   max-width: 100%;
+.slider__item {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.slider__img-link {
+   display: block;
    overflow: hidden;
+}
+
+.slider__img-link > img {
+   transform: scale(1);
+   transition: transform 0.3s linear;
+}
+
+.slider__img-link:hover > img,
+.slider__img-link:focus > img {
+   transform: scale(1.15);
+}
+
+.slider__text-content {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   border: 1px solid #acacac;
+   padding: 30px;
+}
+
+.slider__text-content > *:not(:last-child) {
+   margin-bottom: 10px;
+}
+
+.slider__date {
+   position: absolute;
+   top: -35px;
+   left: 30px;
+   font-size: 15px;
+   line-height: 1;
+   text-align: center;
+   padding: 5px;
+   max-width: 42px;
+   background-color: #ffffff;
+   box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.15);
+   border-bottom: 3px solid #9a6437;
+}
+
+.date__month {
+   text-transform: capitalize;
+   font-size: 12px;
+}
+
+.author-comments-block {
+   display: flex;
+   align-items: center;
+   column-gap: 30px;
+   font-size: 14px;
+   color: #808080;
+}
+
+.author-comments-block__link {
+   display: flex;
+   align-items: center;
+   column-gap: 5px;
+   line-height: 1.3;
+}
+
+.author-comments-block__icon {
+   fill: #9a6437;
+}
+
+.author-comments-block__link:hover .author-comments-block__icon {
+   fill: #608e3e;
+}
+
+.author-comments-block__link:hover .author-comments-block__text {
+   color: #608e3e;
+}
+
+.author-comments-block__link:focus .author-comments-block__icon {
+   fill: #608e3e;
+}
+
+.author-comments-block__link:focus .author-comments-block__text {
+   color: #608e3e;
+}
+
+.slider__title {
+   flex: 1 0 auto;
+}
+
+/* 
+   обмеження по висоті, 
+   оскільки це стаття за посиланням
+*/
+.slider__title-link {
+   font-size: 20px;
+   line-height: 1.5;
+   color: #2e2d2d;
+   max-height: 60px;
+   overflow: hidden;
+
+   transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider__title-link:hover,
+.slider__title-link:focus {
+   color: #608e3e;
 }
