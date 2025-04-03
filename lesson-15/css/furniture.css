@@ -52,12 +52,14 @@ img {
    align-items: center;
    column-gap: 10px;
    font-size: 16px;
+   line-height: 1.2;
    text-transform: uppercase;
    color: #9a6437;
 }
 
 .title-group__title::before,
 .title-group__title::after {
+   flex: 0 0 auto;
    content: '';
    width: 55px;
    height: 1px;
@@ -337,7 +339,7 @@ img {
 }
 
 .popular-products__title-group {
-   flex: 0 0 auto;
+   flex: 0 1 auto;
 }
 
 .popular-products__more-link {
