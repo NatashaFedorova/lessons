@@ -56,7 +56,8 @@ button {
 }
 
 button,
-select {
+select,
+option {
    cursor: pointer;
 }
 
