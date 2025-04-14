@@ -31,6 +31,11 @@
                <li class="nav__item">
                   <a class="nav__link nav__link--line-bg" href="#call-back">Call
                      Back</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg" href="#add-recipe">Add
+                     recipe</a>
+               </li>
             </ul>
          </div>
       </header>
@@ -908,30 +913,189 @@
             </div>
 
          </div>
-      </main>
-      <footer class="footer">
-         <div class="footer__container">
-            <ul class="footer__nav nav">
-               <li class="nav__item">
-                  <a class="nav__link nav__link--line-bg"
-                     href="index.html">Practice</a>
-               </li>
-               <li class="nav__item">
-                  <a class="nav__link nav__link--line-bg" href="#my-info">My
-                     Info</a>
-               </li>
-               <li class="nav__item">
-                  <a class="nav__link nav__link--line-bg"
-                     href="#check-out">Check
-                     Out</a>
-               </li>
-               <li class="nav__item">
-                  <a class="nav__link nav__link--line-bg" href="#call-back">Call
-                     Back</a>
-            </ul>
-            <p class="footer__name">Fedorova Nataliya</p>
+         <div class="add-recipe" id="add-recipe">
+            <div class="add-recipe__container">
+               <h2 class="add-recipe__title">Add recipe</h2>
+               <form class="add-recipe__form form-add-recipe" action="#"
+                  method="GET" enctype="multipart/form-data"
+                  data-add-recipe-form>
+                  <div class="form-add-recipe__top-part">
+                     <div class="form-add-recipe__photo-block photo-block">
+                        <div class="photo-block__wrapper">
+                           <input class="photo-block__input" type="file"
+                              name="file" id="file"
+                              accept="image/webp, image/jpeg, image/png"
+                              title="Download file (image/webp, image/jpeg, image/png)">
+                           <label class="photo-block__label" for="file">
+                              <svg class="photo-block__icon" width="64"
+                                 height="64">
+                                 <use
+                                    href="img/recipe/recipe-icons.svg#icon-icon-photo-camera">
+                                 </use>
+                              </svg>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="form-add-recipe__base-data data-base-recipe">
+                        <div class="data-base-recipe__wrapper">
+                           <label
+                              class="data-base-recipe__label data-base-recipe__label--color"
+                              for="title">
+                              Enter item title
+                           </label>
+                           <input
+                              class="data-base-recipe__input data-base-recipe__input--color"
+                              type="text" name="title" id="title"
+                              placeholder=" ">
+                        </div>
+                        <div class="data-base-recipe__wrapper">
+                           <label
+                              class="data-base-recipe__label data-base-recipe__label--color"
+                              for="about">
+                              Enter about recipe
+                           </label>
+                           <input
+                              class="data-base-recipe__input data-base-recipe__input--color"
+                              type="text" name="about" id="about"
+                              placeholder=" ">
+                        </div>
+                        <div
+                           class="data-base-recipe__wrapper data-base-recipe__wrapper--select">
+                           <label
+                              class="data-base-recipe__label data-base-recipe__label--category"
+                              for="category">
+                              Category
+                           </label>
+                           <select
+                              class="data-base-recipe__select data-base-recipe__select--category"
+                              name="category" id="category">
+                              <option
+                                 class="data-base-recipe__option data-base-recipe__option--category"
+                                 value="breacfast">breakfast</option>
+                              <option
+                                 class="data-base-recipe__option data-base-recipe__option--category"
+                                 value="lunch">lunch</option>
+                              <option
+                                 class="data-base-recipe__option data-base-recipe__option--category"
+                                 value="dinner">dinner</option>
+                              <option
+                                 class="data-base-recipe__option data-base-recipe__option--category"
+                                 value="teatime">teatime</option>
+                           </select>
+                           <svg
+                              class="data-base-recipe__icon data-base-recipe__icon--category"
+                              width="20" height="20">
+                              <use
+                                 href="img/recipe/recipe-icons.svg#icon-chevron-down">
+                              </use>
+                           </svg>
+                        </div>
+                        <div
+                           class="data-base-recipe__wrapper-input-label data-base-recipe__wrapper-input-label--time">
+                           <label
+                              class="data-base-recipe__label data-base-recipe__label--time-num recipe-label"
+                              for="time">
+                              Cooking time
+                           </label>
+                           <input
+                              class="data-base-recipe__input data-base-recipe__input--time-num  recipe-input"
+                              type="number" name="time" id="time" value="0">
+                           <p class="data-base-recipe__time-measurement">min</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-add-recipe__down-part  down-part-form">
+                     <fieldset class="down-part-form__ingredients ingredients">
+                        <div class="ingredient__title-block">
+                           <legend class="ingredients__title">Ingredients
+                           </legend>
+                           <div
+                              class="ingredients__counter counter-ingredients">
+                              <button
+                                 class="counter-ingredients__btn counter-ingredients__btn--subtract"
+                                 type="button">
+                                 <svg class="counter-ingredients__icon"
+                                    height="16" width="16">
+                                    <use
+                                       href="img/recipe/recipe-icons-2.svg#icon-minus">
+                                    </use>
+                                 </svg>
+                              </button>
+                              <p class="counter-ingredients__number">3</p>
+                              <button
+                                 class="counter-ingredients__btn counter-ingredients__btn--add"
+                                 type="button">
+                                 <svg class="counter-ingredients__icon"
+                                    height="16" width="16">
+                                    <use
+                                       href="img/recipe/recipe-icons-2.svg#icon-plus">
+                                    </use>
+                                 </svg>
+                              </button>
+                           </div>
+
+                        </div>
+                        <ul class="ingredients__list">
+                           <li class="ingredients__item">
+                              <div class="ingredients__about">
+                                 <input class="ingredients__name"
+                                    name="ingredients-name" type="text">
+                                 <input class="ingredients__volume"
+                                    name="ingredients__volume" type="text">
+                                 <select class="ingredients__units-mass"
+                                    name="ingredients-units-mass"
+                                    name="units-mass" id="units-mass">
+                                    <option" value="tbs">tbs</option>
+                                       <option value="tsp">tsp</option>
+                                       <option value="kg">kg</option>
+                                       <option value="g">g</option>
+                                 </select>
+                              </div>
+                              <button class="ingredients__btn-remove btn-remove"
+                                 type="button">
+                                 <svg class="btn-remove__icon" height="20"
+                                    width="20">
+                                    <use
+                                       href="img/recipe/recipe-icons.svg#icon-x">
+                                    </use>
+                                 </svg>
+                              </button>
+                           </li>
+                        </ul>
+                  </div>
+                  </fieldset>
+            </div>
+            </form>
          </div>
-      </footer>
+   </div>
+   </main>
+   <footer class="footer">
+      <div class="footer__container">
+         <ul class="footer__nav nav">
+            <li class="nav__item">
+               <a class="nav__link nav__link--line-bg"
+                  href="index.html">Practice</a>
+            </li>
+            <li class="nav__item">
+               <a class="nav__link nav__link--line-bg" href="#my-info">My
+                  Info</a>
+            </li>
+            <li class="nav__item">
+               <a class="nav__link nav__link--line-bg" href="#check-out">Check
+                  Out</a>
+            </li>
+            <li class="nav__item">
+               <a class="nav__link nav__link--line-bg" href="#call-back">Call
+                  Back</a>
+            </li>
+            <li class="nav__item">
+               <a class="nav__link nav__link--line-bg" href="#add-recipe">Add
+                  recipe</a>
+            </li>
+         </ul>
+         <p class="footer__name">Fedorova Nataliya</p>
+      </div>
+   </footer>
    </div>
 
    <script src="js/models.js" type="module"></script>

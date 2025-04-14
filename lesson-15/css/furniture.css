@@ -255,11 +255,11 @@ img {
 .search-basket__decor-input {
    position: absolute;
    bottom: -4px;
-   left: 0;
-   width: 100px;
+   right: 25px;
+   width: 0;
    height: 1px;
-   background-color: rgba(28, 27, 27, 0.6);
-   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+   background-color: rgb(95, 142, 62, 0.8);
+   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .search-basket__search-btn {
@@ -279,12 +279,14 @@ img {
 }
 
 .search-basket__input:focus + .search-basket__decor-input,
-.search-basket__form-search:hover > .search-basket__decor-input {
-   background-color: rgba(95, 142, 62, 0.8);
+.search-basket__form-search:hover > .search-basket__decor-input,
+.search-basket__input:not(:placeholder-shown) + .search-basket__decor-input {
+   width: 100px;
 }
 
 .search-basket__search-btn:hover > .search-basket__icon,
-.search-basket__search-btn:focus > .search-basket__icon {
+.search-basket__search-btn:focus > .search-basket__icon,
+.search-basket__input:not(:placeholder-shown) ~ .search-basket__search-btn > .search-basket__icon {
    fill: rgba(95, 142, 62, 0.8);
 }
 

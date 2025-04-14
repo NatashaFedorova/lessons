@@ -55,6 +55,8 @@ button {
    background-color: transparent;
 }
 
+input,
+label,
 button,
 select,
 option {
@@ -63,7 +65,8 @@ option {
 
 input[type='text'],
 input[type='email'],
-input[type='tel'] {
+input[type='tel'],
+select {
    -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;

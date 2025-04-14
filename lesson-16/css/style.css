@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ephesis:regular&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inter:regular,500,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,600&display=swap');
 @import url('fonts.css');
 @import url('reset.css');
 
@@ -31,7 +32,6 @@ input[type='number']::-webkit-outer-spin-button {
    appearance: none;
    margin: 0;
 } */
-
 .wrapper {
    min-height: 100%;
    overflow: clip;
@@ -317,7 +317,6 @@ input[type='number']::-webkit-outer-spin-button {
    -webkit-appearance: none;
    appearance: none;
    background: transparent;
-   cursor: pointer;
    width: 100%;
    height: 50px;
 }
@@ -539,7 +538,6 @@ input[type='number']::-webkit-outer-spin-button {
 .models-label--checkbox {
    display: inline-flex;
    gap: 11px;
-   cursor: pointer;
    align-items: center;
    font-size: 20px;
    line-height: 1.3;
@@ -777,7 +775,6 @@ input[type='number']::-webkit-outer-spin-button {
 .model-label-block {
    display: flex;
    gap: 19px;
-   cursor: pointer;
    align-items: center;
    font-size: 20px;
    line-height: 1.2;
@@ -1066,6 +1063,318 @@ input[type='number']::-webkit-outer-spin-button {
    outline: 1px solid #373e78;
 }
 
+.add-recipe__container {
+   font-family: 'Poppins';
+   max-width: 830px;
+   margin-bottom: 30px;
+}
+
+.add-recipe__container > * {
+   margin-bottom: 50px;
+}
+
+.add-recipe__title {
+   font-weight: 600;
+   font-size: 44px;
+   color: #001833;
+}
+
+.form-add-recipe > * {
+   margin-bottom: 100px;
+}
+
+.form-add-recipe__top-part {
+   display: flex;
+   align-items: flex-start;
+   column-gap: 50px;
+}
+
+.photo-block {
+   flex: 0 0 auto;
+   width: 350px;
+   height: 352px;
+   border-radius: 5px;
+   background-color: #8baa36;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.photo-block__wrapper {
+   position: relative;
+   width: 64px;
+   height: 64px;
+   overflow: hidden;
+}
+
+.photo-block__input {
+   width: 64px;
+   font-size: 64px;
+   opacity: 0;
+}
+
+.photo-block__label {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 64px;
+   height: 64px;
+   border-radius: 10px;
+   border: 1px solid transparent;
+   transition: border 0.3s linear;
+}
+
+.photo-block__input:focus + .photo-block__label,
+.photo-block__input:hover + .photo-block__label {
+   border: 1px solid #fff;
+}
+
+.photo-block__icon {
+   width: 64px;
+   height: 64px;
+   fill: #fff;
+}
+
+.data-base-recipe {
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   row-gap: 50px;
+}
+
+.data-base-recipe__wrapper {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   column-gap: 20px;
+   border-bottom: 1px solid #e0e0e0;
+   padding-bottom: 20px;
+}
+
+.data-base-recipe__wrapper:hover > .data-base-recipe__input {
+   border-bottom: 1px solid 001833;
+}
+
+.data-base-recipe__wrapper:hover > .data-base-recipe__label {
+   color: #001833;
+}
+
+.data-base-recipe__input {
+   min-height: 24px;
+   max-width: 50%;
+   flex: 0 1 50%;
+   font-size: 16px;
+   color: #001833;
+   border-radius: 0 !important;
+   border-bottom: 1px solid transparent;
+   outline: 1px solid transparent;
+   transition: border 0.3s linear;
+}
+
+.data-base-recipe__label {
+   flex: 0 1 50%;
+   color: #7d7d7d;
+   font-size: 16px;
+   line-height: 1.5;
+   transition: color 0.3s linear;
+}
+
+.data-base-recipe__input--color:hover,
+.data-base-recipe__input--color:focus,
+.data-base-recipe__input--color:not(:placeholder-shown) {
+   border-bottom: 1px solid #8baa36;
+}
+
+.data-base-recipe__input--color:hover .data-base-recipe__label--color,
+.data-base-recipe__input--color:focus .data-base-recipe__label--color,
+.data-base-recipe__input--color:not(:placeholder-shown) .data-base-recipe__label--color {
+   color: #001833;
+}
+
+.data-base-recipe__wrapper--select {
+   position: relative;
+}
+
+.data-base-recipe__select--category {
+   max-width: 100px;
+   flex: 0 1 100px;
+   font-size: 16px;
+   padding: 5px 30px 5px 5px;
+}
+
+.data-base-recipe__option--category {
+   width: 100px;
+}
+
+.data-base-recipe__select--category:focus > .data-base-recipe__option--category:checked {
+   color: #fff;
+   background-color: #8baa36 !important;
+}
+
+.data-base-recipe__select--category:focus,
+.data-base-recipe__select--category:hover {
+   border-radius: 4px;
+   outline: 1px solid #8baa36;
+}
+
+.data-base-recipe__icon--category {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 30px;
+   height: 30px;
+   padding: 5px;
+   stroke: #8baa36;
+   transform: rotateX(0deg);
+   transition: transform 300ms;
+   transition: all 0.3s linear;
+}
+
+.data-base-recipe__select--category:hover + .data-base-recipe__icon--category,
+.data-base-recipe__select--category:focus + .data-base-recipe__icon--category {
+   transform: rotateX(180deg);
+}
+
+.data-base-recipe__wrapper-input-label--time {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   column-gap: 10px;
+   border-bottom: 1px solid #e0e0e0;
+   padding-bottom: 20px;
+}
+.data-base-recipe__label--time-num {
+   flex: 1 1 auto;
+}
+.data-base-recipe__input--time-num {
+   text-align: end;
+}
+
+.data-base-recipe__time-measurement {
+   flex: 0 1 auto;
+   font-size: 16px;
+}
+
+.form-add-recipe__down-part {
+}
+.down-part-form > * {
+   margin-bottom: 35px;
+}
+.down-part-form__ingredients {
+}
+.ingredients {
+   max-width: 600px;
+}
+
+.ingredients > * {
+   margin-bottom: 100px;
+}
+
+.ingredient__title-block {
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+   column-gap: 30px;
+}
+
+.ingredients__title {
+   font-size: 24px;
+   line-height: 1.1;
+   color: #3e4462;
+}
+
+.counter-ingredients {
+   min-height: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   column-gap: 15px;
+   padding: 0 15px;
+   border-radius: 18px;
+   border: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+.counter-ingredients__number {
+   flex: 1 1 16px;
+   color: #333333;
+   font-size: 16px;
+   padding: 0 5px;
+}
+
+.counter-ingredients__btn {
+   flex: 0 0 16px;
+   max-width: 16px;
+   max-height: 16px;
+}
+
+.counter-ingredients__icon {
+   max-width: 16px;
+   max-height: 16px;
+   stroke: rgba(51, 51, 51, 0.3);
+}
+
+.counter-ingredients__btn:hover > .counter-ingredients__icon,
+.counter-ingredients__btn:focus > .counter-ingredients__icon {
+   stroke: #8baa36;
+}
+
+.counter-ingredients__btn:focus {
+   outline: 1px solid #8baa36;
+}
+
+.counter-ingredients__btn--subtract {
+}
+.counter-ingredients__number {
+}
+.counter-ingredients__btn--add {
+}
+.ingredients__list > * {
+   max-width: 610px;
+   margin-bottom: 20px;
+}
+.ingredients__item {
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+   column-gap: 50px;
+}
+
+.ingredients__about {
+   display: flex;
+   align-items: center;
+   column-gap: 60px;
+}
+.ingredients__name {
+   border: 1px solid red;
+}
+.ingredients__volume {
+   border: 1px solid red;
+}
+.ingredients__units-mass {
+}
+
+.btn-remove {
+   padding: 5px;
+   height: 30px;
+   width: 30px;
+}
+
+.btn-remove__icon {
+   height: 20px;
+   width: 20px;
+   stroke: #23262a;
+}
+
+.btn-remove:hover > .btn-remove__icon {
+   stroke: #8baa36;
+}
+
+.btn-remove:focus > .btn-remove__icon {
+   stroke: #8baa36;
+   outline: 1px solid #8baa36;
+}
+
 /* ---------------- margin-bottom: 0; for last-child */
 .wrapper > *:last-child,
 .page > *:last-child,
@@ -1087,6 +1396,12 @@ input[type='number']::-webkit-outer-spin-button {
 .check-out__text > *:last-child,
 .check-out__credit-card-block > *:last-child,
 .check-out__line--radio-input > *:last-child,
-.call-back__container > *:last-child {
+.call-back__container > *:last-child,
+.add-recipe__container > *:last-child,
+.form-add-recipe > *:last-child,
+.base-data-recipe > *:last-child,
+.ingredients__list > *:last-child,
+.down-part-form > *:last-child,
+.ingredients > *:last-child {
    margin-bottom: 0;
 }

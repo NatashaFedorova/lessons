@@ -5,3 +5,4 @@ refs.myInfoForm.addEventListener('submit', onSubmit);
 refs.checkOutForm.addEventListener('submit', onSubmit);
 refs.billingForm.addEventListener('submit', onSubmit);
 refs.callBackForm.addEventListener('submit', onSubmit);
+refs.addRecipeForm.addEventListener('submit', onSubmit);
