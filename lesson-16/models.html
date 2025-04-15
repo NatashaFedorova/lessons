@@ -971,7 +971,8 @@
                               name="category" id="category">
                               <option
                                  class="data-base-recipe__option data-base-recipe__option--category"
-                                 value="breacfast">breakfast</option>
+                                 value="breacfast">breakfast
+                              </option>
                               <option
                                  class="data-base-recipe__option data-base-recipe__option--category"
                                  value="lunch">lunch</option>
@@ -982,8 +983,7 @@
                                  class="data-base-recipe__option data-base-recipe__option--category"
                                  value="teatime">teatime</option>
                            </select>
-                           <svg
-                              class="data-base-recipe__icon data-base-recipe__icon--category"
+                           <svg class="data-base-recipe__icon icon-select"
                               width="20" height="20">
                               <use
                                  href="img/recipe/recipe-icons.svg#icon-chevron-down">
@@ -1040,16 +1040,93 @@
                               <div class="ingredients__about">
                                  <input class="ingredients__name"
                                     name="ingredients-name" type="text">
-                                 <input class="ingredients__volume"
-                                    name="ingredients__volume" type="text">
-                                 <select class="ingredients__units-mass"
-                                    name="ingredients-units-mass"
-                                    name="units-mass" id="units-mass">
-                                    <option" value="tbs">tbs</option>
+                                 <div class="ingredients__block-mass">
+                                    <input class="ingredients__volume"
+                                       name="ingredients__volume" type="number"
+                                       placeholder="0">
+                                    <select class="ingredients__units-mass"
+                                       name="ingredients-units-mass"
+                                       name="units-mass" id="units-mass">
+                                       <option value="tsp">tbs</option>
                                        <option value="tsp">tsp</option>
                                        <option value="kg">kg</option>
                                        <option value="g">g</option>
-                                 </select>
+                                    </select>
+                                    <svg class="ingredients__icon icon-select"
+                                       height="20" width="20">
+                                       <use
+                                          href="img/recipe/recipe-icons.svg#icon-chevron-down">
+                                       </use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <button class="ingredients__btn-remove btn-remove"
+                                 type="button">
+                                 <svg class="btn-remove__icon" height="20"
+                                    width="20">
+                                    <use
+                                       href="img/recipe/recipe-icons.svg#icon-x">
+                                    </use>
+                                 </svg>
+                              </button>
+                           </li>
+                           <li class="ingredients__item">
+                              <div class="ingredients__about">
+                                 <input class="ingredients__name"
+                                    name="ingredients-name" type="text">
+                                 <div class="ingredients__block-mass">
+                                    <input class="ingredients__volume"
+                                       name="ingredients__volume" type="number"
+                                       placeholder="0">
+                                    <select class="ingredients__units-mass"
+                                       name="ingredients-units-mass"
+                                       name="units-mass" id="units-mass">
+                                       <option value="tsp">tbs</option>
+                                       <option value="tsp">tsp</option>
+                                       <option value="kg">kg</option>
+                                       <option value="g">g</option>
+                                    </select>
+                                    <svg class="ingredients__icon icon-select"
+                                       height="20" width="20">
+                                       <use
+                                          href="img/recipe/recipe-icons.svg#icon-chevron-down">
+                                       </use>
+                                    </svg>
+                                 </div>
+                              </div>
+                              <button class="ingredients__btn-remove btn-remove"
+                                 type="button">
+                                 <svg class="btn-remove__icon" height="20"
+                                    width="20">
+                                    <use
+                                       href="img/recipe/recipe-icons.svg#icon-x">
+                                    </use>
+                                 </svg>
+                              </button>
+                           </li>
+                           <li class="ingredients__item">
+                              <div class="ingredients__about">
+                                 <input class="ingredients__name"
+                                    name="ingredients-name" type="text">
+                                 <div class="ingredients__block-mass">
+                                    <input class="ingredients__volume"
+                                       name="ingredients__volume" type="number"
+                                       placeholder="0">
+                                    <select class="ingredients__units-mass"
+                                       name="ingredients-units-mass"
+                                       name="units-mass" id="units-mass">
+                                       <option value="tsp">tbs</option>
+                                       <option value="tsp">tsp</option>
+                                       <option value="kg">kg</option>
+                                       <option value="g">g</option>
+                                    </select>
+                                    <svg class="ingredients__icon icon-select"
+                                       height="20" width="20">
+                                       <use
+                                          href="img/recipe/recipe-icons.svg#icon-chevron-down">
+                                       </use>
+                                    </svg>
+                                 </div>
                               </div>
                               <button class="ingredients__btn-remove btn-remove"
                                  type="button">
