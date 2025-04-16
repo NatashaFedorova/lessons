@@ -763,7 +763,6 @@
                                        <input
                                           class="check-out__input models-input models-input--border"
                                           name="cardNumber" type="text"
-                                          inputmode="numeric"
                                           pattern="[0-9\\s]{13,19}"
                                           autocomplete="cc-number"
                                           maxlength="19"
@@ -913,6 +912,7 @@
             </div>
 
          </div>
+
          <div class="add-recipe" id="add-recipe">
             <div class="add-recipe__container">
                <h2 class="add-recipe__title">Add recipe</h2>
@@ -999,16 +999,17 @@
                            </label>
                            <input
                               class="data-base-recipe__input data-base-recipe__input--time-num  recipe-input"
-                              type="number" name="time" id="time" value="0">
+                              type="number" name="time" id="time"
+                              placeholder="0">
                            <p class="data-base-recipe__time-measurement">min</p>
                         </div>
                      </div>
                   </div>
                   <div class="form-add-recipe__down-part  down-part-form">
-                     <fieldset class="down-part-form__ingredients ingredients">
-                        <div class="ingredient__title-block">
-                           <legend class="ingredients__title">Ingredients
-                           </legend>
+                     <div class="down-part-form__ingredients ingredients">
+                        <div class="ingredients__title-block">
+                           <h3 class="ingredients__title title-form">Ingredients
+                           </h3>
                            <div
                               class="ingredients__counter counter-ingredients">
                               <button
@@ -1033,7 +1034,6 @@
                                  </svg>
                               </button>
                            </div>
-
                         </div>
                         <ul class="ingredients__list">
                            <li class="ingredients__item">
@@ -1045,8 +1045,7 @@
                                        name="ingredients__volume" type="number"
                                        placeholder="0">
                                     <select class="ingredients__units-mass"
-                                       name="ingredients-units-mass"
-                                       name="units-mass" id="units-mass">
+                                       name="ingredients-units-mass">
                                        <option value="tsp">tbs</option>
                                        <option value="tsp">tsp</option>
                                        <option value="kg">kg</option>
@@ -1079,8 +1078,7 @@
                                        name="ingredients__volume" type="number"
                                        placeholder="0">
                                     <select class="ingredients__units-mass"
-                                       name="ingredients-units-mass"
-                                       name="units-mass" id="units-mass">
+                                       name="ingredients-units-mass">
                                        <option value="tsp">tbs</option>
                                        <option value="tsp">tsp</option>
                                        <option value="kg">kg</option>
@@ -1113,8 +1111,7 @@
                                        name="ingredients__volume" type="number"
                                        placeholder="0">
                                     <select class="ingredients__units-mass"
-                                       name="ingredients-units-mass"
-                                       name="units-mass" id="units-mass">
+                                       name="ingredients-units-mass">
                                        <option value="tsp">tbs</option>
                                        <option value="tsp">tsp</option>
                                        <option value="kg">kg</option>
@@ -1139,42 +1136,49 @@
                               </button>
                            </li>
                         </ul>
+                     </div>
+                     <div class="down-part-form__cooking cooking">
+                        <h3 class="cooking__title title-form">
+                           Recipe Preparation</h3>
+                        <textarea class="cooking__textarea" name="cooking"
+                           id="cooking" placeholder="Enter Recipe"></textarea>
+                        <button class="cooking__submit-btn"
+                           type="submit">Add</button>
+                     </div>
                   </div>
-                  </fieldset>
+               </form>
             </div>
-            </form>
          </div>
+      </main>
+      <footer class="footer">
+         <div class="footer__container">
+            <ul class="footer__nav nav">
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg"
+                     href="index.html">Practice</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg" href="#my-info">My
+                     Info</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg"
+                     href="#check-out">Check
+                     Out</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg" href="#call-back">Call
+                     Back</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link nav__link--line-bg" href="#add-recipe">Add
+                     recipe</a>
+               </li>
+            </ul>
+            <p class="footer__name">Fedorova Nataliya</p>
+         </div>
+      </footer>
    </div>
-   </main>
-   <footer class="footer">
-      <div class="footer__container">
-         <ul class="footer__nav nav">
-            <li class="nav__item">
-               <a class="nav__link nav__link--line-bg"
-                  href="index.html">Practice</a>
-            </li>
-            <li class="nav__item">
-               <a class="nav__link nav__link--line-bg" href="#my-info">My
-                  Info</a>
-            </li>
-            <li class="nav__item">
-               <a class="nav__link nav__link--line-bg" href="#check-out">Check
-                  Out</a>
-            </li>
-            <li class="nav__item">
-               <a class="nav__link nav__link--line-bg" href="#call-back">Call
-                  Back</a>
-            </li>
-            <li class="nav__item">
-               <a class="nav__link nav__link--line-bg" href="#add-recipe">Add
-                  recipe</a>
-            </li>
-         </ul>
-         <p class="footer__name">Fedorova Nataliya</p>
-      </div>
-   </footer>
-   </div>
-
    <script src="js/models.js" type="module"></script>
 </body>
 
