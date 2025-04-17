@@ -1404,6 +1404,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .ingredients .ingredients__units-mass {
+   color: #000;
    padding-left: 3px;
 }
 
