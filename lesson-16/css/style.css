@@ -75,6 +75,9 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    padding: 15px 0;
    margin: 0;
    min-height: 100px;
@@ -97,7 +100,9 @@ input[type='number']::-webkit-outer-spin-button {
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 30px;
+   column-gap: 30px;
+   row-gap: 10px;
+   flex-wrap: wrap;
 }
 
 .nav__item {
@@ -106,7 +111,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 .nav__link {
    position: relative;
-   padding: 20px 0;
+   padding: 10px 0;
    font-size: 24px;
    font-weight: 500;
    transition: all 0.3s;
@@ -1107,13 +1112,16 @@ input[type='number']::-webkit-outer-spin-button {
 .form-add-recipe__top-part {
    display: flex;
    align-items: flex-start;
+   justify-content: center;
+   flex-wrap: wrap;
    column-gap: 50px;
+   row-gap: 30px;
 }
 
 .photo-block {
-   flex: 0 0 auto;
+   flex: 0 1 350px;
+   min-width: 290px;
    height: 355px;
-   width: 350px;
    border-radius: 5px;
    background-color: #8baa36;
    display: flex;
@@ -1157,6 +1165,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .data-base-recipe {
+   min-width: 290px;
    flex: 1 1 auto;
    display: flex;
    justify-content: space-between;
@@ -1221,6 +1230,7 @@ input[type='number']::-webkit-outer-spin-button {
    max-width: max-content;
    flex: 0 1 50%;
    font-size: 16px;
+   color: #000;
    border-radius: 4px;
    padding: 5px 30px 5px 5px;
 }
@@ -1351,19 +1361,22 @@ input[type='number']::-webkit-outer-spin-button {
 
 .ingredients__item {
    display: flex;
-   align-items: center;
+   align-items: baseline;
    justify-content: space-between;
-   column-gap: 60px;
+   column-gap: 10px;
 }
 
 .ingredients__about {
    flex: 1 1 auto;
    display: flex;
    align-items: center;
+   flex-wrap: wrap;
    column-gap: 30px;
+   row-gap: 10px;
 }
 
 .ingredients .ingredients__name {
+   flex: 0 1 340px;
    border-radius: 6px;
    padding-left: 15px;
    padding-right: 15px;
@@ -1477,7 +1490,7 @@ input[type='number']::-webkit-outer-spin-button {
 .cooking__textarea {
    line-height: 1.5;
    resize: both;
-   min-width: 200px;
+   min-width: 290px;
    max-width: 500px;
    min-height: 225px;
    max-height: 225px;
