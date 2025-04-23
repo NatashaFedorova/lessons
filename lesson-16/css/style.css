@@ -121,22 +121,22 @@ input[type='number']::-webkit-outer-spin-button {
    content: '';
    position: absolute;
    left: 0;
-   bottom: 10px;
+   bottom: 0;
    background-color: rgba(1, 102, 1, 0.6);
    width: 100%;
    height: 2px;
-   transform: scale(0);
+   transform: scaleX(0);
    border-radius: 1px;
 
    transition: all 0.3s;
 }
 
 .nav__link--line-bg::after {
-   background-color: rgba(138, 51, 253, 0.8);
+   background-color: rgba(1, 102, 1, 0.8);
 }
 
 .nav__link:hover::after {
-   transform: scale(1);
+   transform: scaleX(1);
 }
 
 .footer__name {
@@ -149,7 +149,7 @@ input[type='number']::-webkit-outer-spin-button {
 .hero {
    background: rgb(1, 26, 1) url('../img/bg.webp') center/ cover no-repeat;
    padding: 150px 0;
-   box-shadow: 0px 0px 13px 0px rgb(1, 102, 1);
+   box-shadow: 0px 0px 13px 0px #016601;
 }
 
 .hero__title {
@@ -450,7 +450,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 .my-info__line:hover > .models-label,
 .check-out__line:hover > .models-label {
-   color: #8a33fd;
+   color: #016601;
    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -501,15 +501,15 @@ input[type='number']::-webkit-outer-spin-button {
 .models-input:focus,
 .models-select:focus,
 .models-textarea:focus {
-   color: #8a33fd;
-   outline: 1px solid #8a33fd;
+   color: #016601;
+   outline: 1px solid #016601;
 }
 
 .models-input:hover,
 .models-select:hover,
 .models-textarea:hover {
-   color: #8a33fd;
-   border: 1px solid #8a33fd;
+   color: #016601;
+   border: 1px solid #016601;
 }
 
 .models-select {
@@ -571,16 +571,16 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .models-label--checkbox:hover::before {
-   border: 2px solid #8a33fd;
+   border: 2px solid #016601;
 }
 
 .models-checkbox:focus-visible + .models-label--checkbox {
-   color: #8a33fd;
+   color: #016601;
 }
 
 .models-checkbox:focus-visible + .models-label--checkbox::before {
-   border: 1px solid #8a33fd;
-   outline: 1px solid #8a33fd;
+   border: 1px solid #016601;
+   outline: 1px solid #016601;
 }
 
 .models-checkbox:checked + .models-label--checkbox::before {
@@ -588,7 +588,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .models-checkbox:checked + .models-label--checkbox:hover::before {
-   background: url('../img/vector-violet.svg') center / cover no-repeat;
+   background: url('../img/vector-green.svg') center / cover no-repeat;
 }
 
 .my-info__buttons-wrapper {
@@ -606,17 +606,17 @@ input[type='number']::-webkit-outer-spin-button {
 .my-info__btn--save {
    font-weight: 600;
    color: #ffffff;
-   border: 1px solid #8a33fd;
-   background-color: #8a33fd;
+   border: 1px solid #016601;
+   background-color: #016601;
 }
 
 .my-info__btn--save:hover {
-   color: #8a33fd;
+   color: #016601;
    background-color: transparent;
 }
 
 .my-info__btn--save:focus {
-   outline: 1px solid #420b89;
+   outline: 1px solid #016601;
 }
 
 .my-info__btn--cancel {
@@ -627,12 +627,12 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .my-info__btn--cancel:hover {
-   color: #8a33fd;
-   border: 1px solid #8a33fd;
+   color: #016601;
+   border: 1px solid #016601;
 }
 
 .my-info__btn--cancel:focus {
-   outline: 1px solid #8a33fd;
+   outline: 1px solid #016601;
 }
 
 .check-out__container {
@@ -646,7 +646,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 .check-out__title::before {
    content: '';
-   background-color: #8a33fd;
+   background-color: #016601;
    width: 6px;
    height: 28px;
    border-radius: 10px;
@@ -699,20 +699,20 @@ input[type='number']::-webkit-outer-spin-button {
    padding: 16px 20px;
    margin-bottom: 20px;
    border-radius: 8px;
-   border: 1px solid #8a33fd;
+   border: 1px solid #016601;
    color: #ffffff;
-   background-color: #8a33fd;
+   background-color: #016601;
    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-out__button:hover {
-   color: #8a33fd;
+   color: #016601;
    background-color: #ffffff;
 }
 
 .check-out__button:focus {
-   border: #461981;
-   outline: 1px solid #461981;
+   border: #016601;
+   outline: 1px solid #016601;
 }
 
 .check-out__billing-form > *:not(:last-child) {
@@ -800,7 +800,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 .models-radio:focus-visible + .models-label--radio,
 .models-radio:focus-visible + .model-label-block {
-   outline: 1px solid #8a33fd;
+   outline: 1px solid #016601;
 }
 
 .models-radio:checked + .models-label--radio::before,
@@ -947,7 +947,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 .call-back__title::before {
    content: '';
-   background-color: #40ddb6;
+   background-color: #016601;
    height: 12px;
    width: 12px;
    margin-right: 5px;
@@ -991,14 +991,14 @@ input[type='number']::-webkit-outer-spin-button {
 
 .call-back__input:focus + .call-back__label {
    top: -20%;
-   color: #6b77e5;
+   color: #016601;
    background-color: #ffffff;
 }
 
 .call-back__input:hover + .call-back__label,
 .call-back__input:not(:placeholder-shown) + .call-back__label {
    top: -20%;
-   color: #6b77e5;
+   color: #016601;
    background-color: #ffffff;
 }
 
@@ -1034,13 +1034,13 @@ input[type='number']::-webkit-outer-spin-button {
 
 .call-back__input:hover,
 .call-back__textarea:hover {
-   border: 1px solid #6b77e5;
+   border: 1px solid #016601;
 }
 
 .call-back__input:focus,
 .call-back__textarea:focus {
-   outline: 1px solid #6b77e5;
-   color: #6b77e5;
+   outline: 1px solid #016601;
+   color: #016601;
 }
 
 .call-back__button {
@@ -1049,8 +1049,8 @@ input[type='number']::-webkit-outer-spin-button {
    font-size: 16px;
    padding: 21px 61px;
    color: #ffffff;
-   border: 1px solid #6b77e5;
-   background-color: #6b77e5;
+   border: 1px solid #016601;
+   background-color: #016601;
    width: max-content;
    margin: 0 auto;
 
@@ -1058,14 +1058,14 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .call-back__button:hover {
-   color: #6b77e5;
+   color: #016601;
    background-color: #ffffff;
 }
 
 .call-back__button:focus {
-   color: #6b77e5;
+   color: #016601;
    background-color: #ffffff;
-   outline: 1px solid #373e78;
+   outline: 1px solid #014901;
 }
 
 .add-recipe__container {
@@ -1091,7 +1091,7 @@ input[type='number']::-webkit-outer-spin-button {
    right: 0;
    width: 20px;
    height: 20px;
-   stroke: #8baa36;
+   stroke: #016601;
    transform: rotateX(0deg);
    transition: transform 0.3s;
    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1106,7 +1106,7 @@ input[type='number']::-webkit-outer-spin-button {
    font-size: 24px;
    line-height: 1.1;
    text-transform: capitalize;
-   color: #3e4462;
+   color: #004000;
 }
 
 .form-add-recipe__top-part {
@@ -1123,7 +1123,7 @@ input[type='number']::-webkit-outer-spin-button {
    min-width: 290px;
    height: 355px;
    border-radius: 5px;
-   background-color: #8baa36;
+   background-color: #016601;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -1213,13 +1213,13 @@ input[type='number']::-webkit-outer-spin-button {
 .data-base-recipe__input--color:hover,
 .data-base-recipe__input--color:focus,
 .data-base-recipe__input--color:not(:placeholder-shown) {
-   border-bottom: 1px solid #8baa36;
+   border-bottom: 1px solid #016601;
 }
 
 .data-base-recipe__input--color:hover .data-base-recipe__label--color,
 .data-base-recipe__input--color:focus .data-base-recipe__label--color,
 .data-base-recipe__input--color:not(:placeholder-shown) .data-base-recipe__label--color {
-   color: #001833;
+   color: #013601;
 }
 
 .data-base-recipe__wrapper--select {
@@ -1241,12 +1241,12 @@ input[type='number']::-webkit-outer-spin-button {
 
 .data-base-recipe__select--category:focus > .data-base-recipe__option--category:checked {
    color: #fff;
-   background-color: #8baa36 !important;
+   background-color: #016601 !important;
 }
 
 .data-base-recipe__select--category:focus,
 .data-base-recipe__select--category:hover {
-   outline: 1px solid #8baa36;
+   outline: 1px solid #016601;
 }
 
 .data-base-recipe__select--category:focus + .data-base-recipe__icon {
@@ -1344,11 +1344,11 @@ input[type='number']::-webkit-outer-spin-button {
 
 .counter-ingredients__btn:hover > .counter-ingredients__icon,
 .counter-ingredients__btn:focus > .counter-ingredients__icon {
-   stroke: #8baa36;
+   stroke: #016601;
 }
 
 .counter-ingredients__btn:focus {
-   outline: 1px solid #8baa36;
+   outline: 1px solid #016601;
 }
 
 .ingredients__list {
@@ -1414,6 +1414,7 @@ input[type='number']::-webkit-outer-spin-button {
 .ingredients__icon {
    top: 20px;
    right: 25px;
+   pointer-events: none;
 }
 
 .ingredients .ingredients__units-mass {
@@ -1434,20 +1435,20 @@ input[type='number']::-webkit-outer-spin-button {
 .ingredients__name:hover,
 .ingredients__volume:hover,
 .ingredients__units-mass:hover {
-   border: 1px solid #8baa36;
+   border: 1px solid #016601;
 }
 
 .ingredients__name:focus,
 .ingredients__volume:focus,
 .ingredients__units-mass:focus {
-   border: 1px solid #8baa36;
-   outline: 1px solid #8baa36;
+   border: 1px solid #016601;
+   outline: 1px solid #016601;
 }
 
 .ingredients__volume:focus,
 .ingredients__units-mass:focus {
-   border: 1px solid #8baa36;
-   outline: 1px solid #8baa36;
+   border: 1px solid #016601;
+   outline: 1px solid #016601;
 }
 
 .ingredients__units-mass:focus + .ingredients__icon {
@@ -1467,16 +1468,16 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .btn-remove:hover > .btn-remove__icon {
-   stroke: #8baa36;
+   stroke: #016601;
 }
 
 .btn-remove:focus > .btn-remove__icon {
-   stroke: #8baa36;
+   stroke: #016601;
 }
 
 .btn-remove:focus {
-   stroke: #8baa36;
-   outline: 1px solid #8baa36;
+   stroke: #016601;
+   outline: 1px solid #016601;
 }
 
 .cooking {
@@ -1503,12 +1504,12 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .cooking__textarea:hover {
-   border: 1px solid #8baa36;
+   border: 1px solid #016601;
 }
 
 .cooking__textarea:focus {
-   border: 1px solid #8baa36;
-   outline: 1px solid #8baa36;
+   border: 1px solid #016601;
+   outline: 1px solid #016601;
 }
 
 .cooking__textarea:focus::placeholder {
@@ -1530,11 +1531,11 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .cooking__submit-btn:hover {
-   background-color: #8baa36;
+   background-color: #016601;
 }
 
 .cooking__submit-btn:focus {
-   background-color: #8baa36;
+   background-color: #016601;
    border: 1px solid #22252a;
    outline: 1px solid #22252a;
 }
