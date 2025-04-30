@@ -44,3 +44,32 @@
    font-style: normal;
    font-display: swap;
 }
+
+/* =========================Kollektif============================== */
+@font-face {
+   font-family: 'Kollektif';
+   src: url('../fonts/kollektif/kollektif.woff2') format('woff2'),
+      url('../fonts/kollektif/kollektif.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Kollektif';
+   src: url('../fonts/kollektif/kollektif-bold.woff2') format('woff2'),
+      url('../fonts/kollektif/kollektif-bold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* =========================Lena============================== */
+@font-face {
+   font-family: 'Lena';
+   src: url('../fonts/lena/lena.woff2') format('woff2'),
+      url('../fonts/lena/lena.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
