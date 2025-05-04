@@ -75,7 +75,6 @@
 
 .header,
 .footer {
-   min-height: 60px;
    padding: 10px 0;
 }
 
@@ -87,6 +86,7 @@
 }
 
 .first-model__container {
+   min-height: 60px;
    position: relative;
 }
 
@@ -821,7 +821,7 @@
 
 /* ---------------------------------- */
 .fifth-model {
-   font-family: 'Lena';
+   font-family: 'Lena', sans-serif;
 }
 
 .fifth-model__container {
@@ -845,12 +845,12 @@
 }
 
 .font-family-accent {
-   font-family: 'Kollektif';
+   font-family: 'Kollektif', sans-serif;
 }
 
 .fifth-model__title {
    position: relative;
-   font-family: 'Lena';
+   font-family: 'Lena', sans-serif;
    font-size: 26px;
    line-height: 1.2;
    text-align: start;
@@ -1032,7 +1032,7 @@
 
 .buttons-cookies__btn {
    flex: 1 1 max-content;
-   font-family: 'Kollektif';
+   font-family: 'Kollektif', sans-serif;
    padding: 15px;
    color: #b90303;
    background-color: #fff;

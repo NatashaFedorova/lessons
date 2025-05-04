@@ -34,7 +34,7 @@
 }
 
 .clothing-header {
-   padding: 31px 0;
+   padding: 10px 0;
    border-bottom: 1px solid #bebcbd;
 }
 
@@ -46,6 +46,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   min-height: 80px;
    gap: 20px;
 }
 

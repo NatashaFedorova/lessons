@@ -1,0 +1,18 @@
+.wrapper {
+   min-height: 100%;
+   overflow: clip;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+
+.wrapper > *:not(:last-child) {
+   margin-bottom: 130px;
+}
+
+main > *:not(:last-child) {
+   margin-bottom: 160px;
+}
