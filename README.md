@@ -81,3 +81,8 @@ https://natashafedorova.github.io/lessons/lesson-16/
 Lesson-17. Adaptive layout
 
 https://natashafedorova.github.io/lessons/lesson-17/
+
+
+Lesson-18. Practice
+
+https://natashafedorova.github.io/lessons/lesson-18/
