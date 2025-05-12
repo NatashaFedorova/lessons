@@ -13,6 +13,10 @@
    margin-bottom: 130px;
 }
 
-main > *:not(:last-child) {
-   margin-bottom: 160px;
+main > * {
+   margin-bottom: 100px;
+}
+
+main > *:last-child {
+   margin-bottom: 0;
 }
