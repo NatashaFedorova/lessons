@@ -467,13 +467,11 @@ body {
    aspect-ratio: 1 / 1.5;
    padding: 15px 10px;
    border-radius: 215px;
-   overflow: hidden;
    border: 1px solid #ffffff;
 }
 
 .hero__img > img {
    border-radius: 195px;
-   overflow: hidden;
 }
 
 .right-path-hero > * {
@@ -896,13 +894,11 @@ body {
       min-width: 177px;
       aspect-ratio: 1/ 1.89;
       display: block;
-      border-radius: 235px;
       flex: 0 1 33.5%;
       max-height: 336px;
    }
 
    .img-block__img--small > img {
-      border-radius: 235px;
       margin-top: 14px;
       margin-left: -10px;
    }
@@ -910,7 +906,6 @@ body {
    .img-block__img--large {
       min-width: 308px;
       aspect-ratio: 1 / 1.64;
-      border-radius: 235px;
       flex: 0 1 58.44%;
       max-height: 505px;
    }
