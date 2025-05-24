@@ -484,6 +484,7 @@ img {
 
 .reviews__list {
    display: flex;
+   /* align-items: flex-start; */
    flex-wrap: wrap;
    row-gap: 30px;
    margin-left: -15px;
@@ -595,6 +596,9 @@ img {
 }
 
 .reviews__text {
+   overflow: auto;
+   min-height: 120px;
+   height: 200px;
    font-weight: 300;
 }
 

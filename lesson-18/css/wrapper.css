@@ -9,9 +9,9 @@
    flex-grow: 1;
 }
 
-.wrapper > *:not(:last-child) {
-   margin-bottom: 130px;
-}
+/* .wrapper > *:not(:last-child) {
+   margin-bottom: 100px;
+} */
 
 main > * {
    margin-bottom: 100px;
